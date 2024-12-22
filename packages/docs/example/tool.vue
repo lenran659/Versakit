@@ -1,3 +1,9 @@
+<!--
+ * @Author: 2171204141@qq.com
+ * @Date: 2024-12-21 09:26:35
+ * @LastEditors: Dream
+ * @Description: 
+-->
 <template>
   <div class="button-container">
     <ver-button
@@ -25,7 +31,10 @@ const propsValue = computed(() => {
   if (!props.value) return ''
   return props.value
     .split(',')
-    .map((item) => `<code>'${item}'</code>`)
+    .map((item) => {
+      if (item == '') return `<code>''</code>`
+      else return `<code>${item}</code>`
+    })
     .join(' | ')
 })
 
