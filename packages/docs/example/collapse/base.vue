@@ -17,9 +17,17 @@ const handleChange = (val: string[]) => {
           Consistent with real life: in line with the process and logic of real
           life, and comply with languages and habits that the users are used to;
         </div>
+      </VerCollapseItem>
+      <VerCollapseItem title="Consistency" name="2">
         <div>
-          Consistent within interface: all elements should be consistent, such
-          as: design style, icons and texts, position of elements, etc.
+          Consistent with real life: in line with the process and logic of real
+          life, and comply with languages and habits that the users are used to;
+        </div>
+      </VerCollapseItem>
+      <VerCollapseItem title="Consistency" name="3">
+        <div>
+          Consistent with real life: in line with the process and logic of real
+          life, and comply with languages and habits that the users are used to;
         </div>
       </VerCollapseItem>
     </VerCollapse>

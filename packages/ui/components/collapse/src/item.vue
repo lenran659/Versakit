@@ -15,7 +15,8 @@
       @click="handleClick"
     >
       <slot name="title">{{ title }}</slot>
-      <VerIcon name="caret-right-fill" class="header-angle" />
+
+      <div class="header-angle"><VerIcon name="caret-right-fill" /></div>
     </div>
     <Transition name="slide" v-on="transitionEvents">
       <div class="ver-collapse-item__wrapper" v-show="isActive">
@@ -71,3 +72,5 @@ const transitionEvents: Record<string, (el: HTMLElement) => void> = {
   },
 }
 </script>
+
+<style scoped lang="scss" src="../style/item.scss"></style>
