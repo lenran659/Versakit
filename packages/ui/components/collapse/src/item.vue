@@ -6,7 +6,7 @@
     }"
   >
     <div
-      class="vk-collapse-item__header"
+      class="ver-collapse-item__header"
       :class="{
         'is-disabled': disabled,
         'is-active': isActive,
@@ -18,8 +18,8 @@
       <VerIcon name="caret-right-fill" class="header-angle" />
     </div>
     <Transition name="slide" v-on="transitionEvents">
-      <div class="vk-collapse-item__wrapper" v-show="isActive">
-        <div class="vk-collapse-item__content" :id="`item-content-${name}`">
+      <div class="ver-collapse-item__wrapper" v-show="isActive">
+        <div class="ver-collapse-item__content" :id="`item-content-${name}`">
           <slot />
         </div>
       </div>
