@@ -1,10 +1,10 @@
 # Button 按钮
 
-<p>常用的操作按钮。</p>
+<p>在日常开发中比较常用的操作按钮。</p>
 
 ## 基础使用
 
-<p> 使用  <code>type</code>、<code>plain</code>、<code>round</code> 来定义按钮的样式。</p>
+<p> versakitUI提供了一些基础样式来使用，我们可以通过  <code>type</code>、<code>plain</code>、<code>round</code> 来修改按钮的圆角，颜色和是否透明等属性。</p>
 
 <demo vue="../../example/button/base.vue"></demo>
 
@@ -17,25 +17,31 @@
 
 ## 按钮大小
 
-<p>您可以使用 size 属性来控制按钮大小</p>
+<p>我们可以通过调整 size 属性来控制按钮大小</p>
 
 <demo vue="../../example/button/size.vue"></demo>
 
 ## 文本按钮
 
-<p>没有边框和背景色的按钮。</p>
+<p>我们可以使用text属性让按钮没有边框和背景</p>
 
 <demo vue="../../example/button/text.vue"></demo>
 
 ## 阴影按钮
 
+<p>我们可以通过shade属性来设置按钮的阴影样式</p>
+
 <demo vue="../../example/button/shadow.vue"></demo>
 
 ## 水波纹按钮
 
+<p>按钮可以结合水波纹一起使用</p>
+
 <demo vue="../../example/button/ripple.vue"></demo>
 
 ## 图标按钮
+
+<p>我们可以通过icon属性来设置按钮的图标样式</p>
 
 <demo vue="../../example/button/icon.vue"></demo>
 
