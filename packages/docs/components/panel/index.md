@@ -4,6 +4,8 @@
 
 ## 基础用法
 
+<p>这是一个很简单的面板</p>
+
 <demo vue="../../example/panel/base.vue"></demo>
 
 ## 阴影
