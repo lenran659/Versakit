@@ -1,3 +1,9 @@
+<!--
+ * @Author: 2171204141@qq.com
+ * @Date: 2024-12-18 23:14:04
+ * @LastEditors: Dream
+ * @Description: 
+-->
 <template>
   <ver-row>
     <ver-col :span="12">
@@ -56,6 +62,7 @@ import { VerAvatar, VerIcon, VerRow, VerCol } from '@versakit/ui'
 
 .demo-basic .demo-basic--circle,
 .demo-basic .demo-basic--square {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;

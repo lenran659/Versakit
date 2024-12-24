@@ -1,7 +1,7 @@
 <!--
  * @Author: 2171204141@qq.com
  * @Date: 2024-12-02 08:36:57
- * @LastEditors: Jannik 1337741710@qq.com
+ * @LastEditors: Dream
  * @Description: backtop组件：right,bottom,icon,visibilityHeight属性
 -->
 <template>
@@ -11,7 +11,12 @@
     :style="backTopStyle"
     @click.stop="handleClick"
   >
-    <ver-icon v-if="icon" :name="icon" :color="iconColor" size="26"></ver-icon>
+    <ver-icon
+      v-if="icon != ''"
+      :name="icon"
+      :color="iconColor"
+      size="26"
+    ></ver-icon>
     <span v-else>
       <slot></slot>
     </span>
@@ -28,7 +33,7 @@ import VerIcon from '../../icon/index'
 const props = withDefaults(defineProps<BackTopProps>(), {
   right: '60',
   bottom: '40',
-  icon: 'caret-up-fill',
+  icon: '',
   iconColor: '#8b5cf6',
   visibilityHeight: '150',
 })

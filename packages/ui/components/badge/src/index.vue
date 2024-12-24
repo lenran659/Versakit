@@ -12,7 +12,8 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { BadgeProps } from '../type/index.ts'
+import type { BadgeProps } from '../type'
+// import type { BadgeProps } from '../type/index.ts'
 defineOptions({
   name: 'VerBadge',
 })

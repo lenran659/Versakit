@@ -1,6 +1,6 @@
 <template>
   往下滑可以看到右下方的按钮。
-  <ver-backtop right="130" bottom="40">UP</ver-backtop>
+  <ver-backtop icon="caret-up-fill" />
 </template>
 
 <script setup lang="ts">
