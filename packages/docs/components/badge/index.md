@@ -12,7 +12,7 @@
 ## 基础用法
 
 可以通过设置 `type` 属性改变徽标类型。
-数量值可接受 Number 或 String。
+数量值可接受 `Number` 或 `String。`
 
 <demo vue="../../example/badge/base.vue"></demo>
 
