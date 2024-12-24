@@ -10,6 +10,8 @@
 
 ## 尺寸
 
+<p>可以通过size属性来设置swtich的大小</p>
+
 <demo vue="../../example/switch/size.vue"></demo>
 
 ## Switch API
