@@ -1,0 +1,32 @@
+.ver-collapse-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  font-weight: 500;
+  outline: none;
+  &.is-disabled {
+    cursor: not-allowed;
+    background-image: none;
+  }
+  &.is-active {
+    border-bottom-color: transparent;
+    .header-angle {
+      transform: rotate(90deg);
+    }
+  }
+  .header-angle {
+  }
+}
+.ver-collapse-item__content {
+  will-change: height;
+
+  overflow: hidden;
+  box-sizing: border-box;
+
+  padding-bottom: 25px;
+}
+.slide-enter-active,
+.slide-leave-active {
+}

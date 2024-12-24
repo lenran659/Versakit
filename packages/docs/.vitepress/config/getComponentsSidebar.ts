@@ -47,6 +47,7 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
         { text: 'Badge 徽标', link: '/components/badge/' },
         { text: 'Panel 面板', link: '/components/panel/' },
         { text: 'Descriptions 描述列表', link: '/components/Descriptions/' },
+        { text: 'Collapse 折叠面板', link: '/components/collapse/' },
       ],
     },
     {

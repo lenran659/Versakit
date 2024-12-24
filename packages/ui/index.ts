@@ -15,7 +15,6 @@ import VerDrawer from './components/drawer/index'
 import VerSwitch from './components/switch/index'
 import VerRadio from './components/radio/index'
 import VerMessage from './components/message/index'
-import VerMessageVue from './components/message/src/index.vue'
 import VerTextarea from './components/textarea/index'
 import VerContainer from './components/container/index'
 import VerHeader from './components/header/index'
@@ -29,10 +28,13 @@ import VerDescriptions from './components/descriptions'
 import VerResult from './components/result/index'
 import VerEmpty from './components/empty/index'
 import VerPanel from './components/panel'
+import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerCollapse,
+  VerCollapseItem,
   VerButton,
   VerRow,
   VerText,
@@ -49,7 +51,6 @@ const components: Component[] = [
   VerDrawer,
   VerSwitch,
   VerRadio,
-  VerMessageVue,
   VerTextarea,
   VerContainer,
   VerHeader,
@@ -63,6 +64,8 @@ const components: Component[] = [
   VerEmpty,
 ]
 export {
+  VerCollapse,
+  VerCollapseItem,
   VerButton,
   VerRow,
   VerText,
