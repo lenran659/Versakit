@@ -27,10 +27,13 @@ import VerBacktop from './components/backtop/index'
 import VerResult from './components/result/index'
 import VerEmpty from './components/empty/index'
 import VerPanel from './components/panel'
+import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerCollapse,
+  VerCollapseItem,
   VerButton,
   VerRow,
   VerText,
@@ -59,6 +62,8 @@ const components: Component[] = [
   VerEmpty,
 ]
 export {
+  VerCollapse,
+  VerCollapseItem,
   VerButton,
   VerRow,
   VerText,
