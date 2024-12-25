@@ -1,9 +1,8 @@
 # Descriptions 详细列表
 
-## 基础用法
+列表形式展示多个字段。
 
-在保留当前页面状态的情况下，告知用户并承载相关操作。
-绑定 `v-model`到一个`Boolean`类型的变量。
+## 基础用法
 
 <demo vue="../../example/descriptions/base.vue"></demo>
 
