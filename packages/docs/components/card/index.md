@@ -6,7 +6,7 @@
 
 卡片包含标题，内容以及操作区域。
 
-Card 组件 由 `header` 和 `body`组成。`header` 是可选的，其内容取决于一个具名的 `solt`
+Card 组件 由 `header` 和 `body` 组成。`header` 是可选的，其内容取决于一个具名的 `solt`
 
 <demo vue="../../example/card/base.vue"></demo>
 
@@ -26,7 +26,7 @@ Card 组件 由 `header` 和 `body`组成。`header` 是可选的，其内容取
 
 你可以定义什么时候展示卡片的阴影效果。
 
-通过 `shadow`属性设置卡片阴影出现的时刻。该属性的值可以是: `always`、`hover` 或 `never`
+通过 `shadow` 属性设置卡片阴影出现的时刻。该属性的值可以是: `always`、`hover` 或 `never`
 
 <demo vue="../../example/card/shadow.vue"></demo>
 
@@ -34,9 +34,9 @@ Card 组件 由 `header` 和 `body`组成。`header` 是可选的，其内容取
 
 ### Card 属性
 
-| 属性     | 说明                                   | 类型   | 默认值   |
-| -------- | -------------------------------------- | ------ | -------- |
-| `shadow` | 可以使用shadow来决定卡片拥有阴影的时机 | `enum` | `always` |
+| 属性     | 说明                                   | 类型                                      | 默认值 |
+| -------- | -------------------------------------- | ----------------------------------------- | ------ |
+| `shadow` | 可以使用shadow来决定卡片拥有阴影的时机 | `enum`<Tool value="always,hover,never,"/> | always |
 
 ### Card 插槽
 

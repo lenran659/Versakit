@@ -1,33 +1,36 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-17 19:21:01
- * @LastEditors: Dream
- * @Description: Description 组件文档
--->
+# Descriptions 详细列表
 
-# Description 对话框
+列表形式展示多个字段。
 
 ## 基础用法
 
-在保留当前页面状态的情况下，告知用户并承载相关操作。
-绑定 `v-model`到一个`Boolean`类型的变量。
-
 <demo vue="../../example/descriptions/base.vue"></demo>
 
-## Description API
+## 插槽用法
 
-### Description 属性
+<demo vue="../../example/descriptions/header.vue"></demo>
 
-| 属性         | 说明         | 类型     | 默认值 |
-| ------------ | ------------ | -------- | ------ |
-| `title`      | 标题         | `string` | `空`   |
-| `modelValue` | 绑定值       | `string` | `空`   |
-| `width`      | dialog的宽度 | `string` | `30%`  |
-| `top`        | 距顶部距离   | `string` | `15vh` |
+## 边框用法
 
-### Description 插槽
+可以通过设置 `border` 属性来设置详细列表是否存在边框
 
-| 插槽名   | 说明               |
-| -------- | ------------------ |
-| `title`  | dialog的标题部分   |
-| `footer` | dialog的footer部分 |
+<demo vue="../../example/descriptions/border.vue"></demo>
+
+## Descriptions API
+
+### Descriptions 属性
+
+| 属性     | 说明                  | 类型      | 默认值 |
+| -------- | --------------------- | --------- | ------ |
+| `label`  | 小标题                | `string`  | -      |
+| `value`  | 内容                  | `string`  | -      |
+| `title`  | Descriptions 的标题   | `string`  | -      |
+| `extra`  | Descriptions 的副标题 | `string`  | -      |
+| `border` | 是否存在边框          | `boolean` | true   |
+
+### Descriptions 插槽
+
+| 插槽名  | 说明                  |
+| ------- | --------------------- |
+| `title` | Descriptions 的标题   |
+| `extra` | Descriptions 的副标题 |

@@ -4,7 +4,9 @@
   position: relative;
   display: inline-block;
 
-  &-dot, &-num, &-text {
+  &-dot,
+  &-num,
+  &-text {
     position: absolute;
     right: 0;
     top: 0;
@@ -18,11 +20,12 @@
     background: $ver-red-6;
     box-shadow: 0 0 0 2px #fff;
   }
-  .ver-badge-num, .ver-badge-text {
+  .ver-badge-num,
+  .ver-badge-text {
     min-width: 16px;
     right: -8px;
     top: -8px;
-  }  
+  }
   .ver-badge-dot {
     right: 0;
     top: 0;

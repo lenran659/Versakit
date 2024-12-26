@@ -4,18 +4,19 @@
 
 ## 基础用法
 
-绑定 <code>v-model</code>到一个<code>Boolean</code>类型的变量。
+绑定 `v-model` 到一个 `Boolean` 类型的变量。
 
 <demo vue="../../example/switch/base.vue"></demo>
 
 ## 尺寸
 
-<p>可以通过size属性来设置swtich的大小</p>
+可以通过 `size` 属性来设置 switch 的大小。
 
 <demo vue="../../example/switch/size.vue"></demo>
 
 ## Switch API
 
-| 属性      | 说明   | 类型      | 默认值  |
-| --------- | ------ | --------- | ------- |
-| `v-model` | 绑定值 | `boolean` | `false` |
+| 属性                     | 说明     | 类型                             | 默认值 |
+| ------------------------ | -------- | -------------------------------- | ------ |
+| `v-model` / `modelValue` | 绑定值   | `boolean`                        | false  |
+| `size`                   | 设置尺寸 | `enum`<Tool value="lg,md,sm," /> | md     |

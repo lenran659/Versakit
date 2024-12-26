@@ -1,3 +1,10 @@
+<!--
+ * @Author: 2171204141@qq.com
+ * @Date: 2024-12-17 19:14:39
+ * @LastEditors: Dream
+ * @Description:
+-->
+
 # Message 消息提示
 
 常用于主动操作后的反馈提示。 与 Notification 的区别是后者更多用于系统级通知的被动提醒。
@@ -24,9 +31,14 @@
 
 ### Message 属性
 
-| 属性       | 说明               | 类型       | 默认值 |
-| ---------- | ------------------ | ---------- | ------ |
-| `type`     | 绑定值             | `string`   | `info` |
-| `content`  | 消息的内容         | `string`   | `空`   |
-| `duration` | 消息的持续时间     | `number`   | `0`    |
-| `destroy`  | message 的销毁函数 | `function` | `空`   |
+| 属性       | 说明           | 类型                                               | 默认值 |
+| ---------- | -------------- | -------------------------------------------------- | ------ |
+| `type`     | 绑定值         | `enum`<Tool value="success,warning,info,error," /> | `info` |
+| `content`  | 消息的内容     | `string`                                           | -      |
+| `duration` | 消息的持续时间 | `number`                                           | `3000` |
+
+### Message 方法
+
+| 名称      | 描述               | 类型                                  |
+| --------- | ------------------ | ------------------------------------- |
+| `destroy` | message 的销毁函数 | `function`<Tool value="() => void" /> |

@@ -5,7 +5,7 @@ import { VerButton, VerRow } from '@versakit/ui'
 <template>
   <ver-row class="mb-4">
     <ver-button disabled type="primary">按 钮</ver-button>
-    <ver-button disabled plain type="primary">按 钮</ver-button>
+    <ver-button disabled plain round type="primary">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
@@ -35,6 +35,7 @@ import { VerButton, VerRow } from '@versakit/ui'
   align-items: center;
   margin-bottom: 1rem;
 }
+
 .ver-btn + .ver-btn {
   margin: 0px 10px;
 }

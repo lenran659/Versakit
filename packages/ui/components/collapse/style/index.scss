@@ -1,4 +1,7 @@
+@use '../../../style/color/index.scss' as *;
+
 .ver-collapse {
-  border-top: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
+  font-size: 13px;
+  border-top: 1px solid $ver-zinc-3;
+  border-bottom: 1px solid $ver-zinc-3;
 }

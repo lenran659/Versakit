@@ -1,6 +1,6 @@
 # Empty 无内容
 
-<p>空空如也。</p>
+空状态时的占位提示。
 
 ## 基础用法
 
@@ -16,8 +16,8 @@
 
 | 属性              | 说明             | 类型      | 默认值 |
 | ----------------- | ---------------- | --------- | ------ |
-| `showDescription` | 是否展示描述信息 | `boolean` | `true` |
-| `showButton`      | 是否展示按钮     | `boolean` | `true` |
+| `showDescription` | 是否展示描述信息 | `boolean` | true   |
+| `showButton`      | 是否展示按钮     | `boolean` | true   |
 
 ### Empty 插槽
 

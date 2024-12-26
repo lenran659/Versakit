@@ -1,3 +1,9 @@
+<!--
+ * @Author: 2171204141@qq.com
+ * @Date: 2024-12-24 11:41:57
+ * @LastEditors: Dream
+ * @Description: 
+-->
 <template>
   <div class="ver-badge">
     <slot></slot>
@@ -12,8 +18,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { BadgeProps } from '../type'
-// import type { BadgeProps } from '../type/index.ts'
+import type { BadgeProps } from '../type/index.ts'
 defineOptions({
   name: 'VerBadge',
 })

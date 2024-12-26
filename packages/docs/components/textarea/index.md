@@ -10,23 +10,23 @@
 
 ## 禁用状态
 
-使用<code>disabled</code>属性启用
+使用 `disabled` 属性设置不可点击。
 
 <demo vue="../../example/textarea/disabled.vue"></demo>
 
 ## 限制长度
 
-使用<code>maxlength</code>属性启用
+使用 `maxlength` 属性限制最大输入长度。
 
 <demo vue="../../example/textarea/maxlength.vue"></demo>
 
-
 ## Textarea API
 
-### Textarea属性
-| 属性              | 说明     | 类型           | 默认值     |
-| ----------        | -------- | ---------      | --------- |
-| `disabled`        | 是否禁用 | `boolean`      | `false`   |
-| `placeholder	`        | 输入框占位文本 | `string`      | `空`   |
-| `modelValue`     | 绑定值 | `string`  | `空` |
-| `maxlength`     | 最大值 | `string`  | `undefined` |
+### Textarea 属性
+
+| 属性                     | 说明           | 类型      | 默认值 |
+| ------------------------ | -------------- | --------- | ------ |
+| `disabled`               | 是否禁用       | `boolean` | false  |
+| `placeholder	`            | 输入框占位文本 | `string`  | -      |
+| `v-model` / `modelValue` | 绑定值         | `string`  | -      |
+| `maxlength`              | 最大值         | `string`  | -      |
