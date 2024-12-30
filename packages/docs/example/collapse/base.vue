@@ -1,7 +1,7 @@
 <!--
  * @Author: 2171204141@qq.com
  * @Date: 2024-12-24 15:14:54
- * @LastEditors: Dream
+ * @LastEditors: Jannik 1337741710@qq.com
  * @Description: 
 -->
 <script setup lang="ts">
@@ -24,28 +24,16 @@ const handleChange = (val: string[]) => {
           life, and comply with languages and habits that the users are used to;
         </div>
       </VerCollapseItem>
-      <VerCollapseItem title="Consistency" name="2">
-        <div>
-          Consistent with real life: in line with the process and logic of real
-          life, and comply with languages and habits that the users are used to;
-        </div>
-      </VerCollapseItem>
-      <VerCollapseItem title="Consistency" name="3">
-        <div>
-          Consistent with real life: in line with the process and logic of real
-          life, and comply with languages and habits that the users are used to;
-        </div>
-      </VerCollapseItem>
       <VerCollapseItem title="Consistency 2" name="2">
         <div>
-          Operation feedback: enable the users to clearly perceive their
-          operations by style updates and interactive effects;
+          Consistent with real life: in line with the process and logic of real
+          life, and comply with languages and habits that the users are used to;
         </div>
       </VerCollapseItem>
       <VerCollapseItem title="Consistency 3" name="3">
         <div>
-          Visual feedback: reflect current state by updating or rearranging
-          elements of the page;
+          Consistent with real life: in line with the process and logic of real
+          life, and comply with languages and habits that the users are used to;
         </div>
       </VerCollapseItem>
     </VerCollapse>
