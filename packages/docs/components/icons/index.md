@@ -10,6 +10,8 @@ Versakit UI 提供了一套常用的图标集合。
 
 ## 图标集合
 
+声明：该图标源自Bootstrap图标库
+
 <demo vue="../../example/icon/icons.vue"></demo>
 
 ## Icons API
