@@ -1,10 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-24 11:41:57
- * @LastEditors: Dream
- * @Description:
--->
-
 # Badge 徽标
 
 按钮和图标上的数字或状态标记。
