@@ -20,7 +20,6 @@ import VerContainer from './components/container/index'
 import VerHeader from './components/header/index'
 import VerMain from './components/main/index'
 import VerNotification from './components/notification/index'
-import VerNotificationVue from './components/notification/src/index.vue'
 import VerTab from './components/tab/index'
 import VerIcon from './components/icon/index'
 import VerBacktop from './components/backtop/index'
@@ -55,7 +54,6 @@ const components: Component[] = [
   VerContainer,
   VerHeader,
   VerMain,
-  VerNotificationVue,
   VerTab,
   VerIcon,
   VerBacktop,

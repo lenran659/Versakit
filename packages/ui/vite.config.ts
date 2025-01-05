@@ -39,7 +39,7 @@ export default defineConfig({
   },
   // 打包配置
   build: {
-    sourcemap: true,
+    sourcemap: false,
     rollupOptions: {
       external: ['vue', '@vueuse/core'],
       output: {
