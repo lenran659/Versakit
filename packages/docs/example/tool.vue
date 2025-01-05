@@ -1,9 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-21 09:26:35
- * @LastEditors: Dream
- * @Description: 
--->
 <template>
   <div class="button-container">
     <ver-button
@@ -18,7 +12,7 @@
 
 <script lang="ts" setup>
 import { VerButton } from '@versakit/ui'
-import { defineProps, computed, ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const props = defineProps({
   value: {
