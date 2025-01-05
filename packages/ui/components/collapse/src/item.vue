@@ -16,7 +16,9 @@
     >
       <slot name="title">{{ title }}</slot>
 
-      <div class="header-angle"><VerIcon name="caret-right-fill" /></div>
+      <div class="header-angle">
+        <VerIcon name="caret-right-fill" />
+      </div>
     </div>
     <Transition name="slide" v-on="transitionEvents">
       <div class="ver-collapse-item__wrapper" v-show="isActive">
