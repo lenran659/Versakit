@@ -10,6 +10,14 @@ export default defineConfig({
   title: 'Versakit',
   description: 'A VitePress Site',
   themeConfig: {
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: '...',
+        apiKey: '...',
+        indexName: '...',
+      },
+    },
     nav: getNav(),
     sidebar: {
       '/guide/': getGuideSidebar(),
