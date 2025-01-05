@@ -22,8 +22,8 @@
 
 ### Text属性
 
-| 属性         | 说明                                       | 类型                                              | 默认值  |
-| ------------ | ------------------------------------------ | ------------------------------------------------- | ------- |
-| `type`       | 文本的类型                                 | `enum`<Tool value="default,primary,secondary," /> | default |
-| `size`       | 用于调整文本的大小                         | `enum`<Tool value="large,default,small," />       | default |
-| `truncated ` | 在文本超过视图或最大宽度设置时展示省略符。 | `boolean`                                         | false   |
+| 属性         | 说明                                       | 类型                                             | 默认值  |
+| ------------ | ------------------------------------------ | ------------------------------------------------ | ------- |
+| `type`       | 文本的类型                                 | `enum`<Tool value="default,primary,secondary" /> | default |
+| `size`       | 用于调整文本的大小                         | `enum`<Tool value="lg,md,sm,xs" />               | default |
+| `truncated ` | 在文本超过视图或最大宽度设置时展示省略符。 | `boolean`                                        | false   |

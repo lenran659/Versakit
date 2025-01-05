@@ -66,5 +66,11 @@ const showTooltip = ref(false)
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
+
+  .dark & {
+    background-color: #414243;
+    color: #fff;
+    border-color: #333;
+  }
 }
 </style>

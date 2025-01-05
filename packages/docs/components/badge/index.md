@@ -1,10 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-24 11:41:57
- * @LastEditors: Dream
- * @Description:
--->
-
 # Badge 徽标
 
 按钮和图标上的数字或状态标记。
@@ -26,7 +19,7 @@
 
 ### Badge 属性
 
-| 属性    | 说明           | 类型                                 | 默认值 |
-| ------- | -------------- | ------------------------------------ | ------ |
-| `type`  | 指定徽标的类型 | `enum`<Tool value="number,string,"/> | number |
-| `value` | 徽标显示的值   | `number` / `string`                  | -      |
+| 属性    | 说明           | 类型                                | 默认值 |
+| ------- | -------------- | ----------------------------------- | ------ |
+| `type`  | 指定徽标的类型 | `enum`<Tool value="number,string"/> | number |
+| `value` | 徽标显示的值   | `number` / `string`                 | -      |

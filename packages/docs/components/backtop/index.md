@@ -1,10 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-17 19:14:39
- * @LastEditors: Dream
- * @Description: backtop 组件文档
--->
-
 # Backtop 回到顶部
 
 一个返回页面顶部的操作按钮。

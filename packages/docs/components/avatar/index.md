@@ -1,7 +1,7 @@
 <!--
  * @Author: 2171204141@qq.com
  * @Date: 2024-12-17 19:14:39
- * @LastEditors: Dream
+ * @LastEditors: Jannik 1337741710@qq.com
  * @Description: Avatar 文档
 -->
 
@@ -43,12 +43,12 @@
 
 ### Avatar 属性
 
-| 属性  | 说明           | 类型                                             | 默认值 |
-| ----- | -------------- | ------------------------------------------------ | ------ |
-| src   | 图片资源的路径 | `string`                                         | -      |
-| size  | 尺寸大小       | `number` / `enum`<Tool value="xs,sm,lg,"></Tool> | 50     |
-| shape | 头像的形状     | `enum`<Tool value="square,circle,"></Tool>       | circle |
-| fit   | 头像的填充效果 | `enum`<Tool value="fill,contain,cover,"></Tool>  | cover  |
+| 属性  | 说明           | 类型                                            | 默认值 |
+| ----- | -------------- | ----------------------------------------------- | ------ |
+| src   | 图片资源的路径 | `string`                                        | -      |
+| size  | 尺寸大小       | `number` / `enum`<Tool value="xs,sm,lg"></Tool> | 50     |
+| shape | 头像的形状     | `enum`<Tool value="square,circle"></Tool>       | circle |
+| fit   | 头像的填充效果 | `enum`<Tool value="fill,contain,cover"></Tool>  | cover  |
 
 ### Avatar 事件
 

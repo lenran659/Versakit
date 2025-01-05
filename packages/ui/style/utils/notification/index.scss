@@ -4,5 +4,17 @@
   .ver-notification-#{$type}-plain {
     color: $color5;
     background-color: $color1;
+
+    .dark & {
+      background-color: $color1;
+
+      .ver-notification-title {
+        color: $color5;
+      }
+
+      .ver-notification-content {
+        color: $color5;
+      }
+    }
   }
 }

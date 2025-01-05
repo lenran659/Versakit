@@ -28,8 +28,8 @@
 
 ## Divider API
 
-| 属性        | 说明         | 类型                                       | 默认值       |
-| ----------- | ------------ | ------------------------------------------ | ------------ |
-| `direction` | 分隔线的方向 | `enum`<Tool value="horizontal,vertical,"/> | `horizontal` |
-| `position`  | 分割线的位置 | `enum`<Tool value="top,right,"/>           | `left`       |
-| `line`      | 分隔线的虚实 | `enum`<Tool value="dashed,solid,"/>        | `solid`      |
+| 属性        | 说明         | 类型                                      | 默认值       |
+| ----------- | ------------ | ----------------------------------------- | ------------ |
+| `direction` | 分隔线的方向 | `enum`<Tool value="horizontal,vertical"/> | `horizontal` |
+| `position`  | 分割线的位置 | `enum`<Tool value="center,right,left"/>   | `left`       |
+| `line`      | 分隔线的虚实 | `enum`<Tool value="dashed,solid"/>        | `solid`      |
