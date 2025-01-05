@@ -155,8 +155,11 @@ importers:
   packages/docs:
     dependencies:
       '@versakit/ui':
-        specifier: ^0.2.2
-        version: 0.2.2
+        specifier: ^0.2.4
+        version: 0.2.4
+      docs:
+        specifier: 'file:'
+        version: 'link:'
     devDependencies:
       vitepress:
         specifier: ^1.5.0
@@ -1095,8 +1098,8 @@ packages:
   '@ungap/structured-clone@1.2.1':
     resolution: {integrity: sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA==}
 
-  '@versakit/ui@0.2.2':
-    resolution: {integrity: sha512-VgCv/U0iSthQLCxJkqpOmsy9f06fllJHtHwjos8iClLCH+nzz4HQ+y+/qFkkUT4MvAJ5hggcD/8VqJCL9xwcJQ==}
+  '@versakit/ui@0.2.4':
+    resolution: {integrity: sha512-c8Or12W065DJut1nxpTCvLLMY0OdViiJ1cUj0jrwQxyCvvdzVzYbxPyziaryAx1C0j/0qlEaN53ePNApyhgliA==}
 
   '@vitejs/plugin-vue@5.2.1':
     resolution: {integrity: sha512-cxh314tzaWwOLqVes2gnnCtvBDcM1UMdn+iFR+UjAn411dPT3tOmqrJjbMd7koZpMAmBM/GqeV4n9ge7JSiJJQ==}
@@ -5498,7 +5501,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.1': {}
 
-  '@versakit/ui@0.2.2':
+  '@versakit/ui@0.2.4':
     dependencies:
       '@versakit/ui': docs@file:packages/docs
 

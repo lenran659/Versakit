@@ -23,7 +23,6 @@ import VerNotification from './components/notification/index'
 import VerTab from './components/tab/index'
 import VerIcon from './components/icon/index'
 import VerBacktop from './components/backtop/index'
-import VerDescriptions from './components/descriptions'
 import VerResult from './components/result/index'
 import VerEmpty from './components/empty/index'
 import VerPanel from './components/panel'
@@ -57,7 +56,6 @@ const components: Component[] = [
   VerTab,
   VerIcon,
   VerBacktop,
-  VerDescriptions,
   VerResult,
   VerEmpty,
 ]
@@ -89,7 +87,6 @@ export {
   VerTab,
   VerIcon,
   VerBacktop,
-  VerDescriptions,
   VerResult,
   VerEmpty,
 }
