@@ -1,21 +1,39 @@
-.segmented-control {
-  display: flex;
-}
+.select {
+  position: relative;
+  background-color: #f1f2f6;
+  padding: 0px 2px;
+  .sigment {
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+    width: 66px;
+    height: 28px;
+    top: 2px;
+    border-radius: 4px;
+    transition:
+      transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+      width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    will-change: transform, width;
+  }
+  .selecWrap {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    height: 32px;
+    border-radius: 4px;
 
-.segmented-control button {
-  flex: 1;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  border-right: 1px solid #ccc;
-  background-color: #eee;
-}
+    .selecItem {
+      cursor: pointer;
+      padding: 2px 12px;
+    }
 
-.segmented-control button:last-child {
-  border-right: none;
-}
-
-.segmented-control button.active {
-  background-color: #007bff;
-  color: white;
+    .selectActive {
+      color: black;
+    }
+  }
 }
