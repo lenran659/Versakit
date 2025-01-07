@@ -21,10 +21,7 @@
     "lint:eslint": "eslint packages/**/*.{ts,vue} --cache --fix",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint --config commitlint.config.cjs -e -V",
-    "changeset": "changeset",
-    "packages-version": "changeset version",
-    "publish": "changeset publish --no-git-checks --access=public --registry=https://versakit.npmjs.com/"
+    "commitlint": "commitlint --config commitlint.config.cjs -e -V"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,vue}": [
@@ -46,7 +43,6 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",
-    "@changesets/cli": "^2.27.11",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@tsconfig/node22": "^22.0.0",

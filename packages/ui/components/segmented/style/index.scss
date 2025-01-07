@@ -1,0 +1,21 @@
+.segmented-control {
+  display: flex;
+}
+
+.segmented-control button {
+  flex: 1;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-right: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.segmented-control button:last-child {
+  border-right: none;
+}
+
+.segmented-control button.active {
+  background-color: #007bff;
+  color: white;
+}

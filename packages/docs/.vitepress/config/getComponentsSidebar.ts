@@ -40,6 +40,7 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
         { text: 'Tag 标签', link: '/components/tag/' },
         { text: 'Badge 徽标', link: '/components/badge/' },
         { text: 'Panel 面板', link: '/components/panel/' },
+        { text: 'Segmented 分段控制器', link: '/components/segmented/' },
         { text: 'Collapse 折叠面板', link: '/components/collapse/' },
       ],
     },
