@@ -11,6 +11,6 @@ const options = [
 
 <template>
   <div>
-    <VerSegmented :options :index="0"></VerSegmented>
+    <VerSegmented :options></VerSegmented>
   </div>
 </template>

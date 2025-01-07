@@ -1,7 +1,7 @@
 <template>
-  <div class="ver-container">
+  <section class="ver-container">
     <slot></slot>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
