@@ -1,7 +1,7 @@
 <template>
-  <div class="ver-header">
+  <header class="ver-header">
     <slot></slot>
-  </div>
+  </header>
 </template>
 
 <script lang="ts" setup>

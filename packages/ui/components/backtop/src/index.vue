@@ -1,9 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-02 08:36:57
- * @LastEditors: Dream
- * @Description: backtop组件：right,bottom,icon,visibilityHeight属性
--->
 <template>
   <div
     v-if="visible"
@@ -24,7 +18,6 @@
 </template>
 
 <script setup lang="ts">
-// TODO: 待书写示例
 import { useEventListener, useThrottleFn } from '@vueuse/core'
 import { computed, shallowRef, ref, onMounted } from 'vue'
 import type { BackTopProps } from '../type/index'

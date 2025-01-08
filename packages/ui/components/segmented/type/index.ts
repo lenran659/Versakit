@@ -1,7 +1,15 @@
 import type { SizeType } from '../../../utils/constant'
 
 export interface SegmentedProps {
-  options?: string[] | undefined
-  index?: number | string
+  modelValue: string | number
+  options?:
+    | (
+        | string
+        | {
+            label?: string
+            value?: string | number
+          }
+      )[]
+    | any
   size?: SizeType
 }

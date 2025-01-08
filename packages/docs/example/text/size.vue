@@ -1,14 +1,22 @@
 <script setup lang="ts">
-import { VerRow, VerText } from '@versakit/ui'
+import { ref } from 'vue'
+import { VerText, VerSegmented } from '@versakit/ui'
+
+const selectedValue = ref('md')
+const options = [
+  { label: 'XS', value: 'xs' },
+  { label: 'SM', value: 'sm' },
+  { label: 'MD', value: 'md' },
+  { label: 'LG', value: 'lg' },
+]
 </script>
 
 <template>
-  <ver-row>
-    <ver-text class="mx4" size="lg">lg</ver-text>
-    <ver-text class="mx4">md</ver-text>
-    <ver-text class="mx4" size="sm">sm</ver-text>
-    <ver-text class="mx4" size="xs">xs</ver-text>
-  </ver-row>
+  <div>
+    <VerSegmented :options v-model="selectedValue" />
+
+    <ver-text class="mx4" :size="selectedValue">我是文本</ver-text>
+  </div>
 </template>
 
 <style scoped>
