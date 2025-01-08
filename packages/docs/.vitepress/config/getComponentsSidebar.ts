@@ -75,6 +75,10 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
           link: '/components/notification/',
         },
         {
+          text: 'Tooltip 文字提示',
+          link: '/components/tooltip/',
+        },
+        {
           text: 'Result 结果页',
           link: '/components/result/',
         },

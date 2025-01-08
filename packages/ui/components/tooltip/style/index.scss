@@ -1,0 +1,117 @@
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip-content {
+  position: absolute;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  border: 6px solid transparent;
+}
+
+/* Top positions */
+.tooltip-content.top::after,
+.tooltip-content.top-left::after,
+.tooltip-content.top-right::after {
+  border-top-color: var(--bg-color, #333);
+  bottom: -12px;
+}
+
+.tooltip-content.top::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-content.top-left::after {
+  left: 12px;
+}
+
+.tooltip-content.top-right::after {
+  right: 12px;
+}
+
+/* Bottom positions */
+.tooltip-content.bottom::after,
+.tooltip-content.bottom-left::after,
+.tooltip-content.bottom-right::after {
+  border-bottom-color: var(--bg-color, #333);
+  top: -12px;
+}
+
+.tooltip-content.bottom::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-content.bottom-left::after {
+  left: 12px;
+}
+
+.tooltip-content.bottom-right::after {
+  right: 12px;
+}
+
+/* Left positions */
+.tooltip-content.left::after,
+.tooltip-content.left-top::after,
+.tooltip-content.left-bottom::after {
+  border-left-color: var(--bg-color, #333);
+  right: -12px;
+}
+
+.tooltip-content.left::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-content.left-top::after {
+  top: 12px;
+}
+
+.tooltip-content.left-bottom::after {
+  bottom: 12px;
+}
+
+/* Right positions */
+.tooltip-content.right::after,
+.tooltip-content.right-top::after,
+.tooltip-content.right-bottom::after {
+  border-right-color: var(--bg-color, #333);
+  left: -12px;
+}
+
+.tooltip-content.right::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-content.right-top::after {
+  top: 12px;
+}
+
+.tooltip-content.right-bottom::after {
+  bottom: 12px;
+}
+
+.tooltip-enter-active,
+.tooltip-leave-active {
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+.tooltip-enter-from,
+.tooltip-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
