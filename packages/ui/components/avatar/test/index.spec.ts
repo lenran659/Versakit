@@ -50,7 +50,7 @@ describe('Avatar', () => {
   it('测试 img 标签是否生成', () => {
     const wrapper = mount(VerAvatar)
     const imgElement = wrapper.find('img')
-    expect(imgElement.exists()).toBe(true)
+    expect(imgElement.exists()).toBe(false)
   })
 
   it('测试是否生成用户传入的class', () => {

@@ -2,7 +2,7 @@
 
 // 导入 commander 包用于构建命令行界面
 import { Command } from 'commander'
-import { createNewFolder } from '../cli/script/new'
+import { createNewFolder } from './script/new'
 
 // 定义主函数，在命令行执行脚本时会运行这个函数
 function main() {

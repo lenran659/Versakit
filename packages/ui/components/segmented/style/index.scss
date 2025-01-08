@@ -1,7 +1,6 @@
 .segmented-control {
   width: 100%;
   max-width: 400px;
-  margin: 0 auto;
   padding: 4px;
 }
 
@@ -10,13 +9,12 @@
   display: flex;
   background-color: #f1f1f1;
   border-radius: 8px;
-  padding: 4px;
 }
 
 .segmented-control-highlight {
   position: absolute;
   top: 4px;
-  left: 4px;
+  left: 1rem;
   bottom: 4px;
   background-color: white;
   border-radius: 6px;
