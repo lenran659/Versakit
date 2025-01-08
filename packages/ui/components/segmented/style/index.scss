@@ -9,17 +9,18 @@
   display: flex;
   background-color: #f1f1f1;
   border-radius: 8px;
+  padding: 4px;
 }
 
 .segmented-control-highlight {
   position: absolute;
   top: 4px;
-  left: 1rem;
+  left: 0;
   bottom: 4px;
   background-color: white;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .segmented-control-item {

@@ -37,8 +37,8 @@ onMounted(() => {
       <div
         class="segmented-control-highlight"
         :style="{
-          transform: `translateX(${activeIndex * 100}%)`,
-          width: `calc(100% / ${options.length})`,
+          transform: `translateX(calc(${activeIndex * 100}% + 4px))`,
+          width: `calc((100% - 8px) / ${options.length})`,
         }"
       />
       <div
