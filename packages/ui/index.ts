@@ -27,6 +27,7 @@ import VerResult from './components/result/index'
 import VerEmpty from './components/empty/index'
 import VerPanel from './components/panel/index'
 import VerSegmented from './components/segmented/index'
+import VerGradientText from './components/gradienttext/index'
 import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
 import 'virtual:svg-icons-register'
@@ -60,6 +61,7 @@ const components: Component[] = [
   VerResult,
   VerEmpty,
   VerSegmented,
+  VerGradientText,
 ]
 export {
   VerSegmented,
@@ -92,6 +94,7 @@ export {
   VerBacktop,
   VerResult,
   VerEmpty,
+  VerGradientText,
 }
 
 export default {
