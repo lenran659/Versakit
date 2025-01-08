@@ -1,62 +1,64 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import type { SegmentedProps } from '../type/index'
+import { computed, onMounted } from 'vue'
+import type { SegmentedProps } from '../type'
+
+defineOptions({ name: 'VerSegmented' })
 
 const props = withDefaults(defineProps<SegmentedProps>(), {
   options: () => [],
-  index: 0,
-  size: 'md',
 })
 
-const emit = defineEmits(['hanldeSelect'])
+const emit = defineEmits<{
+  'update:modelValue': [value: string | number]
+}>()
 
-const nextStyle: any = ref(null)
-const firstWidth = ref('66px')
-const itemRefs: any = ref([])
-const skey = ref(props.options[0]?.value)
+const updateValue = (value: string | number) => {
+  emit('update:modelValue', value)
+}
 
-const hanldeSelect = (value: any, index: string | number) => {
-  skey.value = value
-  const next = itemRefs?.value[index]
-  nextStyle.value = calcThumbStyle(next)
-  emit('hanldeSelect', value)
-}
-const calcThumbStyle = (targetElement: {
-  offsetLeft: any
-  offsetWidth: any
-}) => {
-  return {
-    left: targetElement.offsetLeft,
-    width: targetElement.offsetWidth,
-  }
-}
+const activeIndex = computed(() =>
+  props.options.findIndex((option: any) => option.value === props.modelValue),
+)
 
 onMounted(() => {
-  firstWidth.value = `${itemRefs.value[0].offsetWidth}px`
+  const container: any = document.querySelector('.segmented-control-container')
+  if (container) {
+    container.style.setProperty(
+      '--segment-count',
+      props.options.length.toString(),
+    )
+  }
 })
 </script>
 
 <template>
-  <div class="select">
-    <div
-      class="sigment"
-      :style="{
-        transform: `translateX(${nextStyle?.left}px)`,
-        width: nextStyle ? `${nextStyle?.width}px` : firstWidth,
-      }"
-    ></div>
-    <div class="selecWrap">
+  <div class="segmented-control">
+    <div class="segmented-control-container" role="radiogroup">
       <div
-        ref="itemRefs"
-        v-for="(item, index) in props.options"
-        @click="hanldeSelect(item.value, index)"
-        :class="[{ selectActive: item.value === skey }, 'selecItem']"
-        :key="item.value"
+        class="segmented-control-highlight"
+        :style="{
+          transform: `translateX(${activeIndex * 100}%)`,
+          width: `calc(100% / ${options.length})`,
+        }"
+      />
+      <div
+        class="segmented-control-item"
+        v-for="(option, index) in props.options"
+        :key="index"
       >
-        {{ item.label }}
+        <input
+          type="radio"
+          :id="index.toString()"
+          :value="option.value"
+          :checked="modelValue === option.value"
+          @change="updateValue(option.value)"
+        />
+        <label :for="`${index}`">
+          {{ option.label }}
+        </label>
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss" src="../style/index.scss" scoped></style>
+<style scoped lang="scss" src="../style/index.scss"></style>

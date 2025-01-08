@@ -2,20 +2,20 @@
 import { ref } from 'vue'
 import { VerButton, VerSegmented } from '@versakit/ui'
 
+const selectedValue = ref('md')
 const options = [
   { label: 'XS', value: 'xs' },
   { label: 'SM', value: 'sm' },
   { label: 'MD', value: 'md' },
   { label: 'LG', value: 'lg' },
 ]
-const selectedOption = ref(options[0])
 </script>
 
 <template>
   <div>
-    <VerSegmented :options></VerSegmented>
+    <VerSegmented v-model="selectedValue" :options="options"></VerSegmented>
 
-    <ver-button class="mx-2" type="primary" :size="selectedOption.value">
+    <ver-button class="mx-2" type="primary" :size="selectedValue">
       主要按钮
     </ver-button>
   </div>
