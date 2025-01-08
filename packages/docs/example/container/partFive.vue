@@ -1,10 +1,10 @@
 <template>
   <div class="common-layout">
-    <ver-container class="is-vertical">
+    <ver-container direction="column">
       <ver-header>Header</ver-header>
       <ver-container>
         <ver-aside width="200px">Aside</ver-aside>
-        <ver-container class="is-vertical">
+        <ver-container direction="column">
           <ver-main>Main</ver-main>
           <ver-footer>Footer</ver-footer>
         </ver-container>
@@ -24,10 +24,6 @@ import {
 </script>
 
 <style scoped>
-.is-vertical {
-  flex-direction: column;
-}
-
 .common-layout {
   .ver-header {
     display: flex;

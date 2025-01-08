@@ -27,3 +27,7 @@
 <demo vue="../../example/container/partFour.vue"></demo>
 
 <demo vue="../../example/container/partFive.vue"></demo>
+
+<demo vue="../../example/container/partSix.vue"></demo>
+
+<demo vue="../../example/container/partSeven.vue"></demo>

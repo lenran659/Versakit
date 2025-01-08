@@ -1,6 +1,6 @@
 <template>
   <div class="common-layout">
-    <ver-container class="is-vertical">
+    <ver-container direction="column">
       <ver-header>Header</ver-header>
       <ver-main>Main</ver-main>
       <ver-footer>Footer</ver-footer>
@@ -14,10 +14,6 @@ import { VerContainer, VerHeader, VerMain, VerFooter } from '@versakit/ui'
 
 <style scoped>
 .common-layout {
-  .is-vertical {
-    flex-direction: column;
-  }
-
   .ver-header {
     display: flex;
     justify-content: center;

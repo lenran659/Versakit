@@ -1,30 +1,28 @@
 <script setup lang="ts">
-import { VerButton } from '@versakit/ui'
+import { ref } from 'vue'
+import { VerButton, VerSegmented } from '@versakit/ui'
+
+const options = [
+  { label: 'XS', value: 'xs' },
+  { label: 'SM', value: 'sm' },
+  { label: 'MD', value: 'md' },
+  { label: 'LG', value: 'lg' },
+]
+const selectedOption = ref(options[0])
 </script>
 
 <template>
   <div>
-    <span class="mx-2">
-      <ver-button class="mx-2" type="primary" size="lg">主要按钮</ver-button>
-    </span>
-    <span class="mx-2">
-      <ver-button class="mx-2" type="primary">主要按钮</ver-button>
-    </span>
-    <span class="mx-2">
-      <ver-button class="mx-2" type="primary" size="sm">主要按钮</ver-button>
-    </span>
-    <span class="mx-2">
-      <ver-button class="mx-2" type="primary" size="sm">主要按钮</ver-button>
-    </span>
+    <VerSegmented :options></VerSegmented>
 
-    <span class="mx-2">
-      <ver-button class="mx-2" type="primary" size="xs">主要按钮</ver-button>
-    </span>
+    <ver-button class="mx-2" type="primary" :size="selectedOption.value">
+      主要按钮
+    </ver-button>
   </div>
 </template>
 
-<style>
-.mx-2 {
-  margin: 0 6px;
+<style scoped>
+.ver-btn {
+  margin: 10px 0px;
 }
 </style>
