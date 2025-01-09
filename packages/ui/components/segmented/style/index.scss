@@ -1,0 +1,59 @@
+.segmented-control {
+  width: 100%;
+  max-width: 400px;
+  padding: 4px;
+}
+
+.segmented-control-container {
+  position: relative;
+  display: flex;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.segmented-control-highlight {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.segmented-control-item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.segmented-control-item input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.segmented-control-item label {
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.segmented-control-item input:checked + label {
+  color: #333;
+}
+
+.segmented-control-item input:not(:checked) + label {
+  color: #666;
+}
+
+.segmented-control-item label:hover {
+  color: #333;
+}

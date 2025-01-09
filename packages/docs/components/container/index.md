@@ -19,3 +19,15 @@
 ## 常见布局
 
 <demo vue="../../example/container/partOne.vue"></demo>
+
+<demo vue="../../example/container/partTow.vue"></demo>
+
+<demo vue="../../example/container/partThree.vue"></demo>
+
+<demo vue="../../example/container/partFour.vue"></demo>
+
+<demo vue="../../example/container/partFive.vue"></demo>
+
+<demo vue="../../example/container/partSix.vue"></demo>
+
+<demo vue="../../example/container/partSeven.vue"></demo>

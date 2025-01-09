@@ -4,4 +4,8 @@
   font-size: 13px;
   border-top: 1px solid $ver-zinc-3;
   border-bottom: 1px solid $ver-zinc-3;
+
+  .dark & {
+    border-color: $ver-zinc-2;
+  }
 }

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 'Versakit'
   image:
-    src: logo.svg
+    src: https://raw.githubusercontent.com/lenran659/Versakit/main/logo.svg
     alt: Versakit
   actions:
     - theme: brand
@@ -23,3 +23,5 @@ features:
     title: 按需引入
     details: 直接支持按需引入无需配置任何插件。
 ---
+
+<!-- <Home /> -->

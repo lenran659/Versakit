@@ -35,6 +35,7 @@ const props = withDefaults(defineProps<EmptyProps>(), {
   showDescription: true,
   showButton: true,
 })
+
 const computedIconName = computed(() => {
   if (props.iconName) {
     return props.iconName

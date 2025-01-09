@@ -1,9 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-24 15:14:54
- * @LastEditors: Jannik 1337741710@qq.com
- * @Description: 
--->
 <script setup lang="ts">
 import { VerCollapse, VerCollapseItem } from '@versakit/ui'
 

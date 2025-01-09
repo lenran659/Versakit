@@ -12,8 +12,8 @@
 
 ### Tag 属性
 
-| 属性    | 说明           | 类型                                                     | 默认值  |
-| ------- | -------------- | -------------------------------------------------------- | ------- |
-| `type`  | Tag 的类型     | `enum`<Tool value="primary,success,info,warning,danger," | primary |
-| `plain` | 背景是否半透明 | `boolean`                                                | false   |
-| `round` | Tag 是否为圆角 | `boolean`                                                | false   |
+| 属性    | 说明           | 类型                                                      | 默认值  |
+| ------- | -------------- | --------------------------------------------------------- | ------- |
+| `type`  | Tag 的类型     | `enum`<Tool value="primary,success,info,warning,danger"/> | primary |
+| `plain` | 背景是否半透明 | `boolean`                                                 | false   |
+| `round` | Tag 是否为圆角 | `boolean`                                                 | false   |

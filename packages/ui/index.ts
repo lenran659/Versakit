@@ -20,19 +20,27 @@ import VerContainer from './components/container/index'
 import VerHeader from './components/header/index'
 import VerMain from './components/main/index'
 import VerNotification from './components/notification/index'
-import VerNotificationVue from './components/notification/src/index.vue'
 import VerTab from './components/tab/index'
 import VerIcon from './components/icon/index'
 import VerBacktop from './components/backtop/index'
-import VerDescriptions from './components/descriptions'
 import VerResult from './components/result/index'
 import VerEmpty from './components/empty/index'
-import VerPanel from './components/panel'
+import VerPanel from './components/panel/index'
+import VerSegmented from './components/segmented/index'
+import VerGradientText from './components/gradienttext/index'
+import VerFooter from './components/footer/index'
+import VerAside from './components/aside/index'
+import VerProgress from './components/progress/index'
+import VerTooltip from './components/tooltip/index'
 import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerTooltip,
+  VerProgress,
+  VerAside,
+  VerFooter,
   VerCollapse,
   VerCollapseItem,
   VerButton,
@@ -55,15 +63,20 @@ const components: Component[] = [
   VerContainer,
   VerHeader,
   VerMain,
-  VerNotificationVue,
   VerTab,
   VerIcon,
   VerBacktop,
-  VerDescriptions,
   VerResult,
   VerEmpty,
+  VerSegmented,
+  VerGradientText,
 ]
 export {
+  VerTooltip,
+  VerProgress,
+  VerAside,
+  VerFooter,
+  VerSegmented,
   VerCollapse,
   VerCollapseItem,
   VerButton,
@@ -91,9 +104,9 @@ export {
   VerTab,
   VerIcon,
   VerBacktop,
-  VerDescriptions,
   VerResult,
   VerEmpty,
+  VerGradientText,
 }
 
 export default {

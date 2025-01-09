@@ -1,16 +1,23 @@
 @use '../../../style/color/index.scss' as *;
 
 .ver-collapse-item__header {
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: $ver-zinc-7;
   height: 48px;
   line-height: 48px;
-  color: $ver-zinc-7;
   cursor: pointer;
   transition: border-bottom-color 0.3s;
   font-weight: 500;
   outline: none;
+  background-color: $ver-zinc-1;
+
+  .dark & {
+    color: $ver-zinc-1;
+    background-color: $ver-zinc-9;
+  }
 
   &.is-disabled {
     color: $ver-zinc-1;
@@ -19,6 +26,7 @@
   }
 
   .header-angle {
+    transform: translateY(-20px);
     transition: transform 0.3s;
   }
 
@@ -29,12 +37,14 @@
     }
   }
 }
+
 .ver-collapse-item__content {
   will-change: height;
   overflow: hidden;
   box-sizing: border-box;
   padding-bottom: 25px;
 }
+
 .slide-enter-active,
 .slide-leave-active {
   transition: height 0.3s;

@@ -40,8 +40,10 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
         { text: 'Tag 标签', link: '/components/tag/' },
         { text: 'Badge 徽标', link: '/components/badge/' },
         { text: 'Panel 面板', link: '/components/panel/' },
-        { text: 'Descriptions 描述列表', link: '/components/Descriptions/' },
+        { text: 'Segmented 分段控制器', link: '/components/segmented/' },
         { text: 'Collapse 折叠面板', link: '/components/collapse/' },
+        { text: 'Progress 进度条', link: '/components/progress/' },
+        { text: 'GradientText 渐变文字', link: '/components/gradienttext/' },
       ],
     },
     {
@@ -72,6 +74,10 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
         {
           text: 'Notification 通知',
           link: '/components/notification/',
+        },
+        {
+          text: 'Tooltip 文字提示',
+          link: '/components/tooltip/',
         },
         {
           text: 'Result 结果页',

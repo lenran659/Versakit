@@ -1,3 +1,14 @@
+:root {
+  /* 标题 */
+  --vp-home-hero-name-color: transparent;
+  /* 渐变色 */
+  --vp-home-hero-name-background: linear-gradient(
+    180deg,
+    #b224ef 0%,
+    #7579ff 100%
+  );
+}
+
 .vp-doc table {
   width: 100%;
   display: table;

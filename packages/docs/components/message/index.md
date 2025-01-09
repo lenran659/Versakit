@@ -24,11 +24,11 @@
 
 ### Message 属性
 
-| 属性       | 说明           | 类型                                               | 默认值 |
-| ---------- | -------------- | -------------------------------------------------- | ------ |
-| `type`     | 绑定值         | `enum`<Tool value="success,warning,info,error," /> | `info` |
-| `content`  | 消息的内容     | `string`                                           | -      |
-| `duration` | 消息的持续时间 | `number`                                           | `3000` |
+| 属性       | 说明           | 类型                                              | 默认值 |
+| ---------- | -------------- | ------------------------------------------------- | ------ |
+| `type`     | 绑定值         | `enum`<Tool value="success,warning,info,error" /> | `info` |
+| `content`  | 消息的内容     | `string`                                          | -      |
+| `duration` | 消息的持续时间 | `number`                                          | `3000` |
 
 ### Message 方法
 
