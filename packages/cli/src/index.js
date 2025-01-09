@@ -3,18 +3,26 @@
 // 导入 commander 包用于构建命令行界面
 import { Command } from 'commander'
 import { createNewFolder } from './script/new'
+import { info } from './script/info'
 
-// 定义主函数，在命令行执行脚本时会运行这个函数
 function main() {
   const program = new Command()
   // 定义 --help 命令对应的帮助信息
-  program.name('v').description('Versakit命令行工具').version('0.2.0')
+  program.name('v').description('Versakit命令行工具').version('0.2.1')
+
+  // 定义 info 命令对应的帮助信息
+  program
+    .command('info')
+    .description('CLi 信息')
+    .action(() => {
+      info()
+    })
 
   // 定义创建新文件夹对应的命令
   program
     .command('new')
     .description('创建一个新文件夹')
-    .argument('<folderName>', '要创建的文件夹名称') // 明确指定需要接收的参数以及其描述
+    .argument('<folderName>', '要创建的文件夹名称')
     .action((folderName) => {
       createNewFolder(folderName)
     })
@@ -23,5 +31,4 @@ function main() {
   program.parse(process.argv)
 }
 
-// 判断是否是直接运行该脚本，如果是则执行主函数
 main()

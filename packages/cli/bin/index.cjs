@@ -7486,9 +7486,9 @@ const createNewFolder = (folderName) => {
   const indexTsContent = `import { withInstall } from '../../utils/withinstall';
         import ${folderName} from './src/index.vue';
 
-        const V${folderName} = withInstall(${folderName});
+        const Ver${folderName.charAt(0).toUpperCase()} = withInstall(${folderName});
 
-        export default V${folderName};`;
+        export default Ver${folderName.charAt(0).toUpperCase()};`;
   fs.writeFileSync(indexTsPath, indexTsContent);
 
   // 在src文件夹下创建index.vue文件，并写入简单示例内容（这里可按需调整具体内容）
@@ -7507,17 +7507,28 @@ const createNewFolder = (folderName) => {
   );
 };
 
-// 定义主函数，在命令行执行脚本时会运行这个函数
+const info = () => {
+  console.log(colors.green('VersakitCli'));
+};
+
 function main() {
   const program = new Command();
   // 定义 --help 命令对应的帮助信息
-  program.name('v').description('Versakit命令行工具').version('0.2.0');
+  program.name('v').description('Versakit命令行工具').version('0.2.1');
+
+  // 定义 info 命令对应的帮助信息
+  program
+    .command('info')
+    .description('CLi 信息')
+    .action(() => {
+      info();
+    });
 
   // 定义创建新文件夹对应的命令
   program
     .command('new')
     .description('创建一个新文件夹')
-    .argument('<folderName>', '要创建的文件夹名称') // 明确指定需要接收的参数以及其描述
+    .argument('<folderName>', '要创建的文件夹名称')
     .action((folderName) => {
       createNewFolder(folderName);
     })
@@ -7526,6 +7537,4 @@ function main() {
   program.parse(process.argv);
 }
 
-// 判断是否是直接运行该脚本，如果是则执行主函数
 main();
-//# sourceMappingURL=index.cjs.map

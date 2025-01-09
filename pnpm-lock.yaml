@@ -134,7 +134,7 @@ importers:
         version: 15.3.0(rollup@4.28.1)
       '@versakit/cli':
         specifier: 'file:'
-        version: 'link:'
+        version: file:packages/cli(rollup@4.28.1)
       colors:
         specifier: ^1.4.0
         version: 1.4.0
@@ -1042,6 +1042,10 @@ packages:
 
   '@ungap/structured-clone@1.2.1':
     resolution: {integrity: sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA==}
+
+  '@versakit/cli@file:packages/cli':
+    resolution: {directory: packages/cli, type: directory}
+    hasBin: true
 
   '@vitejs/plugin-vue@5.2.1':
     resolution: {integrity: sha512-cxh314tzaWwOLqVes2gnnCtvBDcM1UMdn+iFR+UjAn411dPT3tOmqrJjbMd7koZpMAmBM/GqeV4n9ge7JSiJJQ==}
@@ -2125,6 +2129,11 @@ packages:
 
   fflate@0.8.2:
     resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
+
+  figlet@1.8.0:
+    resolution: {integrity: sha512-chzvGjd+Sp7KUvPHZv6EXV5Ir3Q7kYNpCr4aHrRW79qFtTefmQZNny+W1pW9kf5zeE6dikku2W50W/wAH2xWgw==}
+    engines: {node: '>= 0.4.0'}
+    hasBin: true
 
   file-entry-cache@6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
@@ -5136,6 +5145,17 @@ snapshots:
 
   '@ungap/structured-clone@1.2.1': {}
 
+  '@versakit/cli@file:packages/cli(rollup@4.28.1)':
+    dependencies:
+      '@rollup/plugin-commonjs': 28.0.1(rollup@4.28.1)
+      '@rollup/plugin-node-resolve': 15.3.0(rollup@4.28.1)
+      colors: 1.4.0
+      commander: 12.1.0
+      figlet: 1.8.0
+      fs-extra: 11.2.0
+    transitivePeerDependencies:
+      - rollup
+
   '@vitejs/plugin-vue@5.2.1(vite@5.4.11(@types/node@22.10.1)(sass@1.83.0))(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       vite: 5.4.11(@types/node@22.10.1)(sass@1.83.0)
@@ -6441,6 +6461,8 @@ snapshots:
       picomatch: 4.0.2
 
   fflate@0.8.2: {}
+
+  figlet@1.8.0: {}
 
   file-entry-cache@6.0.1:
     dependencies:
