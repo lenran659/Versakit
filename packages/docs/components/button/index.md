@@ -44,6 +44,12 @@ versakitUI 提供了一些基础样式来使用，我们可以通过 `type`、`p
 
 <demo vue="../../example/button/icon.vue"></demo>
 
+## 流式按钮
+
+按钮中的full属性可以让按钮的宽度占到容器的100%。
+
+<demo vue="../../example/button/full.vue"></demo>
+
 ## Button API
 
 ### Button 属性

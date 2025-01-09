@@ -11,7 +11,9 @@
         <div class="sub-title">circle</div>
         <div class="demo-basic--circle">
           <div class="block">
-            <ver-avatar src="../../assets/example.jpg" />
+            <ver-avatar
+              src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+            />
           </div>
           <div class="block">
             <ver-avatar>user</ver-avatar>
@@ -29,7 +31,10 @@
         <div class="sub-title">square</div>
         <div class="demo-basic--square">
           <div class="block">
-            <ver-avatar src="../../assets/example.jpg" shape="square" />
+            <ver-avatar
+              src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+              shape="square"
+            />
           </div>
           <div class="block">
             <ver-avatar shape="square">user</ver-avatar>

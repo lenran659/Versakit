@@ -32,6 +32,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   size: 'md',
   circle: false,
   icon: '',
+  full: false,
 })
 
 const Verclass = computed(() => {
@@ -46,6 +47,7 @@ const Verclass = computed(() => {
     props.disabled == false ? '' : 'is-disabled',
     props.size == 'md' ? '' : `is-${props.size}`,
     props.circle == false ? '' : 'is-circle',
+    props.full == false ? '' : 'is-full',
   ]
 })
 </script>
