@@ -2,12 +2,6 @@
   display: inline-block;
   background-clip: text;
   color: transparent;
-  font-size: var(--size);
-  background-image: linear-gradient(
-    252deg,
-    rgba(24, 160, 88, 0.6) 0%,
-    #18a058 100%
-  );
 }
 .error {
   background-image: linear-gradient(
