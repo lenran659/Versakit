@@ -8,12 +8,10 @@ import { info } from './script/info'
 function main() {
   const program = new Command()
   // 定义 --help 命令对应的帮助信息
-  program.name('v').description('Versakit命令行工具').version('0.2.1')
-
-  // 定义 info 命令对应的帮助信息
   program
-    .command('info')
-    .description('CLi 信息')
+    .name('v')
+    .description('Versakit命令行工具')
+    .version('0.2.1')
     .action(() => {
       info()
     })
