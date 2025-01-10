@@ -18,11 +18,11 @@
 </template>
 
 <script setup lang="ts">
-import { useEventListener, useThrottleFn } from '@vueuse/core'
-import { computed, shallowRef, ref, onMounted } from 'vue'
-import type { BackTopProps } from '../type/index'
 import VerIcon from '../../icon/index'
+import { computed, ref, onMounted, shallowRef } from 'vue'
+import type { BackTopProps } from '../type/index'
 
+// 设置属性默认值
 const props = withDefaults(defineProps<BackTopProps>(), {
   right: '60',
   bottom: '40',
@@ -33,7 +33,6 @@ const props = withDefaults(defineProps<BackTopProps>(), {
 
 const iconColor = computed(() => props.iconColor || '#8b5cf6')
 
-export type BacktopProps = typeof props
 const Verclass = computed(() => {
   return [
     'ver-backTop',
@@ -53,19 +52,30 @@ const visible = ref(true)
 const handleClick = () => {
   el.value?.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
 const handleScroll = () => {
   if (el.value) {
     visible.value = el.value.scrollTop >= parseInt(props.visibilityHeight)
   }
 }
-const handleScrollThrottled = useThrottleFn(handleScroll, 300, true)
 
-useEventListener(container, 'scroll', handleScrollThrottled)
+const throttle = (func: () => void, delay: number) => {
+  let timer: number | null = null
+  if (!timer) {
+    func()
+    timer = window.setTimeout(() => {
+      timer = null
+    }, delay)
+  }
+}
 
 onMounted(() => {
   container.value = document
   el.value = document.documentElement
   handleScroll()
+  container.value.addEventListener('scroll', () => {
+    throttle(handleScroll, 300)
+  })
 })
 </script>
 <style src="../style/index.scss" lang="scss" scoped></style>
