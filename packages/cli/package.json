@@ -19,6 +19,7 @@
     "@versakit/cli": "file:",
     "colors": "^1.4.0",
     "commander": "^12.1.0",
+    "figlet": "^1.8.0",
     "fs-extra": "^11.2.0"
   },
   "devDependencies": {
