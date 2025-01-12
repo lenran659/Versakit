@@ -12,8 +12,9 @@
 </template>
 <script setup lang="ts">
 import { VerButton, VerSegmented } from '@versakit/ui'
-let typeValue = 'primary'
-let variantValue = 'plain'
+import { ref } from 'vue'
+let typeValue = ref('primary')
+let variantValue = ref('plain')
 let typeOptions = [
   { label: 'primary', value: 'primary' },
   { label: 'success', value: 'success' },
