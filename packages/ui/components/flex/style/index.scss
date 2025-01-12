@@ -1,0 +1,12 @@
+.ver-flex {
+  display: flex;
+  flex-wrap: var(--ver-flex-wrap);
+  justify-content: var(--ver-flex-justify);
+  align-items: var(--ver-flex-align);
+  gap: var(--ver-flex-gap);
+  transition: all 0.3s;
+
+  &--vertical {
+    flex-direction: column;
+  }
+}
