@@ -47,7 +47,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   <Layout></Layout>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
