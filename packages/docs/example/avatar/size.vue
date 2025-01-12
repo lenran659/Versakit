@@ -1,9 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-18 23:14:04
- * @LastEditors: Dream
- * @Description: 
--->
 <template>
   <ver-row>
     <ver-col :span="12">

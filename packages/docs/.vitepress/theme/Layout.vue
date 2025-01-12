@@ -7,6 +7,8 @@ import { nextTick, provide } from 'vue'
 
 const { isDark } = useData()
 
+const { Layout } = DefaultTheme
+
 const enableTransitions = () =>
   'startViewTransition' in document &&
   window.matchMedia('(prefers-reduced-motion: no-preference)').matches
@@ -42,10 +44,10 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
-  <DefaultTheme.Layout />
+  <Layout></Layout>
 </template>
 
-<style>
+<style lang="scss" scoped>
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;

@@ -6,6 +6,7 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
       text: 'Layout 布局组件',
       items: [
         { text: 'Layout 布局', link: '/components/layout/' },
+        { text: 'Flex 弹性布局', link: '/components/flex/' },
         { text: 'Container 布局容器', link: '/components/container/' },
       ],
     },
@@ -30,6 +31,7 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
         { text: 'Switch 开关', link: '/components/switch/' },
         { text: 'Radio 单选框', link: '/components/radio/' },
         { text: 'Textarea 文本域', link: '/components/textarea/' },
+        { text: 'Slider 滑块', link: '/components/slider/' },
       ],
     },
     {

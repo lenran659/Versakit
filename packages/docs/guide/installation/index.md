@@ -2,11 +2,18 @@
 
 ## 选择你喜欢的安装方式
 
-```shell
+::: code-group
 
-npm i @versakit/ui
+```sh [npm]
+npm install @versakit/ui
+```
 
+```sh [yarn]
 yarn add @versakit/ui
+```
 
+```sh [pnpm]
 pnpm add @versakit/ui
 ```
+
+:::

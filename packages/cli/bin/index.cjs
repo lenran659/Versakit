@@ -6,13 +6,14 @@ var require$$1 = require('node:child_process');
 var require$$2 = require('node:path');
 var require$$3 = require('node:fs');
 var require$$4 = require('node:process');
-var require$$0$2 = require('util');
-var require$$0$1 = require('os');
-var require$$0$5 = require('fs');
-var require$$0$3 = require('constants');
-var require$$0$4 = require('stream');
+var require$$0$1 = require('util');
+var os = require('os');
+var require$$0$4 = require('fs');
+var require$$0$2 = require('constants');
+var require$$0$3 = require('stream');
 var require$$5 = require('assert');
 var require$$1$1 = require('path');
+var child_process = require('child_process');
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -3965,7 +3966,7 @@ function requireSupportsColors () {
 	if (hasRequiredSupportsColors) return supportsColors;
 	hasRequiredSupportsColors = 1;
 
-	var os = require$$0$1;
+	var os$1 = os;
 	var hasFlag = requireHasFlag();
 
 	var env = process.env;
@@ -4022,7 +4023,7 @@ function requireSupportsColors () {
 	    // release, and Node.js 7 is not. Windows 10 build 10586 is the first
 	    // Windows release that supports 256 colors. Windows 10 build 14931 is the
 	    // first release that supports 16m/TrueColor.
-	    var osRelease = os.release().split('.');
+	    var osRelease = os$1.release().split('.');
 	    if (Number(process.versions.node.split('.')[0]) >= 8
 	        && Number(osRelease[0]) >= 10 && Number(osRelease[2]) >= 10586) {
 	      return Number(osRelease[2]) >= 14931 ? 3 : 2;
@@ -4397,7 +4398,7 @@ function requireColors () {
 
 		colors.themes = {};
 
-		var util = require$$0$2;
+		var util = require$$0$1;
 		var ansiStyles = colors.styles = requireStyles();
 		var defineProps = Object.defineProperties;
 		var newLineRegex = new RegExp(/[\r\n]+/g);
@@ -4766,7 +4767,7 @@ var hasRequiredPolyfills;
 function requirePolyfills () {
 	if (hasRequiredPolyfills) return polyfills;
 	hasRequiredPolyfills = 1;
-	var constants = require$$0$3;
+	var constants = require$$0$2;
 
 	var origCwd = process.cwd;
 	var cwd = null;
@@ -5130,7 +5131,7 @@ var hasRequiredLegacyStreams;
 function requireLegacyStreams () {
 	if (hasRequiredLegacyStreams) return legacyStreams;
 	hasRequiredLegacyStreams = 1;
-	var Stream = require$$0$4.Stream;
+	var Stream = require$$0$3.Stream;
 
 	legacyStreams = legacy;
 
@@ -5288,12 +5289,12 @@ var hasRequiredGracefulFs;
 function requireGracefulFs () {
 	if (hasRequiredGracefulFs) return gracefulFs;
 	hasRequiredGracefulFs = 1;
-	var fs = require$$0$5;
+	var fs = require$$0$4;
 	var polyfills = requirePolyfills();
 	var legacy = requireLegacyStreams();
 	var clone = requireClone();
 
-	var util = require$$0$2;
+	var util = require$$0$1;
 
 	/* istanbul ignore next - node 0.x polyfill */
 	var gracefulQueue;
@@ -7078,7 +7079,7 @@ function requireJsonfile$1 () {
 	try {
 	  _fs = requireGracefulFs();
 	} catch (_) {
-	  _fs = require$$0$5;
+	  _fs = require$$0$4;
 	}
 	const universalify = requireUniversalify();
 	const { stringify, stripBom } = requireUtils();
@@ -7486,9 +7487,9 @@ const createNewFolder = (folderName) => {
   const indexTsContent = `import { withInstall } from '../../utils/withinstall';
         import ${folderName} from './src/index.vue';
 
-        const V${folderName} = withInstall(${folderName});
+        const Ver${folderName.charAt(0).toUpperCase()} = withInstall(${folderName});
 
-        export default V${folderName};`;
+        export default Ver${folderName.charAt(0).toUpperCase()};`;
   fs.writeFileSync(indexTsPath, indexTsContent);
 
   // 在src文件夹下创建index.vue文件，并写入简单示例内容（这里可按需调整具体内容）
@@ -7507,17 +7508,73 @@ const createNewFolder = (folderName) => {
   );
 };
 
-// 定义主函数，在命令行执行脚本时会运行这个函数
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const figlet = require('figlet');
+
+function getPnpmVersion() {
+  const result = child_process.execSync('pnpm -v').toString().trim();
+  return result
+}
+
+function getNestCLIVersion() {
+  const result = child_process.execSync('v --version').toString().trim();
+
+  return result
+}
+
+const info = () => {
+  console.log(
+    figlet.textSync(
+      'VersakitCLI',
+      {
+        font: 'Ghost',
+        horizontalLayout: 'default',
+        verticalLayout: 'default',
+        width: 120,
+        whitespaceBreak: true,
+      },
+      function (err, data) {
+        if (err) {
+          console.dir(err);
+          return
+        }
+        console.log(data);
+      },
+    ),
+  );
+
+  console.log(colors.green('System Information'));
+
+  const systemInfo = [
+    `OS Version     : ${os.type()} ${os.release()}`,
+    `NodeJS Version : ${process.version}`,
+    `PNPM Version   : ${getPnpmVersion()}`,
+  ];
+
+  systemInfo.forEach((info) => {
+    console.log(colors.cyan(info));
+  });
+
+  console.log(colors.green('Versakit CLI'));
+  console.log(colors.cyan(`Versakit CLI Version : ${getNestCLIVersion()}`));
+};
+
 function main() {
   const program = new Command();
   // 定义 --help 命令对应的帮助信息
-  program.name('v').description('Versakit命令行工具').version('0.2.0');
+  program
+    .name('v')
+    .description('Versakit命令行工具')
+    .version('0.2.1')
+    .action(() => {
+      info();
+    });
 
   // 定义创建新文件夹对应的命令
   program
     .command('new')
     .description('创建一个新文件夹')
-    .argument('<folderName>', '要创建的文件夹名称') // 明确指定需要接收的参数以及其描述
+    .argument('<folderName>', '要创建的文件夹名称')
     .action((folderName) => {
       createNewFolder(folderName);
     })
@@ -7526,6 +7583,4 @@ function main() {
   program.parse(process.argv);
 }
 
-// 判断是否是直接运行该脚本，如果是则执行主函数
 main();
-//# sourceMappingURL=index.cjs.map

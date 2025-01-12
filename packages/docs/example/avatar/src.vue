@@ -1,9 +1,3 @@
-<!--
- * @Author: 2171204141@qq.com
- * @Date: 2024-12-18 23:14:04
- * @LastEditors: Dream
- * @Description: 
--->
 <template>
   <ver-row>
     <ver-col :span="12">
@@ -11,7 +5,9 @@
         <div class="sub-title">circle</div>
         <div class="demo-basic--circle">
           <div class="block">
-            <ver-avatar src="../../assets/example.jpg" />
+            <ver-avatar
+              src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+            />
           </div>
           <div class="block">
             <ver-avatar>user</ver-avatar>
@@ -29,7 +25,10 @@
         <div class="sub-title">square</div>
         <div class="demo-basic--square">
           <div class="block">
-            <ver-avatar src="../../assets/example.jpg" shape="square" />
+            <ver-avatar
+              src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+              shape="square"
+            />
           </div>
           <div class="block">
             <ver-avatar shape="square">user</ver-avatar>
