@@ -7,6 +7,7 @@ import {
 import { getNav } from './config/nav'
 import { getComponentsSidebar } from './config/getComponentsSidebar'
 import { getGuideSidebar } from './config/getGuideSidebar'
+import { getDesignSidebar } from './config/getDesignSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -25,6 +26,7 @@ export default defineConfig({
     nav: getNav(),
     sidebar: {
       '/guide/': getGuideSidebar(),
+      '/design/': getDesignSidebar(),
       '/components/': getComponentsSidebar(),
     } as any,
     socialLinks: [
