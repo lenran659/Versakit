@@ -4,7 +4,7 @@ import { VerButton, VerRow } from '@versakit/ui'
 
 <template>
   <ver-row class="mb-4">
-    <ver-button full type="primary">按 钮</ver-button>
+    <ver-button variant="full" type="primary">按 钮</ver-button>
   </ver-row>
 </template>
 

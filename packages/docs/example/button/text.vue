@@ -4,19 +4,19 @@ import { VerButton, VerRow } from '@versakit/ui'
 
 <template>
   <VerRow>
-    <VerButton text>none</VerButton>
-    <VerButton text type="primary">primary</VerButton>
-    <VerButton text type="success">success</VerButton>
-    <VerButton text type="info">info</VerButton>
-    <VerButton text type="warning">warning</VerButton>
-    <VerButton text type="error">error</VerButton>
+    <VerButton variant="text">none</VerButton>
+    <VerButton variant="text" type="primary">primary</VerButton>
+    <VerButton variant="text" type="success">success</VerButton>
+    <VerButton variant="text" type="info">info</VerButton>
+    <VerButton variant="text" type="warning">warning</VerButton>
+    <VerButton variant="text" type="error">error</VerButton>
   </VerRow>
   <VerRow>
-    <VerButton disabled text>none</VerButton>
-    <VerButton disabled text type="primary">primary</VerButton>
-    <VerButton disabled text type="success">success</VerButton>
-    <VerButton disabled text type="info">info</VerButton>
-    <VerButton disabled text type="warning">warning</VerButton>
-    <VerButton disabled text type="error">error</VerButton>
+    <VerButton disabled variant="text">none</VerButton>
+    <VerButton disabled variant="text" type="primary">primary</VerButton>
+    <VerButton disabled variant="text" type="success">success</VerButton>
+    <VerButton disabled variant="text" type="info">info</VerButton>
+    <VerButton disabled variant="text" type="warning">warning</VerButton>
+    <VerButton disabled variant="text" type="error">error</VerButton>
   </VerRow>
 </template>

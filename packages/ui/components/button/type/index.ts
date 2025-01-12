@@ -14,4 +14,5 @@ export interface ButtonProps {
   circle?: boolean
   icon?: string
   full?: boolean
+  variant?: string
 }
