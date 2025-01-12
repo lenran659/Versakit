@@ -10,16 +10,25 @@
 
 ## 尺寸
 
+它可以自定义数值，也可以写规定尺寸。
+
 <demo vue="../../example/gradienttext/size.vue"></demo>
+
+## 自定义颜色
+
+靠你的天马行空。
+
+<demo vue="../../example/gradienttext/color.vue"></demo>
 
 ## GradientText API
 
 ### GradientText 属性
 
-| 属性   | 说明                                       | 类型              | 默认值    |
-| ------ | ------------------------------------------ | ----------------- | --------- |
-| `type` | 渐变文字的类型                             | `string`          | primary   |
-| `size` | 文字大小（当不指定单位时，默认单位: `px`） | `number` `string` | undefined |
+| 属性       | 说明                                       | 类型              | 默认值    |
+| ---------- | ------------------------------------------ | ----------------- | --------- |
+| `type`     | 渐变文字的类型                             | `string`          | primary   |
+| `size`     | 文字大小（当不指定单位时，默认单位: `px`） | `number` `string` | undefined |
+| `gradient` | 自定义渐变色                               | `object`          | undefined |
 
 ### GradientText 插槽
 
