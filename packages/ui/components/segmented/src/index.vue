@@ -26,8 +26,8 @@ const activeIndex = computed(() =>
       <div
         class="segmented-control-highlight"
         :style="{
-          transform: `translateX(calc(${activeIndex * 100}% + 4px))`,
-          width: `calc((100% - 8px) / ${options.length})`,
+          transform: `translateX(calc(${activeIndex * 100}%)`,
+          width: `calc((100% - ${activeIndex * 10}px) / ${options.length})`,
         }"
       />
       <div

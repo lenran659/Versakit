@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, withDefaults, computed } from 'vue'
+import { computed } from 'vue'
 import type { FlexProps } from '../type'
 
 const props = withDefaults(defineProps<FlexProps>(), {
