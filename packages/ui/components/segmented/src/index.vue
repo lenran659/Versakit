@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-import type { SegmentedProps } from '../type'
+import { computed } from 'vue'
+import type { SegmentedProps } from '../type/index'
 
-defineOptions({ name: 'VerSegmented' })
+const props = defineProps<SegmentedProps>()
 
-const props = withDefaults(defineProps<SegmentedProps>(), {
-  options: () => [],
-})
+// 生成唯一的组件ID
+const componentId = `segmented-${Math.random().toString(36).slice(2, 11)}`
 
 const emit = defineEmits<{
   'update:modelValue': [value: string | number]
@@ -19,16 +18,6 @@ const updateValue = (value: string | number) => {
 const activeIndex = computed(() =>
   props.options.findIndex((option: any) => option.value === props.modelValue),
 )
-
-onMounted(() => {
-  const container: any = document.querySelector('.segmented-control-container')
-  if (container) {
-    container.style.setProperty(
-      '--segment-count',
-      props.options.length.toString(),
-    )
-  }
-})
 </script>
 
 <template>
@@ -42,18 +31,19 @@ onMounted(() => {
         }"
       />
       <div
+        v-for="(option, index) in options"
+        :key="option.value"
         class="segmented-control-item"
-        v-for="(option, index) in props.options"
-        :key="index"
       >
         <input
           type="radio"
-          :id="index.toString()"
+          :id="`${componentId}-${index}`"
+          :name="componentId"
           :value="option.value"
           :checked="modelValue === option.value"
           @change="updateValue(option.value)"
         />
-        <label :for="`${index}`">
+        <label :for="`${componentId}-${index}`">
           {{ option.label }}
         </label>
       </div>
