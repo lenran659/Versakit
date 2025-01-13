@@ -34,6 +34,30 @@ const members = [
       { icon: 'github', link: 'https://github.com/Simonmie' },
     ]
   },
+	{
+    avatar: 'https://avatars.githubusercontent.com/u/128499037?v=4',
+    name: 'ZHuuO',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/ZHuuO' },
+    ]
+  },
+		  {
+    avatar: 'https://avatars.githubusercontent.com/u/184910937?v=4',
+    name: 'StriveToLearnCode',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/StriveToLearnCode' },
+    ]
+  },
+	 {
+    avatar: 'https://avatars.githubusercontent.com/u/180088207?v=4',
+    name: 'Fofow',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/Natorx' },
+    ]
+  },
 ]
 </script>
 

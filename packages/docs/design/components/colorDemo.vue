@@ -22,7 +22,8 @@
 import { VerMessage } from '@versakit/ui'
 
 const colors = {
-  slate: {
+  Slate: {
+    name: '石板色',
     list: [
       '#f8fafc',
       '#f1f5f9',
@@ -37,7 +38,7 @@ const colors = {
       '#020617',
     ],
   },
-  gray: {
+  Gray: {
     list: [
       '#f9fafb',
       '#f3f4f6',
@@ -52,7 +53,7 @@ const colors = {
       '#030712',
     ],
   },
-  zinc: {
+  Zinc: {
     list: [
       '#fafafa',
       '#f4f4f5',
@@ -67,7 +68,7 @@ const colors = {
       '#09090b',
     ],
   },
-  neutral: {
+  Neutral: {
     list: [
       '#fafafa',
       '#f5f5f5',
@@ -82,7 +83,7 @@ const colors = {
       '#0a0a0a',
     ],
   },
-  stone: {
+  Stone: {
     list: [
       '#fafaf9',
       '#f5f5f4',
@@ -97,7 +98,7 @@ const colors = {
       '#0c0a09',
     ],
   },
-  red: {
+  Red: {
     list: [
       '#fef2f2',
       '#fee2e2',
@@ -112,7 +113,7 @@ const colors = {
       '#450a0a',
     ],
   },
-  orange: {
+  Orange: {
     list: [
       '#fff7ed',
       '#ffedd5',
@@ -127,7 +128,7 @@ const colors = {
       '#431407',
     ],
   },
-  amber: {
+  Amber: {
     list: [
       '#fffbeb',
       '#fef3c7',
@@ -142,7 +143,7 @@ const colors = {
       '#451a03',
     ],
   },
-  yellow: {
+  Yellow: {
     list: [
       '#fefce8',
       '#fef9c3',
@@ -157,7 +158,7 @@ const colors = {
       '#422006',
     ],
   },
-  lime: {
+  Lime: {
     list: [
       '#f7fee7',
       '#ecfccb',
@@ -172,7 +173,7 @@ const colors = {
       '#1a2e05',
     ],
   },
-  green: {
+  Green: {
     list: [
       '#f0fdf4',
       '#dcfce7',
@@ -187,7 +188,7 @@ const colors = {
       '#052e16',
     ],
   },
-  emerald: {
+  Emerald: {
     list: [
       '#ecfdf5',
       '#d1fae5',
@@ -202,7 +203,7 @@ const colors = {
       '#022c22',
     ],
   },
-  teal: {
+  Teal: {
     list: [
       '#f0fdfa',
       '#ccfbf1',
@@ -217,7 +218,7 @@ const colors = {
       '#042f2e',
     ],
   },
-  cyan: {
+  Cyan: {
     list: [
       '#ecfeff',
       '#cffafe',
@@ -232,7 +233,7 @@ const colors = {
       '#083344',
     ],
   },
-  sky: {
+  Sky: {
     list: [
       '#f0f9ff',
       '#e0f2fe',
@@ -247,7 +248,7 @@ const colors = {
       '#082f49',
     ],
   },
-  blue: {
+  Blue: {
     list: [
       '#eff6ff',
       '#dbeafe',
@@ -262,7 +263,7 @@ const colors = {
       '#172554',
     ],
   },
-  indigo: {
+  Indigo: {
     list: [
       '#eef2ff',
       '#e0e7ff',
@@ -277,7 +278,7 @@ const colors = {
       '#1e1b4b',
     ],
   },
-  violet: {
+  Violet: {
     list: [
       '#f5f3ff',
       '#ede9fe',
@@ -292,7 +293,7 @@ const colors = {
       '#2e1065',
     ],
   },
-  purple: {
+  Purple: {
     list: [
       '#af5ff',
       '#f3e8ff',
@@ -307,7 +308,7 @@ const colors = {
       '#3b0764',
     ],
   },
-  fuchsia: {
+  Fuchsia: {
     list: [
       '#fdf4ff',
       '#fae8ff',
@@ -322,7 +323,7 @@ const colors = {
       '#4a044e',
     ],
   },
-  pink: {
+  Pink: {
     list: [
       '#fdf2f8',
       '#fce7f3',
@@ -337,7 +338,7 @@ const colors = {
       '#500724',
     ],
   },
-  rose: {
+  Rose: {
     list: [
       '#fff1f2',
       '#ffe4e6',
@@ -355,7 +356,6 @@ const colors = {
 }
 
 function copyColor(event) {
-  console.log('copyColor')
   const rowBoxRight = event.target.querySelector('.row-box-right')
   const contentToCopy = rowBoxRight.textContent || rowBoxRight.innerText
   if (navigator.clipboard) {
@@ -364,7 +364,7 @@ function copyColor(event) {
       .then(() => {
         VerMessage({
           type: 'success',
-          content: '内容已复制成功！',
+          content: `内容已复制成功！${contentToCopy}`,
         })
       })
       .catch((error) => {
