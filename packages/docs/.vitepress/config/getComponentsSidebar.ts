@@ -55,6 +55,10 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
           text: 'Tab 标签页',
           link: '/components/tab/',
         },
+        {
+          text: 'Breadcrumb 面包屑',
+          link: '/components/breadcrumb/',
+        },
       ],
     },
     {
