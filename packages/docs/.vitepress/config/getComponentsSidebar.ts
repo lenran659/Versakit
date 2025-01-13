@@ -46,6 +46,7 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
         { text: 'Collapse 折叠面板', link: '/components/collapse/' },
         { text: 'Progress 进度条', link: '/components/progress/' },
         { text: 'GradientText 渐变文字', link: '/components/gradienttext/' },
+        { text: 'Table 表格', link: '/components/table/' },
       ],
     },
     {
