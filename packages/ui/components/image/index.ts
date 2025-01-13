@@ -1,6 +1,6 @@
 import { withInstall } from '../../utils/withinstall'
 import image from './src/index.vue'
 
-const Vimage = withInstall(image)
+const VerImage = withInstall(image)
 
-export default Vimage
+export default VerImage
