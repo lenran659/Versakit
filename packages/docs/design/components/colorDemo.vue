@@ -8,6 +8,7 @@
           :key="index"
           :style="{ backgroundColor: color }"
           class="row-box"
+          @click="copyColor"
         >
           <div class="row-box-left">{{ name }} - {{ index }}</div>
           <div class="row-box-right">{{ color }}</div>
@@ -18,6 +19,8 @@
 </template>
 
 <script setup lang="ts">
+import { VerMessage } from '@versakit/ui'
+
 const colors = {
   slate: {
     list: [
@@ -349,6 +352,29 @@ const colors = {
       '#4c0519',
     ],
   },
+}
+
+function copyColor(event) {
+  console.log('copyColor')
+  const rowBoxRight = event.target.querySelector('.row-box-right')
+  const contentToCopy = rowBoxRight.textContent || rowBoxRight.innerText
+  if (navigator.clipboard) {
+    navigator.clipboard
+      .writeText(contentToCopy)
+      .then(() => {
+        VerMessage({
+          type: 'success',
+          content: '内容已复制成功！',
+        })
+      })
+      .catch((error) => {
+        VerMessage({
+          type: 'success',
+          content: '内容已复制成功！',
+        })
+        console.error('复制失败:', error)
+      })
+  }
 }
 </script>
 
