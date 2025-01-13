@@ -6003,6 +6003,9 @@ snapshots:
   docs@file:packages/docs:
     dependencies:
       '@versakit/ui': link:packages/ui
+      vitepress-plugin-group-icons: 1.3.3
+    transitivePeerDependencies:
+      - supports-color
 
   doctrine@2.1.0:
     dependencies:
