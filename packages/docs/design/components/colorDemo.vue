@@ -10,7 +10,7 @@
           class="row-box"
         >
           <div class="row-box-left">{{ name }} - {{ index }}</div>
-          {{ color }}
+          <div class="row-box-right">{{ color }}</div>
         </div>
       </div>
     </div>
@@ -353,13 +353,21 @@ const colors = {
 </script>
 
 <style lang="scss" scoped>
-.color-boxes {
+.gradient-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
+}
+.color-boxes {
+  flex: 0 0 calc(33.33% - 30px);
 
   .color-box {
-    flex: 0 0 calc(33.33% - 10px);
+    box-sizing: border-box;
+    &:hover .row-box .row-box-right {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+    }
 
     .color-box-title {
       font-size: 20px;
@@ -372,10 +380,21 @@ const colors = {
       padding: 10px 12px;
       color: white;
       font-size: 12px;
-      font-weight: bold;
-      transition: transform 0.2s ease;
+      transition:
+        opacity 0.3s ease,
+        transform 0.2s ease;
       cursor: pointer;
+      //设置朝那边变换
       transform-origin: left center;
+
+      &:nth-child(-n + 6) {
+        .row-box-left {
+          color: #554d4d;
+        }
+        .row-box-right {
+          color: #676161;
+        }
+      }
 
       &:hover {
         border-radius: 0 5px 5px 0;
@@ -387,8 +406,26 @@ const colors = {
       }
 
       .row-box-left {
+        font-weight: bold;
         margin-right: auto;
         transform: none;
+        color: #f7f7f7;
+      }
+
+      .row-box-right {
+        display: block;
+        color: #ececec;
+        visibility: hidden;
+        opacity: 0; /* 初始完全透明 */
+        transform: translateX(5px);
+        transition:
+          opacity 0.3s ease,
+          transform 0.3s ease,
+          visibility 0.3s ease;
+
+        &:hover {
+          transform: translateX(0);
+        }
       }
     }
   }
