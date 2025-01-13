@@ -6,6 +6,7 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
       text: 'Layout 布局组件',
       items: [
         { text: 'Layout 布局', link: '/components/layout/' },
+        { text: 'Flex 弹性布局', link: '/components/flex/' },
         { text: 'Container 布局容器', link: '/components/container/' },
       ],
     },

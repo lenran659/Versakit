@@ -33,11 +33,13 @@ import VerAside from './components/aside/index'
 import VerProgress from './components/progress/index'
 import VerTooltip from './components/tooltip/index'
 import VerSlider from './components/slider/index'
+import VerFlex from './components/flex/index'
 import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerFlex,
   VerSlider,
   VerTooltip,
   VerProgress,
@@ -74,6 +76,7 @@ const components: Component[] = [
   VerGradientText,
 ]
 export {
+  VerFlex,
   VerSlider,
   VerTooltip,
   VerProgress,
