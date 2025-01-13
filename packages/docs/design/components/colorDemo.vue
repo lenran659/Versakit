@@ -369,8 +369,8 @@ function copyColor(event) {
       })
       .catch((error) => {
         VerMessage({
-          type: 'success',
-          content: '内容已复制成功！',
+          type: 'error',
+          content: '内容复制失败，浏览器不支持！',
         })
         console.error('复制失败:', error)
       })
