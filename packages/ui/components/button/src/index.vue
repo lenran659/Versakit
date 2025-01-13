@@ -4,6 +4,7 @@
     :disabled="props.disabled"
     :size="props.size"
     :color="props.color"
+    :variant="props.variant"
   >
     <!-- icon -->
     <ver-icon v-if="icon" :name="icon"></ver-icon>
@@ -23,31 +24,23 @@ defineOptions({ name: 'VerButton' })
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   type: '',
-  ghost: false,
-  round: false,
-  plain: false,
-  text: false,
-  shade: false,
   disabled: false,
-  size: 'md',
   circle: false,
+  size: 'md',
   icon: '',
-  full: false,
+  variant: '',
 })
 
+//ghost,round,plain,text,shade,circle,full
 const Verclass = computed(() => {
+  const variantList = props.variant.split(' ')
   return [
     'ver-btn',
     props.type == '' ? '' : `ver-btn-${props.type}`,
-    props.ghost == false ? '' : 'is-ghost',
-    props.round == false ? '' : 'is-round',
-    props.plain == false ? '' : 'is-plain',
-    props.text == false ? '' : 'is-text',
-    props.shade == false ? '' : 'is-shade',
+    ...variantList.map((val) => `is-${val}`),
+    props.circle == true ? 'is-circle' : '',
     props.disabled == false ? '' : 'is-disabled',
     props.size == 'md' ? '' : `is-${props.size}`,
-    props.circle == false ? '' : 'is-circle',
-    props.full == false ? '' : 'is-full',
   ]
 })
 </script>

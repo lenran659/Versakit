@@ -20,6 +20,12 @@ versakitUI 提供了一些基础样式来使用，我们可以通过 `type`、`p
 
 <demo vue="../../example/button/size.vue"></demo>
 
+## 按钮风格
+
+使用 `style` 和 `variant` 属性来改变按钮的视觉风格。
+
+<demo vue="../../example/button/style.vue"></demo>
+
 ## 文本按钮
 
 我们可以设置 `text` 属性，实现没有边框和背景的按钮。

@@ -4,32 +4,26 @@ import { VerButton, VerRow } from '@versakit/ui'
 
 <template>
   <VerRow>
-    <VerButton style="margin: 0.5rem" shade>none</VerButton>
-    <VerButton style="margin: 0.5rem" shade type="primary">primary</VerButton>
-    <VerButton style="margin: 0.5rem" shade type="success">success</VerButton>
-    <VerButton style="margin: 0.5rem" shade type="info">info</VerButton>
-    <VerButton style="margin: 0.5rem" shade type="warning">warning</VerButton>
-    <VerButton style="margin: 0.5rem" shade type="error">danger</VerButton>
+    <VerButton variant="shade">none</VerButton>
+    <VerButton variant="shade" type="primary">primary</VerButton>
+    <VerButton variant="shade" type="success">success</VerButton>
+    <VerButton variant="shade" type="info">info</VerButton>
+    <VerButton variant="shade" type="warning">warning</VerButton>
+    <VerButton variant="shade" type="error">danger</VerButton>
   </VerRow>
 
   <VerRow>
-    <VerButton style="margin: 0.5rem" disabled shade>none</VerButton>
-    <VerButton style="margin: 0.5rem" disabled shade type="primary">
-      primary
-    </VerButton>
-    <VerButton style="margin: 0.5rem" disabled shade type="success">
-      success
-    </VerButton>
-    <VerButton style="margin: 0.5rem" disabled shade type="info">
-      info
-    </VerButton>
-    <VerButton style="margin: 0.5rem" disabled shade type="warning">
-      warning
-    </VerButton>
-    <VerButton style="margin: 0.5rem" disabled shade type="error">
-      danger
-    </VerButton>
+    <VerButton disabled variant="shade">none</VerButton>
+    <VerButton disabled variant="shade" type="primary">primary</VerButton>
+    <VerButton disabled variant="shade" type="success">success</VerButton>
+    <VerButton disabled variant="shade" type="info">info</VerButton>
+    <VerButton disabled variant="shade" type="warning">warning</VerButton>
+    <VerButton disabled variant="shade" type="error">danger</VerButton>
   </VerRow>
 </template>
 
-<style></style>
+<style scoped>
+.ver-btn {
+  margin: 0.5rem;
+}
+</style>
