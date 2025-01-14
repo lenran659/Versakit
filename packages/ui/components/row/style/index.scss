@@ -2,4 +2,10 @@
   width: 100%;
   height: auto;
   box-sizing: border-box;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }
