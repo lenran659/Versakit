@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import { reactive, toRefs } from 'vue'
-import {} from '@versakit/ui'
+import { VerImage } from '@versakit/ui'
 
 const state = reactive({
   fits: ['fill', 'contain', 'cover', 'none'],

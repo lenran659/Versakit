@@ -14,7 +14,7 @@
 
 <p>图片的 <code>size</code> 也支持使用 <code>string</code> 类型来设置尺寸大小，例如：<code>xs</code> , <code>s</code> , <code>md</code> , <code>lg</code> 。</p>
 
-<!-- <demo vue="../../example/image/size.vue"></demo> -->
+<demo vue="../../example/image/size.vue"></demo>
 
 ## 展示类型
 
@@ -22,15 +22,15 @@
 支持使用图片或者文字作为 Image。
 </p>
 
-<!-- <demo vue="../../example/image/src.vue"></demo> -->
+<demo vue="../../example/image/src.vue"></demo>
 
 <p>图片加载失败时，可以使用 <code>error</code> 属性触发函数，默认触发图片填充效果。</p>
 
-<!-- <demo vue="../../example/image/error.vue"></demo> -->
+<demo vue="../../example/image/error.vue"></demo>
 
 <p>Image组件支持使用 <code>object-fit</code> 属性设置该图片如何在容器中展示。</p>
 
-<!-- <demo vue="../../example/image/fit.vue"></demo> -->
+<demo vue="../../example/image/fit.vue"></demo>
 
 ## Avatar API
 

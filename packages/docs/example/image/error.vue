@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { VerIcon } from '@versakit/ui'
+import { VerImage, VerIcon } from '@versakit/ui'
 </script>
 
 <style scoped>

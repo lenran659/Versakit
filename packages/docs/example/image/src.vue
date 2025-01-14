@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { VerIcon, VerRow, VerCol } from '@versakit/ui'
+import { VerImage, VerIcon, VerRow, VerCol } from '@versakit/ui'
 </script>
 
 <style scoped>
