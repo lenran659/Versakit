@@ -8,6 +8,12 @@ versakitUI 提供了一些基础样式来使用，我们可以通过 `type`、`p
 
 <demo vue="../../example/button/base.vue"></demo>
 
+## 按钮风格
+
+使用 `style` 和 `variant` 属性来改变按钮的视觉风格。
+
+<demo vue="../../example/button/style.vue"></demo>
+
 ## 禁止状态
 
 您可以使用 `disabled` 属性来定义按钮是否被禁用，该属性接受一个 `Boolean` 类型的值。
@@ -20,24 +26,6 @@ versakitUI 提供了一些基础样式来使用，我们可以通过 `type`、`p
 
 <demo vue="../../example/button/size.vue"></demo>
 
-## 按钮风格
-
-使用 `style` 和 `variant` 属性来改变按钮的视觉风格。
-
-<demo vue="../../example/button/style.vue"></demo>
-
-## 文本按钮
-
-我们可以设置 `text` 属性，实现没有边框和背景的按钮。
-
-<demo vue="../../example/button/text.vue"></demo>
-
-## 阴影按钮
-
-我们可以通过 `shade` 属性来设置按钮的阴影样式。
-
-<demo vue="../../example/button/shadow.vue"></demo>
-
 ## 水波纹按钮
 
 按钮可以结合水波纹一起使用。
@@ -49,12 +37,6 @@ versakitUI 提供了一些基础样式来使用，我们可以通过 `type`、`p
 使用 `icon` 属性来设置按钮的图标样式，您可以在我们的 `Icon` 组件中找到所需图标。
 
 <demo vue="../../example/button/icon.vue"></demo>
-
-## 流式按钮
-
-按钮中的full属性可以让按钮的宽度占到容器的100%。
-
-<demo vue="../../example/button/full.vue"></demo>
 
 ## Button API
 
