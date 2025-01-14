@@ -35,6 +35,7 @@ import VerTooltip from './components/tooltip/index'
 import VerSlider from './components/slider/index'
 import VerFlex from './components/flex/index'
 import VerTable from './components/table/index'
+import VerImage from './components/image/index'
 import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
 import 'virtual:svg-icons-register'
@@ -56,6 +57,7 @@ const components: Component[] = [
   VerInput,
   VerDialog,
   VerAvatar,
+  VerImage,
   VerBadge,
   VerCard,
   VerPanel,
@@ -95,6 +97,7 @@ export {
   VerInput,
   VerDialog,
   VerAvatar,
+  VerImage,
   VerBadge,
   VerCard,
   VerPanel,
