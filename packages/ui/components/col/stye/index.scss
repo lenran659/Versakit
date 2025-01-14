@@ -1,3 +1,8 @@
+@use '../../../style/utils/col/index.scss' as *;
+
+// 响应尺寸：xs、sm、md、lg 和 xl
+@include VerCol('ver-col', 24);
+
 .ver-col {
   float: left;
 }

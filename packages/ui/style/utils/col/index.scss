@@ -1,0 +1,30 @@
+// packages/ui/style/utils/col/index.scss
+@mixin generate-widths($breakpoint, $prefix, $columns) {
+  @for $i from 1 through $columns {
+    .#{$prefix}-#{$breakpoint}-#{$i} {
+      width: calc(#{$i} / #{$columns} * 100%);
+    }
+  }
+}
+
+/* 响应式工具 */
+@mixin VerCol($prefix, $columns: 12) {
+  @media only screen and (max-width: 767px) {
+    @include generate-widths('xs', $prefix, $columns);
+  }
+
+  @media only screen and (min-width: 768px) {
+    @include generate-widths('sm', $prefix, $columns);
+  }
+
+  @media only screen and (min-width: 992px) {
+    @include generate-widths('md', $prefix, $columns);
+  }
+
+  @media only screen and (min-width: 1200px) {
+    @include generate-widths('lg', $prefix, $columns);
+  }
+  @media only screen and (min-width: 1920px) {
+    @include generate-widths('xl', $prefix, $columns);
+  }
+}

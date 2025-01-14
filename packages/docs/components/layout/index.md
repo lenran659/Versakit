@@ -10,17 +10,30 @@
 
 <demo vue="../../example/layout/base.vue"></demo>
 
-## 分栏间隔
 
-通过 `offset` 属性偏移占用指定的列数。
+## 列偏移
+
+通过 `offset` 属性指定分栏偏移的栏数
 
 <demo vue="../../example/layout/offset.vue"></demo>
+
+## 分栏间隔
+
+行提供 `gutter` 属性来指定列之间的间距，其默认值为0。
+
+<demo vue="../../example/layout/gutter.vue"></demo>
 
 ## 混合布局
 
 通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局。
 
 <demo vue="../../example/layout/mix.vue"></demo>
+
+## 响应式布局
+
+参照了 Bootstrap 的 响应式设计，预设了五个响应尺寸：xs、sm、md、lg 和 xl。
+
+<demo vue="../../example/layout/reactive.vue"></demo>
 
 ## Layout API
 
