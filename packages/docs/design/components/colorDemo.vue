@@ -295,7 +295,7 @@ const colors = {
   },
   Purple: {
     list: [
-      '#af5ff',
+      '#faf5ff',
       '#f3e8ff',
       '#e9d5ff',
       '#d8b4fe',
