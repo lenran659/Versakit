@@ -5,6 +5,7 @@
     :size="props.size"
     :color="props.color"
     :variant="props.variant"
+    :style="computedStyles"
   >
     <!-- icon -->
     <ver-icon v-if="icon" :name="icon"></ver-icon>
@@ -19,6 +20,7 @@
 import { computed } from 'vue'
 import VerIcon from '../../icon/index'
 import type { ButtonProps } from '../type/index'
+import colors from '../../../utils/colors/colorMap'
 
 defineOptions({ name: 'VerButton' })
 
@@ -29,6 +31,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   size: 'md',
   icon: '',
   variant: '',
+  color: 'Violet'.toLowerCase(),
 })
 
 //ghost,round,plain,text,shade,circle,full
@@ -41,7 +44,31 @@ const Verclass = computed(() => {
     props.circle == true ? 'is-circle' : '',
     props.disabled == false ? '' : 'is-disabled',
     props.size == 'md' ? '' : `is-${props.size}`,
+    `is-${props.color}`.toLowerCase(),
   ]
+})
+
+const computedStyles = computed(() => {
+  const colorPrefix = `${props.color}-`
+  console.log(1, colorPrefix + '0')
+  console.log(2, colors)
+  console.log(3, 'violet-0' in colors)
+  console.log(4, colors[`${colorPrefix}0`])
+  console.log(4, colors[`${colorPrefix}1`])
+  console.log(4, colors[`${colorPrefix}6`])
+  return {
+    '--color0': colors[`${colorPrefix}0`],
+    '--color1': colors[`${colorPrefix}1`],
+    '--color2': colors[`${colorPrefix}2`],
+    '--color3': colors[`${colorPrefix}3`],
+    '--color4': colors[`${colorPrefix}4`],
+    '--color5': colors[`${colorPrefix}5`],
+    '--color6': colors[`${colorPrefix}6`],
+    '--color7': colors[`${colorPrefix}7`],
+    '--color8': colors[`${colorPrefix}8`],
+    '--color9': colors[`${colorPrefix}9`],
+    '--color10': colors[`${colorPrefix}10`],
+  }
 })
 </script>
 

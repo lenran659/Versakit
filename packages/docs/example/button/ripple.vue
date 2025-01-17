@@ -4,11 +4,11 @@ import { VerButton, VerRow } from '@versakit/ui'
 
 <template>
   <ver-row class="mb-4">
-    <ver-button v-ripple type="primary">按 钮</ver-button>
-    <ver-button v-ripple type="success">按 钮</ver-button>
-    <ver-button v-ripple type="info">按 钮</ver-button>
-    <ver-button v-ripple type="warning">按 钮</ver-button>
-    <ver-button v-ripple type="error">按 钮</ver-button>
+    <ver-button v-ripple>按 钮</ver-button>
+    <ver-button v-ripple>按 钮</ver-button>
+    <ver-button v-ripple>按 钮</ver-button>
+    <ver-button v-ripple>按 钮</ver-button>
+    <ver-button v-ripple>按 钮</ver-button>
   </ver-row>
 </template>
 
