@@ -10,28 +10,28 @@ import { VerButton, VerRow } from '@versakit/ui'
 
 <template>
   <ver-row class="mb-4">
-    <ver-button disabled type="primary">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="primary">按 钮</ver-button>
+    <ver-button disabled>按 钮</ver-button>
+    <ver-button disabled variant="plain round">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="success">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="success">按 钮</ver-button>
+    <ver-button disabled>按 钮</ver-button>
+    <ver-button disabled variant="plain round">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="info">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="info">按 钮</ver-button>
+    <ver-button disabled>按 钮</ver-button>
+    <ver-button disabled variant="plain round">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="warning">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="warning">按 钮</ver-button>
+    <ver-button disabled>按 钮</ver-button>
+    <ver-button disabled variant="plain round">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="error">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="error">按 钮</ver-button>
+    <ver-button disabled>按 钮</ver-button>
+    <ver-button disabled variant="plain round">按 钮</ver-button>
   </ver-row>
 </template>
 

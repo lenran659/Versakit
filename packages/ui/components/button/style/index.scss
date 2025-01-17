@@ -3,6 +3,8 @@
 @use 'sass:list';
 @use 'sass:color';
 
+$color6: var(--color6);
+
 .ver-btn {
   display: inline-flex;
   justify-content: center;
@@ -28,8 +30,8 @@
   }
 
   .dark & {
-    color: $ver-zinc-3;
-    background-color: $ver-zinc-8;
+    color: var(--color3);
+    background-color: var(--color8);
   }
 
   span {
@@ -38,30 +40,46 @@
   }
 }
 
-@include VerBtnType('primary', $ver-violet-6);
-@include VerBtnType('success', $ver-green-6);
-@include VerBtnType('info', $ver-zinc-6);
-@include VerBtnType('warning', $ver-orange-6);
-@include VerBtnType('error', $ver-red-6);
+// @include VerBtnType('primary', $ver-violet-6);
+// @include VerBtnType('success', $ver-green-6);
+// @include VerBtnType('info', $ver-zinc-6);
+// @include VerBtnType('warning', $ver-orange-6);
+// @include VerBtnType('error', $ver-red-6);
 
-/* 灵魂按钮 */
-@include VerBtnGhost(null, $ver-zinc-5, $ver-zinc-6);
-@include VerBtnGhost('primary', $ver-violet-5, $ver-violet-6);
-@include VerBtnGhost('success', $ver-green-5, $ver-green-6);
-@include VerBtnGhost('info', $ver-zinc-5, $ver-zinc-6);
-@include VerBtnGhost('warning', $ver-orange-5, $ver-orange-6);
-@include VerBtnGhost('error', $ver-red-5, $ver-red-6);
+.ver-btn {
+  color: $ver-zinc-1;
+  background-color: var(--color6);
+
+  &:not(.is-disabled):hover {
+    // background-color: color.adjust(var(--color6), $lightness: 10%);
+    background-color: var(--color6);
+    filter: brightness(110%);
+  }
+
+  .dark & {
+    color: $ver-zinc-1;
+    background-color: var(--color6);
+  }
+}
+
+// /* 灵魂按钮 */
+// @include VerBtnGhost(null, $ver-zinc-5, $ver-zinc-6);
+// @include VerBtnGhost('primary', $ver-violet-5, $ver-violet-6);
+// @include VerBtnGhost('success', $ver-green-5, $ver-green-6);
+// @include VerBtnGhost('info', $ver-zinc-5, $ver-zinc-6);
+// @include VerBtnGhost('warning', $ver-orange-5, $ver-orange-6);
+// @include VerBtnGhost('error', $ver-red-5, $ver-red-6);
 
 .is-ghost {
   padding: 12px 19px;
   background-color: transparent;
-  color: $ver-zinc-6;
-  border: 1.5px solid $ver-zinc-5;
+  color: var(--color6);
+  border: 1.5px solid var(--color5);
 
   &:not(.is-disabled):hover {
-    background-color: $ver-zinc-6;
-    border-color: $ver-zinc-6;
-    color: $ver-zinc-1;
+    background-color: var(--color6);
+    border-color: var(--color6);
+    color: var(--color1);
   }
 
   .dark & {
@@ -70,6 +88,26 @@
     &:not(.is-disabled):hover {
       background-color: $ver-zinc-2;
       color: $ver-zinc-6;
+    }
+  }
+}
+
+.is-ghost {
+  color: var(--color6);
+  border: 1.5px solid var(--color5);
+
+  &:not(.is-disabled):hover {
+    background-color: var(--color6);
+    border-color: var(--color6);
+  }
+
+  .dark & {
+    border-color: var(--color5);
+    background-color: $ver-zinc-2;
+
+    &:not(.is-disabled):hover {
+      background-color: var(--color6);
+      color: $ver-zinc-1;
     }
   }
 }
@@ -86,12 +124,12 @@
 }
 
 /* plain属性 */
-@include VerBtnPlain(null, $ver-zinc-1, $ver-zinc-6);
-@include VerBtnPlain('primary', $ver-violet-1, $ver-violet-6);
-@include VerBtnPlain('success', $ver-green-1, $ver-green-6);
-@include VerBtnPlain('info', $ver-zinc-1, $ver-zinc-6);
-@include VerBtnPlain('warning', $ver-orange-1, $ver-orange-6);
-@include VerBtnPlain('error', $ver-red-1, $ver-red-6);
+// @include VerBtnPlain(null, $ver-zinc-1, $ver-zinc-6);
+// @include VerBtnPlain('primary', $ver-violet-1, $ver-violet-6);
+// @include VerBtnPlain('success', $ver-green-1, $ver-green-6);
+// @include VerBtnPlain('info', $ver-zinc-1, $ver-zinc-6);
+// @include VerBtnPlain('warning', $ver-orange-1, $ver-orange-6);
+// @include VerBtnPlain('error', $ver-red-1, $ver-red-6);
 
 .is-plain {
   color: $ver-zinc-6;
@@ -112,13 +150,33 @@
   }
 }
 
+.is-plain {
+  color: var(--color6);
+  border: 1px solid var(--color6);
+  background-color: var(--color1);
+
+  &:not(.is-disabled):hover {
+    background-color: var(--color1);
+    color: var(--color6);
+  }
+
+  .dark & {
+    background-color: $ver-zinc-2;
+
+    &:not(.is-disabled):hover {
+      border-color: var(--color6);
+      color: var(--color6);
+    }
+  }
+}
+
 /* text属性 */
-@include VerBtnText(null, $ver-zinc-1, $ver-zinc-6);
-@include VerBtnText('primary', $ver-violet-1, $ver-violet-6);
-@include VerBtnText('success', $ver-green-1, $ver-green-6);
-@include VerBtnText('info', $ver-zinc-1, $ver-zinc-6);
-@include VerBtnText('warning', $ver-orange-1, $ver-orange-6);
-@include VerBtnText('error', $ver-red-1, $ver-red-6);
+// @include VerBtnText(null, $ver-zinc-1, $ver-zinc-6);
+// @include VerBtnText('primary', $ver-violet-1, $ver-violet-6);
+// @include VerBtnText('success', $ver-green-1, $ver-green-6);
+// @include VerBtnText('info', $ver-zinc-1, $ver-zinc-6);
+// @include VerBtnText('warning', $ver-orange-1, $ver-orange-6);
+// @include VerBtnText('error', $ver-red-1, $ver-red-6);
 
 .is-text {
   border: none;
@@ -135,6 +193,27 @@
 
     &:not(.is-disabled):hover {
       color: $ver-zinc-9;
+    }
+  }
+}
+
+.is-text {
+  border: none;
+  color: var(--color6);
+  background-color: transparent;
+
+  &:not(.is-disabled):hover {
+    background-color: var(--color1);
+  }
+
+  .dark & {
+    color: var(--color6);
+    background-color: transparent;
+
+    &:not(.is-disabled):hover {
+      // color: color.adjust(#ffffff, $lightness: -10%);
+      background-color: var(--color6);
+      filter: brightness(90%);
     }
   }
 }
