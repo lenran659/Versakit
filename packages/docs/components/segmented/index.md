@@ -2,4 +2,4 @@
 
 ## 基本使用
 
-<demo vue="../../example/segmented/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>

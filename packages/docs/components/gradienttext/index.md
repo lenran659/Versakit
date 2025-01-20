@@ -6,19 +6,19 @@
 
 它有不同的类型。
 
-<demo vue="../../example/gradienttext/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 尺寸
 
 它可以自定义数值，也可以写规定尺寸。
 
-<demo vue="../../example/gradienttext/size.vue"></demo>
+<demo vue="./example/size.vue"></demo>
 
 ## 自定义颜色
 
 靠你的天马行空。
 
-<demo vue="../../example/gradienttext/color.vue"></demo>
+<demo vue="./example/color.vue"></demo>
 
 ## GradientText API
 

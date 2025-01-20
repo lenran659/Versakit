@@ -4,19 +4,19 @@
 
 由 `type` 属性来选择 Text 的类型。
 
-<demo vue="../../example/text/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 尺寸
 
 使用 `size` 属性配置尺寸，可选的尺寸大小有：`large`， `default` 或 `small`。
 
-<demo vue="../../example/text/size.vue"></demo>
+<demo vue="./example/size.vue"></demo>
 
 ## 省略
 
 通过 `truncated` 属性,在文本超过视图或最大宽度设置时展示省略符。
 
-<demo vue="../../example/text/truncated.vue"></demo>
+<demo vue="./example/truncated.vue"></demo>
 
 ## Text API
 

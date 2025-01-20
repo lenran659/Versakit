@@ -4,13 +4,13 @@
 
 我们提供了连接的一些基本样式，可以通过 `type` 来设置连接的基础样式。
 
-<demo vue="../../example/link/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 禁用状态
 
 为链接添加 `disabled` 属性，让文字链接处于不可用状态。
 
-<demo vue="../../example/link/disable.vue"></demo>
+<demo vue="./example/disable.vue"></demo>
 
 ## Link API
 

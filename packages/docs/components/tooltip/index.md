@@ -6,4 +6,4 @@
 
 在这里我们提供 9 种不同方向的展示方式，可以通过以下完整示例来理解，选择你要的效果。
 
-<demo vue="../../example/tooltip/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>

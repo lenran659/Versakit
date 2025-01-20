@@ -4,11 +4,11 @@
 
 ## 基础用法
 
-<demo vue="../../example/empty/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 自定义图标
 
-<demo vue="../../example/empty/extend.vue"></demo>
+<demo vue="./example/extend.vue"></demo>
 
 ## Empty API
 

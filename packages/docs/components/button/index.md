@@ -6,37 +6,37 @@
 
 versakitUI 提供了一些基础样式来使用，我们可以通过 `type`、`plain`、`round` 来修改按钮的圆角，颜色和是否透明等属性。
 
-<demo vue="../../example/button/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 按钮风格
 
 使用 `style` 和 `variant` 属性来改变按钮的视觉风格。
 
-<demo vue="../../example/button/style.vue"></demo>
+<demo vue="./example/style.vue"></demo>
 
 ## 禁止状态
 
 您可以使用 `disabled` 属性来定义按钮是否被禁用，该属性接受一个 `Boolean` 类型的值。
 
-<demo vue="../../example/button/disabled.vue"></demo>
+<demo vue="./example/disabled.vue"></demo>
 
 ## 按钮大小
 
 我们可以通过调整 `size` 属性来控制按钮大小。
 
-<demo vue="../../example/button/size.vue"></demo>
+<demo vue="./example/size.vue"></demo>
 
 ## 水波纹按钮
 
 按钮可以结合水波纹一起使用。
 
-<demo vue="../../example/button/ripple.vue"></demo>
+<demo vue="./example/ripple.vue"></demo>
 
 ## 图标按钮
 
 使用 `icon` 属性来设置按钮的图标样式，您可以在我们的 `Icon` 组件中找到所需图标。
 
-<demo vue="../../example/button/icon.vue"></demo>
+<demo vue="./example/icon.vue"></demo>
 
 ## Button API
 

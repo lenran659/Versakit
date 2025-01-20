@@ -2,4 +2,4 @@
 
 ## 基本用法
 
-<demo vue="../../example/slider/base.vue" />
+<demo vue="./example/base.vue" />

@@ -8,13 +8,13 @@
 
 ## 演示
 
-<demo vue="../../example/result/success.vue"></demo>
-<demo vue="../../example/result/error.vue"></demo>
-<demo vue="../../example/result/warning.vue"></demo>
-<demo vue="../../example/result/info.vue"></demo>
-<demo vue="../../example/result/403.vue"></demo>
-<demo vue="../../example/result/404.vue"></demo>
-<demo vue="../../example/result/500.vue"></demo>
+<demo vue="./example/success.vue"></demo>
+<demo vue="./example/error.vue"></demo>
+<demo vue="./example/warning.vue"></demo>
+<demo vue="./example/info.vue"></demo>
+<demo vue="./example/403.vue"></demo>
+<demo vue="./example/404.vue"></demo>
+<demo vue="./example/500.vue"></demo>
 
 ## Result API
 

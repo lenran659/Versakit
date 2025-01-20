@@ -7,13 +7,13 @@
 可以通过设置 `type` 属性改变徽标类型。
 数量值可接受 `Number` 或 `String。`
 
-<demo vue="../../example/badge/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 最大值徽标
 
 当徽标中数字大于 `99` 时候会显示 `99+`，使用数字徽标需将 `type` 属性设置为 `number`
 
-<demo vue="../../example/badge/number.vue"></demo>
+<demo vue="./example/number.vue"></demo>
 
 ## Badge API
 

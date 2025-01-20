@@ -6,7 +6,7 @@
 
 这是一个很简单的面板。
 
-<demo vue="../../example/panel/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 阴影
 
@@ -14,7 +14,7 @@
 
 通过`shadow`属性设置卡片阴影出现的时刻。该属性的值可以是: `always`、`hover` 或 `never`
 
-<demo vue="../../example/panel/shadow.vue"></demo>
+<demo vue="./example/shadow.vue"></demo>
 
 ## Panel API
 

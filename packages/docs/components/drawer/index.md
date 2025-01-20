@@ -6,13 +6,13 @@
 
 呼出一个临时的侧边栏，自定义内容。
 
-<demo vue="../../example/drawer/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 不同方向
 
 抽屉可以从四个方向呼出，可以用 `direction` 设置。
 
-<demo vue="../../example/drawer/direction.vue"></demo>
+<demo vue="./example/direction.vue"></demo>
 
 ## Drawer API
 
