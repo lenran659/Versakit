@@ -20,7 +20,7 @@
 
 行提供 `gutter` 属性来指定列之间的间距，其默认值为0。
 
-<demo vue="../../example/layout/gutter.vue"></demo>
+<demo vue="./example/gutter.vue"></demo>
 
 ## 混合布局
 
@@ -32,7 +32,7 @@
 
 参照了 Bootstrap 的 响应式设计，预设了五个响应尺寸：xs、sm、md、lg 和 xl。
 
-<demo vue="../../example/layout/reactive.vue"></demo>
+<demo vue="./example/reactive.vue"></demo>
 
 ## Layout API
 
