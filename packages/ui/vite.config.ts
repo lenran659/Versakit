@@ -42,14 +42,27 @@ export default defineConfig({
     sourcemap: false,
     rollupOptions: {
       external: ['vue', '@vueuse/core'],
-      output: {
-        exports: 'named',
-        globals: {
-          vue: 'Vue',
-          '@vueuse/core': 'VueUse',
+      output: [
+        {
+          exports: 'named',
+          globals: {
+            vue: 'Vue',
+            '@vueuse/core': 'VueUse',
+          },
+          preserveModules: false,
         },
-        preserveModules: false,
-      },
+        {
+          format: 'umd',
+          dir: 'dist/umd',
+          entryFileNames: '[name].umd.js',
+          name: 'index',
+        },
+        {
+          format: 'esm',
+          dir: 'dist/esm',
+          entryFileNames: '[name].esm.js',
+        },
+      ],
     },
     lib: {
       entry: 'index.ts',

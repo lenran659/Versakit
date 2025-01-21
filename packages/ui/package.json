@@ -4,6 +4,7 @@
   "author": "Jannik",
   "private": false,
   "type": "module",
+  "types": "./dist/index.d.ts",
   "main": "./dist/ui.js",
   "homepage": "https://lenran659.github.io/Versakit/",
   "repository": {
