@@ -23,7 +23,7 @@ import type { ButtonProps } from '../type/index'
 defineOptions({ name: 'VerButton' })
 
 const props = withDefaults(defineProps<ButtonProps>(), {
-  type: '',
+  color: '',
   disabled: false,
   circle: false,
   size: 'md',
@@ -36,7 +36,7 @@ const Verclass = computed(() => {
   const variantList = props.variant.split(' ')
   return [
     'ver-btn',
-    props.type == '' ? '' : `ver-btn-${props.type}`,
+    props.color == '' ? '' : `ver-btn-${props.color}`,
     ...variantList.map((val) => `is-${val}`),
     props.circle == true ? 'is-circle' : '',
     props.disabled == false ? '' : 'is-disabled',

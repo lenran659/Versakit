@@ -10,28 +10,32 @@ import { VerButton, VerRow } from '@versakit/ui'
 
 <template>
   <ver-row class="mb-4">
-    <ver-button disabled type="primary">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="primary">按 钮</ver-button>
+    <ver-button disabled color="red-5">按 钮</ver-button>
+    <ver-button disabled variant="plain round" color="red-1">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="success">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="success">按 钮</ver-button>
+    <ver-button disabled color="blue-5">按 钮</ver-button>
+    <ver-button disabled variant="plain round" color="blue-1">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="info">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="info">按 钮</ver-button>
+    <ver-button disabled color="green-5">按 钮</ver-button>
+    <ver-button disabled variant="plain round" color="green-1">
+      按 钮
+    </ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="warning">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="warning">按 钮</ver-button>
+    <ver-button disabled color="zinc-5">按 钮</ver-button>
+    <ver-button disabled variant="plain round" color="zinc-1">按 钮</ver-button>
   </ver-row>
 
   <ver-row class="mb-4">
-    <ver-button disabled type="error">按 钮</ver-button>
-    <ver-button disabled variant="plain round" type="error">按 钮</ver-button>
+    <ver-button disabled color="violet-5">按 钮</ver-button>
+    <ver-button disabled variant="plain round" color="violet-1">
+      按 钮
+    </ver-button>
   </ver-row>
 </template>
 

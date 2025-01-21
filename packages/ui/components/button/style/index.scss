@@ -38,19 +38,30 @@
   }
 }
 
-@include VerBtnType('primary', $ver-violet-6);
-@include VerBtnType('success', $ver-green-6);
-@include VerBtnType('info', $ver-zinc-6);
-@include VerBtnType('warning', $ver-orange-6);
-@include VerBtnType('error', $ver-red-6);
+// 普通按钮
+@each $color-name, $color-list in $color-maps {
+  @for $i from 1 through length($color-list) {
+    $color: nth($color-list, $i);
+    @include VerBtnType('#{$color-name}-#{$i}', $color);
+  }
+}
 
 /* 灵魂按钮 */
-@include VerBtnGhost(null, $ver-zinc-5, $ver-zinc-6);
-@include VerBtnGhost('primary', $ver-violet-5, $ver-violet-6);
-@include VerBtnGhost('success', $ver-green-5, $ver-green-6);
-@include VerBtnGhost('info', $ver-zinc-5, $ver-zinc-6);
-@include VerBtnGhost('warning', $ver-orange-5, $ver-orange-6);
-@include VerBtnGhost('error', $ver-red-5, $ver-red-6);
+@function generateColor($color-list, $index, $default-color: #000) {
+  // 默认颜色为黑色
+  @if ($index > length($color-list)) {
+    @return $default-color;
+  }
+  @return nth($color-list, $index);
+}
+
+@each $color-name, $color-list in $color-maps {
+  @for $i from 1 through length($color-list) {
+    $color5: generateColor($color-list, $i);
+    $color6: generateColor($color-list, $i + 1);
+    @include VerBtnGhost('#{$color-name}-#{$i}', $color5, $color6);
+  }
+}
 
 .is-ghost {
   padding: 12px 19px;
@@ -85,13 +96,15 @@
   padding: 11px 20px;
 }
 
-/* plain属性 */
-@include VerBtnPlain(null, $ver-zinc-1, $ver-zinc-6);
-@include VerBtnPlain('primary', $ver-violet-1, $ver-violet-6);
-@include VerBtnPlain('success', $ver-green-1, $ver-green-6);
-@include VerBtnPlain('info', $ver-zinc-1, $ver-zinc-6);
-@include VerBtnPlain('warning', $ver-orange-1, $ver-orange-6);
-@include VerBtnPlain('error', $ver-red-1, $ver-red-6);
+/* plain,text属性 */
+@each $color-name, $color-list in $color-maps {
+  @for $i from 1 through length($color-list) {
+    $color: generateColor($color-list, $i);
+    $color6: generateColor($color-list, 6);
+    @include VerBtnPlain('#{$color-name}-#{$i}', $color, $color6);
+    @include VerBtnText('#{$color-name}-#{$i}', $color, $color6);
+  }
+}
 
 .is-plain {
   color: $ver-zinc-6;
@@ -111,14 +124,6 @@
     }
   }
 }
-
-/* text属性 */
-@include VerBtnText(null, $ver-zinc-1, $ver-zinc-6);
-@include VerBtnText('primary', $ver-violet-1, $ver-violet-6);
-@include VerBtnText('success', $ver-green-1, $ver-green-6);
-@include VerBtnText('info', $ver-zinc-1, $ver-zinc-6);
-@include VerBtnText('warning', $ver-orange-1, $ver-orange-6);
-@include VerBtnText('error', $ver-red-1, $ver-red-6);
 
 .is-text {
   border: none;
@@ -165,33 +170,7 @@
 }
 
 /* 禁用属性 */
-$button-colors: (
-  'primary': (
-    $ver-violet-1,
-    $ver-violet-5,
-    $ver-violet-6,
-  ),
-  'success': (
-    $ver-green-1,
-    $ver-green-5,
-    $ver-green-6,
-  ),
-  'info': (
-    $ver-zinc-1,
-    $ver-zinc-5,
-    $ver-zinc-6,
-  ),
-  'warning': (
-    $ver-orange-1,
-    $ver-orange-5,
-    $ver-orange-6,
-  ),
-  'error': (
-    $ver-red-1,
-    $ver-red-5,
-    $ver-red-6,
-  ),
-);
+$button-colors: ();
 
 /* 禁止状态 */
 .ver-btn.is-disabled {
