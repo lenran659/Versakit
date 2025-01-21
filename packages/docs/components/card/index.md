@@ -8,19 +8,19 @@
 
 Card 组件 由 `header` 和 `body` 组成。`header` 是可选的，其内容取决于一个具名的 `solt`
 
-<demo vue="../../example/card/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 简单卡片
 
 卡片可以只有内容区域。
 
-<demo vue="../../example/card/simple.vue"></demo>
+<demo vue="./example/simple.vue"></demo>
 
 ## 插槽
 
 卡片可以只有内容区域。
 
-<demo vue="../../example/card/template.vue"></demo>
+<demo vue="./example/template.vue"></demo>
 
 ## 带有阴影效果的卡片
 
@@ -28,7 +28,7 @@ Card 组件 由 `header` 和 `body` 组成。`header` 是可选的，其内容�
 
 通过 `shadow` 属性设置卡片阴影出现的时刻。该属性的值可以是: `always`、`hover` 或 `never`
 
-<demo vue="../../example/card/shadow.vue"></demo>
+<demo vue="./example/shadow.vue"></demo>
 
 ## Card API
 

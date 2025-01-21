@@ -2,19 +2,19 @@
 
 ## 基本使用
 
-<demo vue="../../example/flex/base.vue" />
+<demo vue="./example/base.vue" />
 
 ## 对齐方式
 
-<demo vue="../../example/flex/align.vue" />
+<demo vue="./example/align.vue" />
 
 ## 间隙设置
 
-<demo vue="../../example/flex/gap.vue" />
+<demo vue="./example/gap.vue" />
 
 ## 自动换行
 
-<demo vue="../../example/flex/wrap.vue" />
+<demo vue="./example/wrap.vue" />
 
 ## Flex API
 

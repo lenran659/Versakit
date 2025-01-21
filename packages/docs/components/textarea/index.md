@@ -6,19 +6,19 @@
 
 用于多行输入。
 
-<demo vue="../../example/textarea/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 禁用状态
 
 使用 `disabled` 属性设置不可点击。
 
-<demo vue="../../example/textarea/disabled.vue"></demo>
+<demo vue="./example/disabled.vue"></demo>
 
 ## 限制长度
 
 使用 `maxlength` 属性限制最大输入长度。
 
-<demo vue="../../example/textarea/maxlength.vue"></demo>
+<demo vue="./example/maxlength.vue"></demo>
 
 ## Textarea API
 

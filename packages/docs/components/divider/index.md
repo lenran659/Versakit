@@ -6,25 +6,25 @@
 
 对不同段落的文本进行分割。
 
-<demo vue="../../example/divider/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 虚线
 
 您可以设置分隔符的样式。
 
-<demo vue="../../example/divider/style.vue"></demo>
+<demo vue="./example/style.vue"></demo>
 
 ## 设置文案
 
 可以在分割线上自定义文本内容。
 
-<demo vue="../../example/divider/text.vue"></demo>
+<demo vue="./example/text.vue"></demo>
 
 ## 垂直分割线
 
 垂直方向的分割线。
 
-<demo vue="../../example/divider/vertical.vue"></demo>
+<demo vue="./example/vertical.vue"></demo>
 
 ## Divider API
 

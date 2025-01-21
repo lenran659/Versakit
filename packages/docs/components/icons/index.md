@@ -6,13 +6,13 @@ Versakit UI 提供了一套常用的图标集合。
 
 通过使用 `ver-icon` 来调用 SVG 图标，并且通过 `size` 调整图标的尺寸，通过 color 改变图标的颜色。
 
-<demo vue="../../example/icon/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 图标集合
 
 声明：该图标源自Bootstrap图标库
 
-<demo vue="../../example/icon/icons.vue"></demo>
+<demo vue="./example/icons.vue"></demo>
 
 ## Icons API
 

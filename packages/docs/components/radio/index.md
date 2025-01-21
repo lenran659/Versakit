@@ -6,13 +6,13 @@
 
 单选框的基本使用。
 
-<demo vue="../../example/radio/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 禁用状态
 
 `disabled` 属性可以用来控制单选框的禁用状态。
 
-<demo vue="../../example/radio/disabled.vue"></demo>
+<demo vue="./example/disabled.vue"></demo>
 
 ## Radio API
 

@@ -6,19 +6,19 @@
 
 从顶部出现，3 秒后自动消失。
 
-<demo vue="../../example/message/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 不同状态
 
 用来显示「成功、警告、消息、错误」类的操作反馈。
 
-<demo vue="../../example/message/status.vue"></demo>
+<demo vue="./example/status.vue"></demo>
 
 ## 不同风格
 
 用来显示「成功、警告、消息、错误」类的操作反馈。
 
-<demo vue="../../example/message/plain.vue"></demo>
+<demo vue="./example/plain.vue"></demo>
 
 ## Message API
 

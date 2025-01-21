@@ -8,13 +8,13 @@
 
 通过 `row` 和 `col` 组件，并通过 `col` 组件的 `span` 属性我们就可以自由地组合布局。
 
-<demo vue="../../example/layout/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 列偏移
 
 通过 `offset` 属性指定分栏偏移的栏数
 
-<demo vue="../../example/layout/offset.vue"></demo>
+<demo vue="./example/offset.vue"></demo>
 
 ## 分栏间隔
 
@@ -26,7 +26,7 @@
 
 通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局。
 
-<demo vue="../../example/layout/mix.vue"></demo>
+<demo vue="./example/mix.vue"></demo>
 
 ## 响应式布局
 

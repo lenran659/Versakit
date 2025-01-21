@@ -6,7 +6,7 @@
 
 可同时展开多个面板，面板之间不影响。
 
-<demo vue="../../example/collapse/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 手风琴效果
 
@@ -14,7 +14,7 @@
 
 通过 `accordion` 属性来设置是否以手风琴模式显示。
 
-<demo vue="../../example/collapse/accordion.vue"></demo>
+<demo vue="./example/accordion.vue"></demo>
 
 ## Collapse Item API
 

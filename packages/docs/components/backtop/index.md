@@ -6,13 +6,13 @@
 
 通过滑动来查看处于右下角的按钮，可以通过设置 `bottom`、`right` 设置 backtop 按钮具体的位置；通过设置 `visibilityHeight` 属性设置具体高度显示 backtop 按钮。
 
-<demo vue="../../example/backtop/base.vue" />
+<demo vue="./example/base.vue" />
 
 ## 图标
 
 其中的内容可设置为图标。
 
-<demo vue="../../example/backtop/icon.vue" />
+<demo vue="./example/icon.vue" />
 
 ## backtop API
 

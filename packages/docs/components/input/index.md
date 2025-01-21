@@ -4,13 +4,13 @@
 
 通过鼠标或键盘输入字符.
 
-<demo vue="../../example/input/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 禁用状态
 
 通过 `disabled` 属性指定是否禁用 input 组件
 
-<demo vue="../../example/input/disabled.vue"></demo>
+<demo vue="./example/disabled.vue"></demo>
 
 ## Input API
 

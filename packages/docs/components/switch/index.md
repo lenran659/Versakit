@@ -6,13 +6,13 @@
 
 绑定 `v-model` 到一个 `Boolean` 类型的变量。
 
-<demo vue="../../example/switch/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## 尺寸
 
 可以通过 `size` 属性来设置 switch 的大小。
 
-<demo vue="../../example/switch/size.vue"></demo>
+<demo vue="./example/size.vue"></demo>
 
 ## Switch API
 

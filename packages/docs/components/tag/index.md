@@ -6,7 +6,7 @@
 
 由`type`属性来选择 tag 类型。也能通过 `plain` 让 tag 的背景变得半透明，可以通过 `color` 属性自定义颜色。
 
-<demo vue="../../example/tag/base.vue"></demo>
+<demo vue="./example/base.vue"></demo>
 
 ## Tag API
 
