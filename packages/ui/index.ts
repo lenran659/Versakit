@@ -35,11 +35,14 @@ import VerTooltip from './components/tooltip/index'
 import VerSlider from './components/slider/index'
 import VerFlex from './components/flex/index'
 import VerTable from './components/table/index'
+import { VerCarousel, VerCarouselItem } from './components/carousel/index'
 import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerCarouselItem,
+  VerCarousel,
   VerFlex,
   VerSlider,
   VerTooltip,
@@ -78,6 +81,8 @@ const components: Component[] = [
   VerTable,
 ]
 export {
+  VerCarouselItem,
+  VerCarousel,
   VerFlex,
   VerSlider,
   VerTooltip,

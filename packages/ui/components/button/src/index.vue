@@ -49,12 +49,6 @@ const Verclass = computed(() => {
 
 const computedStyles = computed(() => {
   const colorPrefix = `${props.color}-`
-  console.log(1, colorPrefix + '0')
-  console.log(2, colors)
-  console.log(3, 'violet-0' in colors)
-  console.log(4, colors[`${colorPrefix}0`])
-  console.log(4, colors[`${colorPrefix}1`])
-  console.log(4, colors[`${colorPrefix}6`])
   return {
     '--color0': colors[`${colorPrefix}0`],
     '--color1': colors[`${colorPrefix}1`],

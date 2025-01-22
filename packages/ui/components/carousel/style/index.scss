@@ -1,0 +1,107 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel.horizontal .carousel-container {
+  display: flex;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-arrow-prev {
+  left: 16px;
+}
+
+.carousel-arrow-next {
+  right: 16px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.carousel-indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-indicator.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+/* Vertical carousel styles */
+.carousel.vertical .carousel-container {
+  flex-direction: column;
+}
+
+.carousel.vertical .carousel-arrow {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel.vertical .carousel-arrow-prev {
+  top: 16px;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.carousel.vertical .carousel-arrow-next {
+  top: auto;
+  bottom: 16px;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.carousel.vertical .carousel-indicators {
+  flex-direction: column;
+  bottom: 50%;
+  left: auto;
+  right: 16px;
+  transform: translateY(50%);
+}
