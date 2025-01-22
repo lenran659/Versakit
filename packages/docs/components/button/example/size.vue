@@ -14,7 +14,10 @@ const options = [
 <template>
   <div>
     <VerSegmented v-model="selectedValue" :options="options"></VerSegmented>
-    <ver-button class="mx-2" :size="selectedValue">主要按钮</ver-button>
+
+    <ver-button class="mx-2" color="blue-5" :size="selectedValue">
+      主要按钮
+    </ver-button>
   </div>
 </template>
 

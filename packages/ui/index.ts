@@ -125,7 +125,8 @@ export default {
   install: (app: App) => {
     for (const c in components) {
       app.component(c, components[c])
-      app.directive('ripple', vRipple)
     }
+
+    app.directive('ripple', vRipple)
   },
 }

@@ -41,13 +41,12 @@ export default defineConfig({
   build: {
     sourcemap: false,
     rollupOptions: {
-      external: ['vue', '@vueuse/core'],
+      external: ['vue'],
       output: [
         {
           exports: 'named',
           globals: {
             vue: 'Vue',
-            '@vueuse/core': 'VueUse',
           },
           preserveModules: false,
         },
@@ -66,7 +65,6 @@ export default defineConfig({
     },
     lib: {
       entry: 'index.ts',
-      formats: ['es', 'umd'],
       name: 'versakit-ui',
     },
     terserOptions: {

@@ -33,7 +33,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, withDefaults } from 'vue'
 import type { TableProps } from '../type/index'
 
 const props = withDefaults(defineProps<TableProps>(), {
