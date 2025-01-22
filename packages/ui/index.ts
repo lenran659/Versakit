@@ -38,6 +38,7 @@ import { VerTable } from './components/table/index'
 import { VerCarousel, VerCarouselItem } from './components/carousel/index'
 import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple } from './directives/index'
+import { vIncrease } from './directives/index'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
@@ -130,5 +131,6 @@ export default {
     }
 
     app.directive('ripple', vRipple)
+    app.directive('increase', vIncrease)
   },
 }

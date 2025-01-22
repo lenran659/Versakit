@@ -24,18 +24,20 @@ const style = computed(() => {
   const index = carousel.items.value.findIndex(
     (item: any) => item.uid === uid.value,
   )
+  const currentIndex = carousel.currentIndex.value
   const isHorizontal = carousel.direction === 'horizontal'
+  const offset = (index - currentIndex) * 100
 
   if (isHorizontal) {
     return {
-      transform: `translateX(-${index * 100}%)`,
+      transform: `translateX(${offset}%)`,
       transition: 'transform 0.5s ease-in-out',
       width: props.width,
       height: props.height,
     }
   } else {
     return {
-      transform: `translateY(-${index * 100}%)`,
+      transform: `translateY(${offset}%)`,
       transition: 'transform 0.5s ease-in-out',
       width: props.width,
       height: props.height,

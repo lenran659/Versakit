@@ -5,3 +5,7 @@
 ## 基本使用
 
 <demo vue="./example/base.vue"></demo>
+
+## 自定义内容
+
+<demo vue="./example/slot.vue"></demo>

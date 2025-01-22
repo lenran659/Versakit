@@ -28,11 +28,6 @@
 .carousel-slide img {
   width: 100%;
   height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.carousel-slide:hover img {
-  transform: scale(1.05);
 }
 
 .carousel-caption {
@@ -46,8 +41,4 @@
   font-size: 1.2em;
   transform: translateY(0);
   transition: transform 0.3s ease;
-}
-
-.carousel-slide:hover .carousel-caption {
-  transform: translateY(-5px);
 }

@@ -12,7 +12,13 @@ export const getComponentsSidebar = (): DefaultTheme.Sidebar => {
     },
     {
       text: 'Directives 指令',
-      items: [{ text: 'Ripple 水波纹', link: '/components/ripple/' }],
+      items: [
+        { text: 'Ripple 水波纹', link: '/components/ripple/' },
+        {
+          text: 'NumberAnimation 数字动画',
+          link: '/components/increase/',
+        },
+      ],
     },
     {
       text: 'Basic 基础组件',

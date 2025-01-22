@@ -3,7 +3,7 @@ import { VerCarousel, VerCarouselItem } from '@versakit/ui'
 </script>
 
 <template>
-  <div>
+  <div class="carousel-wrapper">
     <VerCarousel
       :autoplay="true"
       :interval="3000"
@@ -39,3 +39,12 @@ import { VerCarousel, VerCarouselItem } from '@versakit/ui'
     </VerCarousel>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.carousel-wrapper {
+  width: 100%;
+  height: 600px;
+  margin: 40px 0;
+  overflow: hidden;
+}
+</style>
