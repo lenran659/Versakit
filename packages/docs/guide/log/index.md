@@ -1,5 +1,21 @@
 # 更新日志
 
+## 0.2.5
+
+- 🛠 组件 bugs 修复
+- ✔ 完善Container 布同容器
+- ✔ 更好的打包配置文件
+- 🧐 适配TS类型
+- 🛠重构 Layout 布局 组件
+- 🛠重构 Button 按钮 组件
+- ✨新增Flex 弹性布局 组件
+- ✨新增Slider 滑块 组件
+- ✨新增Progress 进度条 组件
+- ✨新增GradientText 渐变文字 组件
+- ✨新增Table 表格 组件
+- ✨新增Tooltip 文字提示
+- ✨新增Segmented 分段控制器组件
+
 ## 0.2.4
 
 - 🛠 组件 bugs 修复
