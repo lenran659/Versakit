@@ -1,20 +1,20 @@
 .segmented-control {
-  width: 100%;
+  width: auto;
   padding: 4px;
 }
 
 .segmented-control-container {
   position: relative;
   display: flex;
-  background-color: #f1f1f1;
   border-radius: 8px;
   padding: 4px;
+  background-color: #f1f1f1;
 }
 
 .segmented-control-highlight {
   position: absolute;
   top: 4px;
-  left: 0;
+  left: 4px;
   bottom: 4px;
   background-color: white;
   border-radius: 6px;
@@ -24,8 +24,9 @@
 
 .segmented-control-item {
   position: relative;
-  flex: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .segmented-control-item input {
@@ -36,7 +37,6 @@
 }
 
 .segmented-control-item label {
-  width: max-content;
   display: block;
   padding: 8px 16px;
   font-size: 14px;
@@ -44,6 +44,7 @@
   position: relative;
   transition: color 0.3s ease;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .segmented-control-item input:checked + label {
