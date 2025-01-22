@@ -3,4 +3,4 @@ import Progress from './src/index.vue'
 
 const VerProgress = withInstall(Progress)
 
-export default VerProgress
+export { VerProgress }

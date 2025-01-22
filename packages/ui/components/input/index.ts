@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerInput = withInstall(Input)
 
-export default VerInput
+export { VerInput }

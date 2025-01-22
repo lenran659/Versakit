@@ -1,6 +1,6 @@
 import { withInstall } from '../../utils/withinstall'
 import GradientText from './src/index.vue'
 
-const VGradientText = withInstall(GradientText)
+const VerGradientText = withInstall(GradientText)
 
-export default VGradientText
+export { VerGradientText }

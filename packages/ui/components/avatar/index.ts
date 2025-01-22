@@ -3,4 +3,4 @@ import Avatar from './src/index.vue'
 
 const VerAvatar = withInstall(Avatar)
 
-export default VerAvatar
+export { VerAvatar }

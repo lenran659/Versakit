@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerCol = withInstall(Col)
 
-export default VerCol
+export { VerCol }

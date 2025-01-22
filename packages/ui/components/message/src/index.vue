@@ -11,7 +11,7 @@
 import { onMounted, ref, computed } from 'vue'
 import { getLastBottomOffset } from './index'
 import type { MessageProps } from '../type/index'
-import VerIcon from '../../icon/index'
+import { VerIcon } from '../../icon/index'
 
 defineOptions({ name: 'VerMessage' })
 

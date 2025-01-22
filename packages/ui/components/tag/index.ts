@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerTag = withInstall(Tag)
 
-export default VerTag
+export { VerTag }

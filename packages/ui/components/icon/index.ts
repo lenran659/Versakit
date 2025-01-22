@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerIcon = withInstall(Icon)
 
-export default VerIcon
+export { VerIcon }

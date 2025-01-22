@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import VerIcon from '../../icon/index'
+import { VerIcon } from '../../icon/index'
 import type { ButtonProps } from '../type/index'
 import colors from '../../../utils/colors/colorMap'
 

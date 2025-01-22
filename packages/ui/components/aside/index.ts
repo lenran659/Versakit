@@ -3,4 +3,4 @@ import Aside from './src/index.vue'
 
 const VerAside = withInstall(Aside)
 
-export default VerAside
+export { VerAside }

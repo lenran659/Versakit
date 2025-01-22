@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerLink = withInstall(Link)
 
-export default VerLink
+export { VerLink }

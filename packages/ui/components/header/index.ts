@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerHeader = withInstall(Header)
 
-export default VerHeader
+export { VerHeader }

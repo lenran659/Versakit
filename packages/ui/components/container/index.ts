@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerContainer = withInstall(Container)
 
-export default VerContainer
+export { VerContainer }

@@ -3,4 +3,4 @@ import Flex from './src/index.vue'
 
 const VerFlex = withInstall(Flex)
 
-export default VerFlex
+export { VerFlex }

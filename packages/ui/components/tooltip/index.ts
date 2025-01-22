@@ -3,4 +3,4 @@ import Tooltip from './src/index.vue'
 
 const VerTooltip = withInstall(Tooltip)
 
-export default VerTooltip
+export { VerTooltip }

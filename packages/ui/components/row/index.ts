@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerRow = withInstall(Row)
 
-export default VerRow
+export { VerRow }

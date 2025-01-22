@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import VerDivider from '../index'
+import { VerDivider } from '../index'
 import { describe, it, expect } from 'vitest'
 
 describe('VerDivider', () => {

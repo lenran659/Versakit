@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerTextarea = withInstall(Textarea)
 
-export default VerTextarea
+export { VerTextarea }

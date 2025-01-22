@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerMain = withInstall(Main)
 
-export default VerMain
+export { VerMain }

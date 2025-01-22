@@ -18,7 +18,7 @@
 <script lang="ts" setup>
 import { ref, onMounted, computed } from 'vue'
 import { getLastBottomOffset } from './index'
-import VerIcon from '../../icon/index'
+import { VerIcon } from '../../icon/index'
 import type { NotifivationProps } from '../type/index'
 
 defineOptions({ name: 'VerNotifivation' })

@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerRadio = withInstall(Radio)
 
-export default VerRadio
+export { VerRadio }

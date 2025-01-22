@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerDivider = withInstall(Divider)
 
-export default VerDivider
+export { VerDivider }

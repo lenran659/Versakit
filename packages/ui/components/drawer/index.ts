@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerDrawer = withInstall(Drawer)
 
-export default VerDrawer
+export { VerDrawer }

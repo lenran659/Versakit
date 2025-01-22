@@ -1,6 +1,6 @@
 import { withInstall } from '../../utils/withinstall'
-import empty from './src/index.vue'
+import Empty from './src/index.vue'
 
-const Vempty = withInstall(empty)
+const VerEmpty = withInstall(Empty)
 
-export default Vempty
+export { VerEmpty }

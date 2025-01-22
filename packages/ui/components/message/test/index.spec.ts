@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import VerMessage from '../index'
+import { VerMessage } from '../index'
 
 describe('message', () => {
   it('测试组件是否能正常渲染', () => {

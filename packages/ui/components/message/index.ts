@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerMessage = withInstall(Message)
 
-export default VerMessage
+export { VerMessage }

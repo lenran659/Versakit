@@ -1,6 +1,6 @@
 import { withInstall } from '../../utils/withinstall'
-import result from './src/index.vue'
+import Result from './src/index.vue'
 
-const Vresult = withInstall(result)
+const VerResult = withInstall(Result)
 
-export default Vresult
+export { VerResult }

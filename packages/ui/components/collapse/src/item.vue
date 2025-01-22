@@ -33,7 +33,7 @@
 import { inject, computed } from 'vue'
 import type { CollapseItemProps } from '../type/index'
 import { collapseContextKey } from '../type/index'
-import VerIcon from '../../icon/index'
+import { VerIcon } from '../../icon/index'
 
 defineOptions({
   name: 'VerCollapseItem',

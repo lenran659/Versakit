@@ -3,4 +3,4 @@ import Table from './src/index.vue'
 
 const VerTable = withInstall(Table)
 
-export default VerTable
+export { VerTable }

@@ -1,7 +1,7 @@
 <!--
  * @Author: 2171204141@qq.com
  * @Date: 2024-12-17 19:10:47
- * @LastEditors: Dream
+ * @LastEditors: Jannik 1337741710@qq.com
  * @Description: 
 -->
 <template>
@@ -38,7 +38,7 @@
 
 <script lang="ts" setup>
 import type { DiaLogProps } from '../type/index'
-import VerIcon from '../../icon/index'
+import { VerIcon } from '../../icon/index'
 
 defineOptions({ name: 'VerDialog' })
 

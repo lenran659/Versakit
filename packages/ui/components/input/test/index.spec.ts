@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
-import VerInput from '../index'
+import { VerInput } from '../index'
 import type { InputType } from '../type'
 
 describe('VerInput', () => {

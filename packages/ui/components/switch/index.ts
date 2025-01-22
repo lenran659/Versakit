@@ -3,4 +3,4 @@ import Switch from './src/index.vue'
 
 const VerSwitch = withInstall(Switch)
 
-export default VerSwitch
+export { VerSwitch }

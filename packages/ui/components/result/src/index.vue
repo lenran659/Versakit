@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import VerIcon from '../../icon/index'
+import { VerIcon } from '../../icon/index'
 import { computed } from 'vue'
 import type { ResultProps } from '../type/index.ts'
 

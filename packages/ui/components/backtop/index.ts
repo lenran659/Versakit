@@ -3,4 +3,4 @@ import Backtop from './src/index.vue'
 
 const VerBacktop = withInstall(Backtop)
 
-export default VerBacktop
+export { VerBacktop }

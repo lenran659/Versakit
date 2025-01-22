@@ -3,4 +3,4 @@ import footer from './src/index.vue'
 
 const VerFooter = withInstall(footer)
 
-export default VerFooter
+export { VerFooter }

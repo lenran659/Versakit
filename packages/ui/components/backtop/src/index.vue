@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import VerIcon from '../../icon/index'
+import { VerIcon } from '../../icon/index'
 import { computed, ref, onMounted, shallowRef } from 'vue'
 import type { BackTopProps } from '../type/index'
 

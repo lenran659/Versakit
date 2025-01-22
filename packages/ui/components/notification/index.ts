@@ -3,4 +3,4 @@ import { withInstall } from '../../utils/withinstall'
 
 const VerNotification = withInstall(Notification)
 
-export default VerNotification
+export { VerNotification }
