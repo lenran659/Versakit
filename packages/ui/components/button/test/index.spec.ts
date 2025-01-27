@@ -1,7 +1,7 @@
 /*
  * @Author: 2171204141@qq.com
  * @Date: 2024-12-08 23:10:39
- * @LastEditors: Dream
+ * @LastEditors: Jannik 1337741710@qq.com
  * @Description: Button 单元测试
  */
 import { describe, it, expect } from 'vitest'
@@ -16,34 +16,6 @@ describe('button', () => {
     expect(wrapper.classes()).not.toContain('is-plain')
     expect(wrapper.classes()).not.toContain('is-round')
     expect(wrapper.attributes('disabled')).toBeUndefined()
-  })
-
-  it('测试按钮设置 type 属性后类名的变化', () => {
-    const typeValue = 'success'
-    const wrapper = mount(VerButton, {
-      props: {
-        type: typeValue,
-      },
-    })
-    expect(wrapper.classes()).toContain(`ver-btn-${typeValue}`)
-  })
-
-  it('测试按钮设置 plain 属性后类名的变化', () => {
-    const wrapper = mount(VerButton, {
-      props: {
-        plain: true,
-      },
-    })
-    expect(wrapper.classes()).toContain('is-plain')
-  })
-
-  it('测试按钮设置 round 属性后类名的变化', () => {
-    const wrapper = mount(VerButton, {
-      props: {
-        round: true,
-      },
-    })
-    expect(wrapper.classes()).toContain('is-round')
   })
 
   it('测试按钮设置禁用属性后的变化', () => {

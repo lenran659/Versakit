@@ -9,20 +9,6 @@ describe('Radio 组件测试', () => {
     expect(wrapper.classes()).toContain('ver-radio')
   })
 
-  // 测试 v-model 绑定
-  // it('测试 v-model 绑定功能', async () => {
-  //   const wrapper = mount(VerRadio, {
-  //     props: {
-  //       modelValue: false,
-  //       'onUpdate:modelValue': (e: boolean) =>
-  //         wrapper.setProps({ modelValue: e }),
-  //     },
-  //   })
-
-  //   await wrapper.find('input[type="radio"]').setValue(true)
-  //   expect(wrapper.props('modelValue')).toBe(true)
-  // })
-
   // 测试禁用状态
   it('测试禁用状态', async () => {
     const wrapper = mount(VerRadio, {
