@@ -74,9 +74,6 @@ Please note that you need to adjust and supplement the above content according t
 ### Thanks to the Contributors for Their Efforts
 
 <a href="https://github.com/lenran659/Versakit/graphs/contributors">
- <img src="https://avatars.githubusercontent.com/u/74483049?s=400&u=102dfac48d0067d9d7a5576134e409590bbfaafe&v=4" width="64" height="64" style="border-radius:50%"  />
-  <img src="https://avatars.githubusercontent.com/u/131731035?v=4" width="64" height="64" style="border-radius:50%" />
-  <img src="https://avatars.githubusercontent.com/u/122306263?v=4" width="64" height="64" style="border-radius:50%" />
-  <img src="https://avatars.githubusercontent.com/u/180088207?v=4" width="64" height="64"  style="border-radius:50%" />
-  <img src="https://avatars.githubusercontent.com/u/120795714?v=4" width="64" height="64"  style="border-radius:50%" />
+  <img src="https://contrib.rocks/image?repo=lenran659/Versakit" />
 </a>
+
