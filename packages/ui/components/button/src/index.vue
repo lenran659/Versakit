@@ -1,28 +1,29 @@
 <template>
   <button
-    :class="Verclass"
+    :class="rootClasses"
+    :style="mergedStyles"
+    v-bind="otherAttrs"
     :disabled="props.disabled"
-    :size="props.size"
-    :color="props.color"
-    :variant="props.variant"
-    :style="computedStyles"
   >
-    <!-- icon -->
-    <ver-icon v-if="icon" :name="icon"></ver-icon>
-    <!-- common -->
-    <span v-else>
+    <ver-icon v-if="icon" :name="icon" :class="iconClasses"></ver-icon>
+
+    <span :class="labelClasses">
       <slot></slot>
     </span>
   </button>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, useAttrs } from 'vue'
+import type { StyleValue } from 'vue'
 import { VerIcon } from '../../icon/index'
 import type { ButtonProps } from '../type/index'
 import colors from '../../../utils/colors/colorMap'
 
-defineOptions({ name: 'VerButton' })
+defineOptions({
+  name: 'VerButton',
+  inheritAttrs: false,
+})
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   disabled: false,
@@ -31,37 +32,74 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   icon: '',
   variant: '',
   color: 'violet',
+  unstyled: false,
+  pt: () => ({}),
 })
 
-//ghost,round,plain,text,shade,circle,full
-const Verclass = computed(() => {
-  const variantList = props.variant.split(' ')
+const attrs = useAttrs()
+
+// 属性解构与类型断言
+const {
+  class: userClass = '',
+  style: userStyle = {} as StyleValue,
+  ...otherAttrs
+} = attrs as {
+  class?: string | unknown[]
+  style?: StyleValue
+  [key: string]: unknown
+}
+
+// 根节点类名计算
+const rootClasses = computed(() => {
+  if (props.unstyled) return props.pt.root || ''
+
+  const variantClasses = props.variant
+    .split(' ')
+    .filter(Boolean)
+    .map((v) => `is-${v}`)
+
   return [
-    'ver-btn',
-    props.color == '' ? '' : `ver-btn-${props.color}`,
-    ...variantList.map((val) => `is-${val}`),
-    props.circle == true ? 'is-circle' : '',
-    props.disabled == false ? '' : 'is-disabled',
-    props.size == 'md' ? '' : `is-${props.size}`,
-    `is-${props.color}`.toLowerCase(),
-  ]
+    props.pt.root || 'ver-btn',
+    props.color && `ver-btn-${props.color}`,
+    ...variantClasses,
+    props.circle && 'is-circle',
+    props.disabled && 'is-disabled',
+    props.size !== 'md' && `is-${props.size}`,
+    props.color && `is-${props.color.toLowerCase()}`,
+    userClass,
+  ].filter(Boolean) as string[]
 })
 
-const computedStyles = computed(() => {
-  const colorPrefix = `${props.color}-`
-  return {
-    '--color0': colors[`${colorPrefix}0`],
-    '--color1': colors[`${colorPrefix}1`],
-    '--color2': colors[`${colorPrefix}2`],
-    '--color3': colors[`${colorPrefix}3`],
-    '--color4': colors[`${colorPrefix}4`],
-    '--color5': colors[`${colorPrefix}5`],
-    '--color6': colors[`${colorPrefix}6`],
-    '--color7': colors[`${colorPrefix}7`],
-    '--color8': colors[`${colorPrefix}8`],
-    '--color9': colors[`${colorPrefix}9`],
-    '--color10': colors[`${colorPrefix}10`],
+// 图标类名计算
+const iconClasses = computed(() => {
+  if (props.unstyled) return props.pt.icon || ''
+  return [
+    props.pt.icon || 'ver-btn__icon',
+    props.color && `ver-btn__icon--${props.color}`,
+  ].filter(Boolean)
+})
+
+// 标签类名计算
+const labelClasses = computed(() => {
+  if (props.unstyled) return props.pt.label || ''
+  return props.pt.label || 'ver-btn__label'
+})
+
+// 合并样式计算
+const mergedStyles = computed<StyleValue>(() => {
+  if (props.unstyled) return userStyle
+
+  const colorStyles: Record<string, string> = {}
+  if (props.color) {
+    for (let i = 0; i <= 10; i++) {
+      const colorKey = `${props.color}-${i}`
+      if (colors[colorKey]) {
+        colorStyles[`--color${i}`] = colors[colorKey]
+      }
+    }
   }
+
+  return [colorStyles, userStyle] as StyleValue
 })
 </script>
 
