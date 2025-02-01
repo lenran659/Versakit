@@ -2,7 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import Versakit from '@versakit/ui'
 import '@versakit/ui/dist/style.css'
-// import { Element } from '@versakit/theme'
+import { Element } from '@versakit/theme'
+
+// import './style.css'
 
 const app = createApp(App)
 

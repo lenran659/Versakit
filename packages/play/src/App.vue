@@ -6,7 +6,7 @@ import { VKButton } from '@versakit/ui'
   <div>
     <VKButton>按钮</VKButton>
 
-    <VKButton unstyled :pt="{ root: 'btn' }">按钮</VKButton>
+    <VKButton unstyled>按钮</VKButton>
 
     <VKButton type="success">按钮</VKButton>
   </div>
