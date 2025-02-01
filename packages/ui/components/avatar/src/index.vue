@@ -78,4 +78,4 @@ const imgClass = computed(() => {
 })
 </script>
 
-<style lang="scss" src="../style/index.scss" scoped></style>
+<style src="../style/index.css" scoped></style>
