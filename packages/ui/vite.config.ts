@@ -1,4 +1,5 @@
 import vue from '@vitejs/plugin-vue'
+import path from 'path'
 // CSS工程化
 import autoprefixer from 'autoprefixer'
 import postCssPxToRem from 'postcss-pxtorem'
@@ -10,10 +11,19 @@ import cssnano from 'cssnano'
 // TS
 import dts from 'vite-plugin-dts'
 
+// 图标
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [vue(), dts({ tsconfigPath: '../../tsconfig.build.json' })],
+  plugins: [
+    vue(),
+    dts({ tsconfigPath: '../../tsconfig.build.json' }),
+    createSvgIconsPlugin({
+      iconDirs: [path.resolve(process.cwd(), './icons')],
+      symbolId: 'icon-[dir]-[name]',
+    }),
+  ],
   css: {
     preprocessorOptions: {
       scss: {

@@ -1,5 +1,23 @@
 :root {
+  /*  */
+  --ver-white: #ffffff;
+  --ver-black: #000000;
+
+  /* 主色调 */
   --ver-primary-color: #7c3aed;
   --ver-success-color: #22c55e;
-  --ver-error-color: red;
+  --ver-error-color: #ef4444;
+
+  /* 中性 */
+  --ver-zinc-50: #fafafa;
+  --ver-zinc-100: #f4f4f5;
+  --ver-zinc-200: #e4e4e7;
+  --ver-zinc-300: #d4d4d8;
+  --ver-zinc-400: #a1a1aa;
+  --ver-zinc-500: #71717a;
+  --ver-zinc-600: #52525b;
+  --ver-zinc-700: #3f3f46;
+  --ver-zinc-800: #27272a;
+  --ver-zinc-900: #18181b;
+  --ver-zinc-950: #09090b;
 }

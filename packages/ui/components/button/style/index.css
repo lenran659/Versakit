@@ -19,8 +19,18 @@
   border: none;
   transition: 0.1s;
 
-  &:active {
+  &:not(.is-disabled):active {
     transform: scale(0.9);
+  }
+
+  .dark & {
+    color: var(--theme-neutral-300, var(--ver-zinc-300));
+    background-color: var(--theme-neutral-800, var(--ver-zinc-800));
+  }
+
+  span {
+    display: inline-flex;
+    align-items: center;
   }
 }
 

@@ -1,0 +1,141 @@
+.ver-drawer-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 2001;
+  background-color: rgba(#000, 0.5);
+  .ver-drawer {
+    position: absolute;
+    width: 30%;
+    height: 100vh;
+    background-color: var(--theme-neutral-100, var(--ver-zinc-100));
+
+    .dark & {
+      background-color: var(--theme-neutral-800, var(--ver-zinc-800));
+    }
+
+    &_header {
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      padding-bottom: 10px;
+      color: var(--theme-neutral-500, var(--ver-zinc-500));
+
+      .dark & {
+        color: var(--theme-neutral-200, var(--ver-zinc-200));
+      }
+
+      .ver-drawer_title {
+        margin: 0;
+        line-height: inherit;
+        font-size: 1rem;
+      }
+      .ver-drawer_headerbtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+    &_body {
+      flex: 1;
+      height: calc(100% - 80px);
+      margin-left: 20px;
+      margin-right: 20px;
+
+      .dark & {
+        color: var(--theme-neutral-300, var(--ver-zinc-300));
+      }
+    }
+  }
+}
+
+.ver-drawer-left {
+  .ver-drawer {
+    animation: fade-left 0.3s;
+    left: 0;
+    width: 30%;
+    height: 100%;
+  }
+}
+
+.ver-drawer-right {
+  .ver-drawer {
+    animation: fade-right 0.3s;
+    right: 0;
+    width: 30%;
+    height: 100%;
+  }
+}
+
+.ver-drawer-top {
+  .ver-drawer {
+    animation: fade-top 0.3s;
+    top: 0;
+    width: 100%;
+    height: 30%;
+  }
+}
+
+.ver-drawer-bottom {
+  .ver-drawer {
+    animation: fade-bottom 0.3s;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
