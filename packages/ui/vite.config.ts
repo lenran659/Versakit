@@ -1,21 +1,14 @@
 import vue from '@vitejs/plugin-vue'
-import dts from 'vite-plugin-dts'
-import path from 'path'
+// CSS工程化
 import autoprefixer from 'autoprefixer'
 import postCssPxToRem from 'postcss-pxtorem'
+import postNested from 'postcss-nested'
 import cssnano from 'cssnano'
+
 import { defineConfig } from 'vite'
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineConfig({
-  plugins: [
-    dts({ tsconfigPath: '../../tsconfig.build.json' }),
-    vue(),
-    createSvgIconsPlugin({
-      iconDirs: [path.resolve(process.cwd(), './icons')],
-      symbolId: 'icon-[dir]-[name]',
-    }),
-  ],
+  plugins: [vue()],
   css: {
     preprocessorOptions: {
       scss: {
@@ -27,6 +20,7 @@ export default defineConfig({
         autoprefixer({
           overrideBrowserslist: ['Chrome > 40', 'ff > 31', 'ie 11'],
         }),
+        postNested(),
         postCssPxToRem({
           rootValue: 16,
           propList: ['*'],

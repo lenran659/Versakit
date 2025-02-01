@@ -28,11 +28,14 @@
     "dist/*"
   ],
   "scripts": {
-    "build": "run-p type-check \"build-only {@}\" --",
-    "build-only": "vite build",
+    "build-ts": "run-p type-check \"build-only {@}\" --",
+    "build": "vite build",
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
     "@versakit/ui": "file:"
+  },
+  "devDependencies": {
+    "postcss-nested": "^7.0.2"
   }
 }

@@ -1,28 +1,8 @@
-<template>
-  <button
-    :class="Verclass"
-    :disabled="props.disabled"
-    :size="props.size"
-    :color="props.color"
-    :variant="props.variant"
-    :style="computedStyles"
-  >
-    <!-- icon -->
-    <ver-icon v-if="icon" :name="icon"></ver-icon>
-    <!-- common -->
-    <span v-else>
-      <slot></slot>
-    </span>
-  </button>
-</template>
-
 <script setup lang="ts">
-import { computed } from 'vue'
-import { VerIcon } from '../../icon/index'
-import type { ButtonProps } from '../type/index'
-import colors from '../../../utils/colors/colorMap'
+import { computed, useAttrs } from 'vue'
+import type { ButtonProps, BtnPassThroughOptions } from '../type/index'
 
-defineOptions({ name: 'VerButton' })
+defineOptions({ name: 'VKButton' })
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   disabled: false,
@@ -30,39 +10,57 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   size: 'md',
   icon: '',
   variant: '',
-  color: 'violet',
+  type: 'primary',
+  unstyled: false,
+  pt: () => ({}) as BtnPassThroughOptions,
 })
 
-//ghost,round,plain,text,shade,circle,full
-const Verclass = computed(() => {
-  const variantList = props.variant.split(' ')
+const attrs = useAttrs()
+
+// 计算样式类
+const baseClass = computed(() => {
+  if (props.unstyled) return []
+
+  const variantClasses = props.variant
+    .split(' ')
+    .filter(Boolean)
+    .map((v) => `is-${v}`)
+
   return [
-    'ver-btn',
-    props.color == '' ? '' : `ver-btn-${props.color}`,
-    ...variantList.map((val) => `is-${val}`),
-    props.circle == true ? 'is-circle' : '',
-    props.disabled == false ? '' : 'is-disabled',
-    props.size == 'md' ? '' : `is-${props.size}`,
-    `is-${props.color}`.toLowerCase(),
-  ]
+    'vk-btn',
+    props.type === 'primary' ? 'vk-btn-primary' : `vk-btn-${props.type}`,
+    ...variantClasses,
+    props.circle && 'is-circle',
+    props.disabled && 'is-disabled',
+    props.size !== 'md' && `is-${props.size}`,
+  ].filter(Boolean)
 })
 
-const computedStyles = computed(() => {
-  const colorPrefix = `${props.color}-`
-  return {
-    '--color0': colors[`${colorPrefix}0`],
-    '--color1': colors[`${colorPrefix}1`],
-    '--color2': colors[`${colorPrefix}2`],
-    '--color3': colors[`${colorPrefix}3`],
-    '--color4': colors[`${colorPrefix}4`],
-    '--color5': colors[`${colorPrefix}5`],
-    '--color6': colors[`${colorPrefix}6`],
-    '--color7': colors[`${colorPrefix}7`],
-    '--color8': colors[`${colorPrefix}8`],
-    '--color9': colors[`${colorPrefix}9`],
-    '--color10': colors[`${colorPrefix}10`],
-  }
-})
+// 合并根元素属性
+const rootAttrs = computed(() => ({
+  ...attrs,
+  class: [baseClass.value.join(' '), attrs.class, props.pt.root]
+    .filter(Boolean)
+    .join(' '),
+  disabled: props.disabled || undefined,
+}))
 </script>
 
-<style src="../style/index.scss" lang="scss" scoped></style>
+<template>
+  <button v-bind="rootAttrs">
+    <!-- Icon slot -->
+    <span v-if="$slots.icon" v-bind="props.pt.icon">
+      <slot name="icon" />
+    </span>
+
+    <!-- Icon prop -->
+    <i v-else-if="props.icon" :class="props.icon" v-bind="props.pt.icon" />
+
+    <!-- Label -->
+    <span v-bind="props.pt.label">
+      <slot></slot>
+    </span>
+  </button>
+</template>
+
+<style src="../style/index.css" lang="css" scoped></style>

@@ -5,7 +5,7 @@
     "components/**/*",
     "components/**/*.vue",
     "directives/**/*",
-    "utils/**/*",
+    "utils/**/*"
   ],
   "exclude": ["components/**/__tests__/*"],
   "compilerOptions": {

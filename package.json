@@ -7,10 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "cli:build": "pnpm --filter cli build",
-    "docs:build": "pnpm --filter docs docs:build",
-    "docs:dev": "pnpm --filter docs docs:dev",
-    "docs:preview": "pnpm --filter docs docs:preview",
+    "play:dev": "pnpm --filter play dev",
     "ui:build": "pnpm --filter ui build",
     "test": "vitest",
     "test:ui": "vitest --ui",
@@ -36,7 +33,6 @@
   "dependencies": {
     "@types/vue": "^2.0.0",
     "eslint": "8",
-    "sass": "^1.83.0",
     "versakit-monorepo": "file:",
     "vue": "^3.5.12"
   },
