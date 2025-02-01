@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { VKButton } from '@versakit/ui'
+import { VerButton } from '@versakit/ui'
 </script>
 
 <template>
   <div>
-    <VKButton>按钮</VKButton>
+    <VerButton>按钮</VerButton>
 
-    <VKButton unstyled>按钮</VKButton>
+    <VerButton type="success" unstyled>按钮</VerButton>
 
-    <VKButton type="success">按钮</VKButton>
+    <VerButton type="error">按钮</VerButton>
   </div>
 </template>
 

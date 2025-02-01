@@ -4,12 +4,16 @@ import autoprefixer from 'autoprefixer'
 import postCssPxToRem from 'postcss-pxtorem'
 import postNested from 'postcss-nested'
 import mixins from 'postcss-mixins'
+import each from 'postcss-each'
+import eachVariables from 'postcss-each-variables'
 import cssnano from 'cssnano'
+// TS
+import dts from 'vite-plugin-dts'
 
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), dts({ tsconfigPath: '../../tsconfig.build.json' })],
   css: {
     preprocessorOptions: {
       scss: {
@@ -18,6 +22,8 @@ export default defineConfig({
     },
     postcss: {
       plugins: [
+        each(),
+        eachVariables(),
         autoprefixer({
           overrideBrowserslist: ['Chrome > 40', 'ff > 31', 'ie 11'],
         }),

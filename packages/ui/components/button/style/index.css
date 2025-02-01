@@ -1,4 +1,4 @@
-.vk-btn {
+.ver-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +24,9 @@
   }
 }
 
-.vk-btn-primary {
-  color: var(--utils-text-white, #fff);
-  background-color: var(--theme-primary-500, #8b5cf6);
-}
-
-.vk-btn-success {
-  color: var(--utils-text-white, #fff);
-  background-color: var(--theme-success-500, #22c55e);
+@each $item in primary, success, warn, info, error {
+  .ver-btn-$(item) {
+    color: var(--utils-text-white, #fff);
+    background-color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+  }
 }

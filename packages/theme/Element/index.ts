@@ -3,14 +3,14 @@ export const Element = {
   theme: {
     primary: {
       50: '#e0f2fe',
-      500: '#3b82f6',
+      500: '#409EFF',
       600: '#2563eb',
     },
+    success: {
+      500: '#67C23A',
+    },
+    error: {
+      500: '#F56C6C',
+    },
   },
-  size: {
-    sm: '0.5rem',
-    md: '1rem',
-    lg: '2rem',
-  },
-  borderRadius: '0.375rem',
 }

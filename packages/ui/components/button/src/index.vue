@@ -2,7 +2,7 @@
 import { computed, useAttrs } from 'vue'
 import type { ButtonProps, BtnPassThroughOptions } from '../type/index'
 
-defineOptions({ name: 'VKButton' })
+defineOptions({ name: 'VerButton' })
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   disabled: false,
@@ -27,8 +27,8 @@ const baseClass = computed(() => {
     .map((v) => `is-${v}`)
 
   return [
-    'vk-btn',
-    props.type === 'primary' ? 'vk-btn-primary' : `vk-btn-${props.type}`,
+    'ver-btn',
+    props.type === 'primary' ? 'ver-btn-primary' : `ver-btn-${props.type}`,
     ...variantClasses,
     props.circle && 'is-circle',
     props.disabled && 'is-disabled',

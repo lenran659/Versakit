@@ -169,9 +169,6 @@ importers:
       postcss-each-variables:
         specifier: ^0.3.0
         version: 0.3.0
-      postcss-for:
-        specifier: ^2.1.1
-        version: 2.1.1
       postcss-mixins:
         specifier: ^11.0.3
         version: 11.0.3(postcss@8.4.49)
@@ -3242,9 +3239,6 @@ packages:
     peerDependencies:
       postcss: ^8.0.0
 
-  postcss-for@2.1.1:
-    resolution: {integrity: sha512-X0R84FCyr5cqzW4+/g4Dvz2OUe1iwC3G/atIrwEpiRstZlBBpknV+ETlIneSTnw/iXgUnEoTRaO2qXY62YWLhQ==}
-
   postcss-js@4.0.1:
     resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
     engines: {node: ^12 || ^14 || >= 16}
@@ -3388,9 +3382,6 @@ packages:
   postcss-selector-parser@7.0.0:
     resolution: {integrity: sha512-9RbEr1Y7FFfptd/1eEdntyjMwLeghW1bHX9GWjXo19vx4ytPQhANltvVxDggzJl7mnWM+dX28kb6cyS/4iQjlQ==}
     engines: {node: '>=4'}
-
-  postcss-simple-vars@2.0.0:
-    resolution: {integrity: sha512-HllLaKKCBOdKudyzqrw/ve5rWouM9cDL+WHaSF9q4CkBEPjdTdiKNw1xF2dAz5rUKrxVmnUmOYxamwy37dnq2Q==}
 
   postcss-simple-vars@6.0.3:
     resolution: {integrity: sha512-fkNn4Zio8vN4vIig9IFdb8lVlxWnYR769RgvxCM6YWlFKie/nQaOcaMMMFz/s4gsfHW4/5bJW+i57zD67mQU7g==}
@@ -7447,11 +7438,6 @@ snapshots:
       postcss: 8.4.49
       postcss-simple-vars: 6.0.3(postcss@8.4.49)
 
-  postcss-for@2.1.1:
-    dependencies:
-      postcss: 5.2.18
-      postcss-simple-vars: 2.0.0
-
   postcss-js@4.0.1(postcss@8.4.49):
     dependencies:
       camelcase-css: 2.0.1
@@ -7588,10 +7574,6 @@ snapshots:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-
-  postcss-simple-vars@2.0.0:
-    dependencies:
-      postcss: 5.2.18
 
   postcss-simple-vars@6.0.3(postcss@8.4.49):
     dependencies:
