@@ -1,10 +1,10 @@
 import type { App, Component } from 'vue'
 import { installTheme } from './core/theme'
-import { VKButton } from './components/button/index'
+import { VButton } from './components/button/index'
 
-const components: Component[] = [VKButton]
+const components: Component[] = [VButton]
 
-export { VKButton }
+export { VButton }
 
 const Versakit = {
   install: (app: App, options?: any) => {
