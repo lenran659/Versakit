@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import autoprefixer from 'autoprefixer'
 import postCssPxToRem from 'postcss-pxtorem'
 import postNested from 'postcss-nested'
+import mixins from 'postcss-mixins'
 import cssnano from 'cssnano'
 
 import { defineConfig } from 'vite'
@@ -20,6 +21,7 @@ export default defineConfig({
         autoprefixer({
           overrideBrowserslist: ['Chrome > 40', 'ff > 31', 'ie 11'],
         }),
+        mixins(),
         postNested(),
         postCssPxToRem({
           rootValue: 16,

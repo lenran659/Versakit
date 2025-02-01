@@ -160,6 +160,12 @@ importers:
         specifier: 'file:'
         version: 'link:'
     devDependencies:
+      '@types/postcss-mixins':
+        specifier: ^9.0.6
+        version: 9.0.6
+      postcss-mixins:
+        specifier: ^11.0.3
+        version: 11.0.3(postcss@8.4.49)
       postcss-nested:
         specifier: ^7.0.2
         version: 7.0.2(postcss@8.4.49)
@@ -1023,6 +1029,9 @@ packages:
   '@types/node@22.10.1':
     resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
 
+  '@types/postcss-mixins@9.0.6':
+    resolution: {integrity: sha512-AyFHDblvvsiyHyjZQYgFSX/mPKnfKflOQD4Xm20qynAicmUX7sXp1cs4wa3rlcvO8ORE4OlkWML3aFgqWbxarA==}
+
   '@types/postcss-pxtorem@6.1.0':
     resolution: {integrity: sha512-kHsYTjQgllOfhi3J+xunjMKUZ3APARV/JYeOOcIVLhvPVS162S8Ir8LsZwioFFyYCSnQp+aisupiSaRWVwKyDA==}
 
@@ -1441,6 +1450,10 @@ packages:
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
+
+  camelcase-css@2.0.1:
+    resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
+    engines: {node: '>= 6'}
 
   caniuse-api@3.0.0:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
@@ -3193,6 +3206,12 @@ packages:
     peerDependencies:
       postcss: ^8.4.31
 
+  postcss-js@4.0.1:
+    resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
+    engines: {node: ^12 || ^14 || >= 16}
+    peerDependencies:
+      postcss: ^8.4.21
+
   postcss-merge-longhand@7.0.4:
     resolution: {integrity: sha512-zer1KoZA54Q8RVHKOY5vMke0cCdNxMP3KBfDerjH/BYHh4nCIh+1Yy0t1pAEQF18ac/4z3OFclO+ZVH8azjR4A==}
     engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
@@ -3228,6 +3247,12 @@ packages:
     engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
+
+  postcss-mixins@11.0.3:
+    resolution: {integrity: sha512-HZa6DHlN7uCkp7GTFNvhpyK/Gi9+vrVG7FPl2oQdj+sXUuYo4ri9OsWBseTnvnLfWxRWOq8/VwcHcixtZPrRRg==}
+    engines: {node: ^18.0 || ^ 20.0 || >= 22.0}
+    peerDependencies:
+      postcss: ^8.2.14
 
   postcss-nested@7.0.2:
     resolution: {integrity: sha512-5osppouFc0VR9/VYzYxO03VaDa3e8F23Kfd6/9qcZTUI8P58GIYlArOET2Wq0ywSl2o2PjELhYOFI4W7l5QHKw==}
@@ -3324,6 +3349,12 @@ packages:
   postcss-selector-parser@7.0.0:
     resolution: {integrity: sha512-9RbEr1Y7FFfptd/1eEdntyjMwLeghW1bHX9GWjXo19vx4ytPQhANltvVxDggzJl7mnWM+dX28kb6cyS/4iQjlQ==}
     engines: {node: '>=4'}
+
+  postcss-simple-vars@7.0.1:
+    resolution: {integrity: sha512-5GLLXaS8qmzHMOjVxqkk1TZPf1jMqesiI7qLhnlyERalG0sMbHIbJqrcnrpmZdKCLglHnRHoEBB61RtGTsj++A==}
+    engines: {node: '>=14.0'}
+    peerDependencies:
+      postcss: ^8.2.1
 
   postcss-svgo@7.0.1:
     resolution: {integrity: sha512-0WBUlSL4lhD9rA5k1e5D8EN5wCEyZD6HJk0jIvRxl+FDVOMlJ7DePHYWGGVc5QRqrJ3/06FTXM0bxjmJpmTPSA==}
@@ -4922,6 +4953,10 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
+  '@types/postcss-mixins@9.0.6':
+    dependencies:
+      postcss: 8.4.49
+
   '@types/postcss-pxtorem@6.1.0':
     dependencies:
       postcss: 8.4.49
@@ -5451,6 +5486,8 @@ snapshots:
       set-function-length: 1.2.2
 
   callsites@3.1.0: {}
+
+  camelcase-css@2.0.1: {}
 
   caniuse-api@3.0.0:
     dependencies:
@@ -7323,6 +7360,11 @@ snapshots:
     dependencies:
       postcss: 8.4.49
 
+  postcss-js@4.0.1(postcss@8.4.49):
+    dependencies:
+      camelcase-css: 2.0.1
+      postcss: 8.4.49
+
   postcss-merge-longhand@7.0.4(postcss@8.4.49):
     dependencies:
       postcss: 8.4.49
@@ -7361,6 +7403,14 @@ snapshots:
       cssesc: 3.0.0
       postcss: 8.4.49
       postcss-selector-parser: 6.1.2
+
+  postcss-mixins@11.0.3(postcss@8.4.49):
+    dependencies:
+      postcss: 8.4.49
+      postcss-js: 4.0.1(postcss@8.4.49)
+      postcss-simple-vars: 7.0.1(postcss@8.4.49)
+      sugarss: 4.0.1(postcss@8.4.49)
+      tinyglobby: 0.2.10
 
   postcss-nested@7.0.2(postcss@8.4.49):
     dependencies:
@@ -7446,6 +7496,10 @@ snapshots:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
+
+  postcss-simple-vars@7.0.1(postcss@8.4.49):
+    dependencies:
+      postcss: 8.4.49
 
   postcss-svgo@7.0.1(postcss@8.4.49):
     dependencies:
@@ -7850,7 +7904,6 @@ snapshots:
   sugarss@4.0.1(postcss@8.4.49):
     dependencies:
       postcss: 8.4.49
-    optional: true
 
   supports-color@2.0.0: {}
 

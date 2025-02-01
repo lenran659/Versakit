@@ -36,6 +36,8 @@
     "@versakit/ui": "file:"
   },
   "devDependencies": {
+    "@types/postcss-mixins": "^9.0.6",
+    "postcss-mixins": "^11.0.3",
     "postcss-nested": "^7.0.2"
   }
 }
