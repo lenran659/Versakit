@@ -66,15 +66,15 @@
 .ver-radio.is-checked {
   .ver-radio_input {
     .ver-radio_inner {
-      border-color: var(--theme-primary-500, var(--ver-primary-500));
-      background-color: var(--theme-primary-500, var(--ver-primary-500));
+      border-color: var(--theme-primary-500, var(--ver-primary-color));
+      background-color: var(--theme-primary-500, var(--ver-primary-color));
       &:after {
         transform: translate(-50%, -50%) scale(1);
       }
     }
   }
   .ver-radio_label {
-    color: var(--theme-primary-500, var(--ver-primary-500));
+    color: var(--theme-primary-500, var(--ver-primary-color));
   }
 }
 

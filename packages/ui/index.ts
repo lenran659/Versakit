@@ -121,8 +121,18 @@ export {
   VerTable,
 }
 
+// 定义 ThemeOptions 类型
+type ThemeOptions = {
+  preset: any // 由于不清楚 Element 的具体类型，暂时使用 any
+}
+
+// 定义 VersakitOptions 类型
+type VersakitOptions = {
+  theme?: ThemeOptions
+}
+
 const Versakit = {
-  install: (app: App, options?: any) => {
+  install: (app: App, options?: VersakitOptions) => {
     for (const c in components) {
       app.component(components[c]?.name || c, components[c])
     }

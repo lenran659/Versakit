@@ -20,10 +20,10 @@
     &:focus,
     &:active,
     &:focus-visible {
-      border: 1px solid var(--theme-primary-500, var(--ver-primary-500));
+      border: 1px solid var(--theme-primary-500, var(--ver-primary-color));
     }
     &:focus-visible {
-      border: 1px solid var(--theme-primary-500, var(--ver-primary-500));
+      border: 1px solid var(--theme-primary-500, var(--ver-primary-color));
     }
 
     .dark & {
@@ -33,10 +33,10 @@
       &:focus,
       &:active,
       &:focus-visible {
-        border: 1px solid var(--theme-primary-500, var(--ver-primary-500));
+        border: 1px solid var(--theme-primary-500, var(--ver-primary-color));
       }
       &:focus-visible {
-        border: 1px solid var(--theme-primary-500, var(--ver-primary-500));
+        border: 1px solid var(--theme-primary-500, var(--ver-primary-color));
       }
     }
   }

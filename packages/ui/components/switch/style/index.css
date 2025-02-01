@@ -42,8 +42,8 @@
 
 .is-checked {
   .ver-switch-core {
-    border-color: var(--theme-primary-500, var(--ver-primary-500));
-    background-color: var(--theme-primary-500, var(--ver-primary-500));
+    border-color: var(--theme-primary-500, var(--ver-primary-color));
+    background-color: var(--theme-primary-500, var(--ver-primary-color));
     .ver-switch-button {
       transform: translateX(100%);
     }
