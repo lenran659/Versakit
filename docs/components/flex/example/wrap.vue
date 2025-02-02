@@ -11,6 +11,6 @@ import { VerFlex } from '@versakit/ui'
 .flex-item {
   width: 80px;
   height: 40px;
-  background-color: #c4b5fd;
+  background-color: var(--theme-primary-500, var(--ver-primary-500));
 }
 </style>

@@ -29,8 +29,8 @@
 @each $item in primary, success, warn, info, error {
   .ver-tag-$(item) {
     color: var(--theme-neutral-100, var(--ver-neutral-100));
-    background-color: var(--theme-$(item)-600, var(--ver-$(item)-600));
     border-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
+    background-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
   }
 
   .ver-tag-$(item).is-plain {

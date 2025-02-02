@@ -33,13 +33,13 @@ const alignOptions = [
 .flex-container {
   height: 150px;
   border-radius: 5px;
-  border: 1px solid #c4b5fd;
+  border: 1px dotted var(--theme-primary-500, var(--ver-primary-500));
   margin-top: 15px;
 }
 
 .flex-item {
   width: 80px;
   height: 40px;
-  background-color: #c4b5fd;
+  background-color: var(--theme-primary-500, var(--ver-primary-500));
 }
 </style>

@@ -46,8 +46,8 @@
     border: 1.5px solid var(--theme-$(item)-500, var(--ver-$(item)-500));
 
     &:not(.is-disabled):hover {
-      background-color: var(--theme-$(item)-600, var(--ver-$(item)-500));
-      border-color: var(--theme-$(item)-600, var(--ver-$(item)-500));
+      background-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
+      border-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
     }
 
     .dark & {

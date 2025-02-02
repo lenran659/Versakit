@@ -15,7 +15,7 @@ export default {
 
     app.use(Versakit, {
       theme: {
-        preset: Element,
+        preset: Layui,
       },
     })
   },
