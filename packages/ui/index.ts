@@ -6,7 +6,7 @@ import { VerButton } from './components/button/index'
 import { VerText } from './components/text/index'
 import { VerLink } from './components/link/index'
 import { VerRow } from './components/row/index'
-// import { VerCol } from './components/col/index'
+import { VerCol } from './components/col/index'
 import { VerInput } from './components/input/index'
 import { VerDialog } from './components/dialog/index'
 import { VerDivider } from './components/divider/index'
@@ -51,6 +51,7 @@ import './style/index.css'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerCol,
   VerTag,
   VerNotification,
   VerMessage,
@@ -92,6 +93,7 @@ const components: Component[] = [
   VerTable,
 ]
 export {
+  VerCol,
   VerTag,
   VerNotification,
   VerMessage,

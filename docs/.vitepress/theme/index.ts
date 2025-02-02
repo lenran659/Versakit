@@ -12,6 +12,7 @@ export default {
   Layout: MyLayout,
   enhanceApp({ app }) {
     app.component('Tool', Tool)
+
     app.use(Versakit) // 注册组件库
   },
 }

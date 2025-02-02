@@ -7,6 +7,7 @@ import postNested from 'postcss-nested'
 import mixins from 'postcss-mixins'
 import each from 'postcss-each'
 import eachVariables from 'postcss-each-variables'
+import conditionals from 'postcss-conditionals'
 import cssnano from 'cssnano'
 // TS
 import dts from 'vite-plugin-dts'
@@ -32,6 +33,7 @@ export default defineConfig({
     },
     postcss: {
       plugins: [
+        conditionals(),
         each(),
         eachVariables(),
         autoprefixer({
