@@ -11,62 +11,50 @@
   padding: 0;
   font-size: 14px;
   font-weight: 500;
-  color: var(--theme-neutral-500, var(--ver-zinc-500));
+  color: var(--theme-neutral-500, var(--ver-neutral-500));
   transition: 0.1s;
 
   .dark & {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
   }
 
   &:hover {
-    border-bottom: 1px solid var(--theme-neutral-500, var(--ver-zinc-500));
+    border-bottom: 1px solid var(--theme-neutral-500, var(--ver-neutral-500));
   }
 }
 
 @each $item in primary, success, warn, info, error {
   .ver-link-$(item) {
-    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    color: var(--theme-$(item)-500, var(--ver-$(item)-500));
     &:hover {
-      color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+      color: var(--theme-$(item)-600, var(--ver-$(item)-600));
     }
     .dark & {
-      color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+      color: var(--theme-$(item)-500, var(--ver-$(item)-500));
       &:hover {
-        color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+        color: var(--theme-$(item)-600, var(--ver-$(item)-600));
       }
     }
     &:hover {
-      border-bottom: 1px solidvar(--theme-$(item)-500, var(--ver-$(item)-color));
+      border-bottom: 1px solidvar(--theme-$(item)-500, var(--ver-$(item)-500));
     }
   }
 
   .ver-link-$(item).is-disabled {
-    color: var(--theme-$(item)-700, var(--ver-$(item)-color));
+    color: var(--theme-$(item)-700, var(--ver-$(item)-700));
     .dark & {
-      color: var(--theme-$(item)-700, var(--ver-$(item)-color));
+      color: var(--theme-$(item)-700, var(--ver-$(item)-700));
     }
   }
 }
 
-@include ver-link-type('primary', $ver-violet-5, $ver-violet-6);
-@include ver-link-type('success', $ver-green-5, $ver-green-6);
-@include ver-link-type('info', $ver-zinc-5, $ver-zinc-6);
-@include ver-link-type('warning', $ver-orange-5, $ver-orange-6);
-@include ver-link-type('error', $ver-red-5, $ver-red-6);
-
-@include ver-link-disabled('primary', $ver-violet-7);
-@include ver-link-disabled('success', $ver-green-7);
-@include ver-link-disabled('info', $ver-zinc-7);
-@include ver-link-disabled('warning', $ver-orange-7);
-@include ver-link-disabled('error', $ver-red-7);
-
 /* 禁用状态 */
 .ver-link.is-disabled {
   cursor: not-allowed;
-  color: var(--theme-neutral-500, var(--ver-zinc-500));
+  color: var(--theme-neutral-500, var(--ver-neutral-500));
   text-decoration: none;
 
   .dark & {
-    color: var(--theme-neutral-400, var(--ver-zinc-400));
+    color: var(--theme-neutral-400, var(--ver-neutral-400));
   }
 }

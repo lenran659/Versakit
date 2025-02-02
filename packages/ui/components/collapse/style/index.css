@@ -2,10 +2,10 @@
 
 .ver-collapse {
   font-size: 13px;
-  border-top: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
-  border-bottom: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+  border-top: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
+  border-bottom: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
 
   .dark & {
-    border-color: var(--theme-neutral-200, var(--ver-zinc-200));
+    border-color: var(--theme-neutral-200, var(--ver-neutral-200));
   }
 }

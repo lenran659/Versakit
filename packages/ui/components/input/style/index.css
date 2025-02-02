@@ -29,8 +29,8 @@ input {
   }
 
   .dark & {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
-    border-color: var(--theme-neutral-600, var(--ver-zinc-600));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
+    border-color: var(--theme-neutral-600, var(--ver-neutral-600));
 
     &:hover,
     &:focus {
@@ -41,17 +41,17 @@ input {
 
 .ver-input.is-disabled {
   cursor: not-allowed;
-  color: var(--theme-neutral-600, var(--ver-zinc-600));
-  background-color: var(--theme-neutral-100, var(--ver-zinc-100));
-  border: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+  color: var(--theme-neutral-600, var(--ver-neutral-600));
+  background-color: var(--theme-neutral-100, var(--ver-neutral-100));
+  border: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
 
   input {
     cursor: not-allowed;
   }
 
   .dark & {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
-    background-color: var(--theme-neutral-800, var(--ver-zinc-800));
-    border: 1px solid var(--theme-neutral-600, var(--ver-zinc-600));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
+    background-color: var(--theme-neutral-800, var(--ver-neutral-800));
+    border: 1px solid var(--theme-neutral-600, var(--ver-neutral-600));
   }
 }

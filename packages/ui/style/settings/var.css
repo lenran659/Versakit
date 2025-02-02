@@ -1,16 +1,61 @@
 :root {
-  /*  */
+  /* 基础色 */
   --ver-white: #ffffff;
   --ver-black: #000000;
 
-  /* 主色调 */
-  --ver-primary-color: #7c3aed;
-  --ver-success-color: #22c55e;
-  --ver-error-color: #ef4444;
-  --ver-warn-color: #f97316;
-  --ver-info-color: #71717a;
+  /* 紫罗兰 */
+  --ver-violet-50: #f5f3ff;
+  --ver-violet-100: #ede9fe;
+  --ver-violet-200: #ddd6fe;
+  --ver-violet-300: #c4b5fd;
+  --ver-violet-400: #a78bfa;
+  --ver-violet-500: #8b5cf6;
+  --ver-violet-600: #7c3aed;
+  --ver-violet-700: #6d28d9;
+  --ver-violet-800: #5b21b6;
+  --ver-violet-900: #581c87;
+  --ver-violet-950: #2e1065;
 
-  /* 中性 */
+  /* 绿色 */
+  --ver-green-50: #f0fdf4;
+  --ver-green-100: #dcfce7;
+  --ver-green-200: #bbf7d0;
+  --ver-green-300: #86efac;
+  --ver-green-400: #4ade80;
+  --ver-green-500: #22c55e;
+  --ver-green-600: #16a34a;
+  --ver-green-700: #15803d;
+  --ver-green-800: #166534;
+  --ver-green-900: #14532d;
+  --ver-green-950: #052e16;
+
+  /* 红色 */
+  --ver-red-50: #fef2f2;
+  --ver-red-100: #fecaca;
+  --ver-red-200: #fca5a5;
+  --ver-red-300: #f87171;
+  --ver-red-400: #ef4444;
+  --ver-red-500: #dc2626;
+  --ver-red-600: #b91c1c;
+  --ver-red-700: #991b1b;
+  --ver-red-800: #7f1d1d;
+  --ver-red-900: #7f1d1d;
+  --ver-red-950: #7f1d1d;
+
+  /* 橙色 */
+  --ver-orange-50: #fff7ed;
+  --ver-orange-100: #ffedd5;
+  --ver-orange-200: #fed7aa;
+  --ver-orange-300: #fdba74;
+  --ver-orange-400: #fb923c;
+  --ver-orange-500: #f97316;
+  --ver-orange-600: #ea580c;
+  --ver-orange-700: #8b4c1a;
+  --ver-orange-800: #7c3a16;
+  --ver-orange-900: #7c3a16;
+  --ver-orange-950: #7c3a16;
+
+  /* 锌色 */
   --ver-zinc-50: #fafafa;
   --ver-zinc-100: #f4f4f5;
   --ver-zinc-200: #e4e4e7;
@@ -22,4 +67,83 @@
   --ver-zinc-800: #27272a;
   --ver-zinc-900: #18181b;
   --ver-zinc-950: #09090b;
+
+  /* 主题色 */
+
+  --ver-primary-50: var(--ver-violet-50);
+  --ver-primary-100: var(--ver-violet-100);
+  --ver-primary-200: var(--ver-violet-200);
+  --ver-primary-300: var(--ver-violet-300);
+  --ver-primary-400: var(--ver-violet-400);
+  --ver-primary-500: var(--ver-violet-500);
+  --ver-primary-600: var(--ver-violet-600);
+  --ver-primary-700: var(--ver-violet-700);
+  --ver-primary-800: var(--ver-violet-800);
+  --ver-primary-900: var(--ver-violet-900);
+  --ver-primary-950: var(--ver-violet-950);
+
+  /* Success 颜色系列 */
+  --ver-success-50: var(--ver-green-50);
+  --ver-success-100: var(--ver-green-100);
+  --ver-success-200: var(--ver-green-200);
+  --ver-success-300: var(--ver-green-300);
+  --ver-success-400: var(--ver-green-400);
+  --ver-success-500: var(--ver-green-500);
+  --ver-success-600: var(--ver-green-600);
+  --ver-success-700: var(--ver-green-700);
+  --ver-success-800: var(--ver-green-800);
+  --ver-success-900: var(--ver-green-900);
+  --ver-success-950: var(--ver-green-950);
+
+  /* Error 颜色系列 */
+  --ver-error-50: var(--ver-red-50);
+  --ver-error-100: var(--ver-red-100);
+  --ver-error-200: var(--ver-red-200);
+  --ver-error-300: var(--ver-red-300);
+  --ver-error-400: var(--ver-red-400);
+  --ver-error-500: var(--ver-red-500);
+  --ver-error-600: var(--ver-red-600);
+  --ver-error-700: var(--ver-red-700);
+  --ver-error-800: var(--ver-red-800);
+  --ver-error-900: var(--ver-red-900);
+  --ver-error-950: var(--ver-red-950);
+
+  /* Warn 颜色系列 */
+  --ver-warn-50: var(--ver-orange-50);
+  --ver-warn-100: var(--ver-orange-100);
+  --ver-warn-200: var(--ver-orange-200);
+  --ver-warn-300: var(--ver-orange-300);
+  --ver-warn-400: var(--ver-orange-400);
+  --ver-warn-500: var(--ver-orange-500);
+  --ver-warn-600: var(--ver-orange-600);
+  --ver-warn-700: var(--ver-orange-700);
+  --ver-warn-800: var(--ver-orange-800);
+  --ver-warn-900: var(--ver-orange-900);
+  --ver-warn-950: var(--ver-orange-950);
+
+  /* Info 颜色系列 */
+  --ver-info-50: var(--ver-zinc-50);
+  --ver-info-100: var(--ver-zinc-100);
+  --ver-info-200: var(--ver-zinc-200);
+  --ver-info-300: var(--ver-zinc-300);
+  --ver-info-400: var(--ver-zinc-400);
+  --ver-info-500: var(--ver-zinc-500);
+  --ver-info-600: var(--ver-zinc-600);
+  --ver-info-700: var(--ver-zinc-700);
+  --ver-info-800: var(--ver-zinc-800);
+  --ver-info-900: var(--ver-zinc-900);
+  --ver-info-950: var(--ver-zinc-950);
+
+  /* 中性色 */
+  --ver-neutral-50: var(--ver-zinc-50);
+  --ver-neutral-100: var(--ver-zinc-100);
+  --ver-neutral-200: var(--ver-zinc-200);
+  --ver-neutral-300: var(--ver-zinc-300);
+  --ver-neutral-400: var(--ver-zinc-400);
+  --ver-neutral-500: var(--ver-zinc-500);
+  --ver-neutral-600: var(--ver-zinc-600);
+  --ver-neutral-700: var(--ver-zinc-700);
+  --ver-neutral-800: var(--ver-zinc-800);
+  --ver-neutral-900: var(--ver-zinc-900);
+  --ver-neutral-950: var(--ver-zinc-950);
 }

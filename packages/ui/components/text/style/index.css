@@ -6,7 +6,7 @@
   word-break: break-all;
 
   .dark & {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
   }
 }
 
@@ -20,10 +20,10 @@
 
 @each $item in primary, success, warn, info, error {
   .ver-text-$(item) {
-    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    color: var(--theme-$(item)-500, var(--ver-$(item)-500));
 
     .dark & {
-      color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+      color: var(--theme-$(item)-500, var(--ver-$(item)-500));
     }
   }
 }

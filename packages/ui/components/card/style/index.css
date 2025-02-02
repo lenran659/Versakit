@@ -5,9 +5,9 @@
   transition: 0.3s;
 
   .dark & {
-    color: var(--theme-neutral-50, var(--ver-zinc-100));
-    background-color: var(--theme-neutral-900, var(--ver-zinc-900));
-    border-color: var(--theme-neutral-600, var(--ver-zinc-600));
+    color: var(--theme-neutral-50, var(--ver-neutral-100));
+    background-color: var(--theme-neutral-900, var(--ver-neutral-900));
+    border-color: var(--theme-neutral-600, var(--ver-neutral-600));
   }
 }
 
@@ -15,11 +15,11 @@
   height: 42px;
   line-height: 42px;
   padding: 0 15px;
-  border-bottom: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+  border-bottom: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
   font-size: 14px;
 
   .dark & {
-    border-color: var(--theme-neutral-700, var(--ver-zinc-700));
+    border-color: var(--theme-neutral-700, var(--ver-neutral-700));
   }
 }
 
@@ -32,10 +32,10 @@
   height: 42px;
   line-height: 42px;
   padding: 0 15px;
-  border-top: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+  border-top: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
   font-size: 14px;
   .dark & {
-    border-color: var(--theme-neutral-700, var(--ver-zinc-700));
+    border-color: var(--theme-neutral-700, var(--ver-neutral-700));
   }
 }
 

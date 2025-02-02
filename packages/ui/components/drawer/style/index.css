@@ -11,10 +11,10 @@
     position: absolute;
     width: 30%;
     height: 100vh;
-    background-color: var(--theme-neutral-100, var(--ver-zinc-100));
+    background-color: var(--theme-neutral-100, var(--ver-neutral-100));
 
     .dark & {
-      background-color: var(--theme-neutral-800, var(--ver-zinc-800));
+      background-color: var(--theme-neutral-800, var(--ver-neutral-800));
     }
 
     &_header {
@@ -24,10 +24,10 @@
       align-items: center;
       padding: 20px;
       padding-bottom: 10px;
-      color: var(--theme-neutral-500, var(--ver-zinc-500));
+      color: var(--theme-neutral-500, var(--ver-neutral-500));
 
       .dark & {
-        color: var(--theme-neutral-200, var(--ver-zinc-200));
+        color: var(--theme-neutral-200, var(--ver-neutral-200));
       }
 
       .ver-drawer_title {
@@ -54,7 +54,7 @@
       margin-right: 20px;
 
       .dark & {
-        color: var(--theme-neutral-300, var(--ver-zinc-300));
+        color: var(--theme-neutral-300, var(--ver-neutral-300));
       }
     }
   }

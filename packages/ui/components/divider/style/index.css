@@ -7,10 +7,10 @@
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
-  border-top: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+  border-top: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
 
   .dark & {
-    border-top: 1px solid var(--theme-neutral-700, var(--ver-zinc-700));
+    border-top: 1px solid var(--theme-neutral-700, var(--ver-neutral-700));
   }
 }
 
@@ -20,11 +20,11 @@
   height: 1em;
   margin: 0 8px;
   border-top: none;
-  border-left: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+  border-left: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
   padding: 0;
 
   .dark & {
-    border-left: 1px solid var(--theme-neutral-700, var(--ver-zinc-700));
+    border-left: 1px solid var(--theme-neutral-700, var(--ver-neutral-700));
   }
 }
 

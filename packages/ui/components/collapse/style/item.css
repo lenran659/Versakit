@@ -3,22 +3,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--theme-neutral-700, var(--ver-zinc-700));
+  color: var(--theme-neutral-700, var(--ver-neutral-700));
   height: 48px;
   line-height: 48px;
   cursor: pointer;
   transition: border-bottom-color 0.3s;
   font-weight: 500;
   outline: none;
-  background-color: var(--theme-neutral-100, var(--ver-zinc-100));
+  background-color: var(--theme-neutral-100, var(--ver-neutral-100));
 
   .dark & {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
-    background-color: var(--theme-neutral-900, var(--ver-zinc-900));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
+    background-color: var(--theme-neutral-900, var(--ver-neutral-900));
   }
 
   &.is-disabled {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
     cursor: not-allowed;
     background-image: none;
   }

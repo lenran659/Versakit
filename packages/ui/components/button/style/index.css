@@ -24,8 +24,8 @@
   }
 
   .dark & {
-    color: var(--theme-neutral-300, var(--ver-zinc-300));
-    background-color: var(--theme-neutral-800, var(--ver-zinc-800));
+    color: var(--theme-neutral-300, var(--ver-neutral-300));
+    background-color: var(--theme-neutral-800, var(--ver-neutral-800));
   }
 
   span {
@@ -37,26 +37,26 @@
 @each $item in primary, success, warn, info, error {
   .ver-btn-$(item) {
     color: var(--utils-text-white, var(--ver-white));
-    background-color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    background-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
   }
 
   /* 幽灵按钮 */
   .ver-btn-$(item).is-ghost {
     color: var(--utils-text-black, var(--ver-black));
-    border: 1.5px solid var(--theme-$(item)-500, var(--ver-$(item)-color));
+    border: 1.5px solid var(--theme-$(item)-500, var(--ver-$(item)-500));
 
     &:not(.is-disabled):hover {
-      background-color: var(--theme-$(item)-600, var(--ver-$(item)-color));
-      border-color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+      background-color: var(--theme-$(item)-600, var(--ver-$(item)-500));
+      border-color: var(--theme-$(item)-600, var(--ver-$(item)-500));
     }
 
     .dark & {
-      border-color: var(--theme-$(item)-500, var(--ver-$(item)-color));
-      background-color: var(--theme-neutral-600, var(--ver-zinc-600));
+      border-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
+      background-color: var(--theme-neutral-600, var(--ver-neutral-600));
 
       &:not(.is-disabled):hover {
-        background-color: var(--theme-$(item)-600, var(--ver-$(item)-color));
-        color: var(--theme-neutral-100, var(--ver-zinc-100));
+        background-color: var(--theme-$(item)-600, var(--ver-$(item)-600));
+        color: var(--theme-neutral-100, var(--ver-neutral-100));
       }
     }
   }
@@ -64,18 +64,18 @@
   /* 文本按钮 */
   .ver-btn-$(item).is-text {
     border: none;
-    color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+    color: var(--theme-$(item)-600, var(--ver-$(item)-600));
     background-color: transparent;
 
     &:not(.is-disabled):hover {
-      background-color: var(--theme-$(item)-100, var(--ver-$(item)-color));
+      background-color: var(--theme-$(item)-100, var(--ver-$(item)-100));
     }
 
     .dark & {
       color: $color6;
       background-color: transparent;
       &:not(.is-disabled):hover {
-        color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+        color: var(--theme-$(item)-600, var(--ver-$(item)-600));
       }
     }
   }
@@ -84,21 +84,21 @@
 .is-ghost {
   padding: 12px 19px;
   background-color: transparent;
-  color: var(--theme-neutral-600, var(--ver-zinc-600));
-  border: 1.5px solid var(--theme-neutral-500, var(--ver-zinc-500));
+  color: var(--theme-neutral-600, var(--ver-neutral-600));
+  border: 1.5px solid var(--theme-neutral-500, var(--ver-neutral-500));
 
   &:not(.is-disabled):hover {
-    background-color: var(--theme-neutral-600, var(--ver-zinc-600));
-    border-color: var(--theme-neutral-600, var(--ver-zinc-600));
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
+    background-color: var(--theme-neutral-600, var(--ver-neutral-600));
+    border-color: var(--theme-neutral-600, var(--ver-neutral-600));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
   }
 
   .dark & {
-    border-color: var(--theme-neutral-800, var(--ver-zinc-800));
+    border-color: var(--theme-neutral-800, var(--ver-neutral-800));
 
     &:not(.is-disabled):hover {
-      background-color: var(--theme-neutral-200, var(--ver-zinc-200));
-      color: var(--theme-neutral-600, var(--ver-zinc-600));
+      background-color: var(--theme-neutral-200, var(--ver-neutral-200));
+      color: var(--theme-neutral-600, var(--ver-neutral-600));
     }
   }
 }
@@ -117,19 +117,19 @@
 /* 文本 */
 .is-text {
   border: none;
-  color: var(--theme-neutral-600, var(--ver-zinc-600));
+  color: var(--theme-neutral-600, var(--ver-neutral-600));
   background-color: transparent;
 
   &:not(.is-disabled):hover {
-    background-color: var(--theme-neutral-100, var(--ver-zinc-100));
+    background-color: var(--theme-neutral-100, var(--ver-neutral-100));
   }
 
   .dark & {
-    color: var(--theme-neutral-600, var(--ver-zinc-600));
+    color: var(--theme-neutral-600, var(--ver-neutral-600));
     background-color: transparent;
 
     &:not(.is-disabled):hover {
-      color: var(--theme-neutral-900, var(--ver-zinc-900));
+      color: var(--theme-neutral-900, var(--ver-neutral-900));
     }
   }
 }
@@ -152,10 +152,10 @@
 
 /* shade属性 */
 .ver-btn.is-shade {
-  box-shadow: 0px 0 10px 0px var(--theme-neutral-500, var(--ver-zinc-500));
+  box-shadow: 0px 0 10px 0px var(--theme-neutral-500, var(--ver-neutral-500));
 
   &:not(.is-disabled):hover {
-    box-shadow: 0px 0 10px 0px var(--theme-neutral-500, var(--ver-zinc-500));
+    box-shadow: 0px 0 10px 0px var(--theme-neutral-500, var(--ver-neutral-500));
   }
 }
 

@@ -10,11 +10,11 @@
     display: inline-block;
     width: 40px;
     height: 20px;
-    border: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+    border: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
     outline: none;
     border-radius: 10px;
     box-sizing: border-box;
-    background-color: var(--theme-neutral-300, var(--ver-zinc-300));
+    background-color: var(--theme-neutral-300, var(--ver-neutral-300));
     cursor: pointer;
     transition:
       border-color 0.3s,
@@ -22,8 +22,8 @@
     vertical-align: middle;
 
     .dark & {
-      border-color: var(--theme-neutral-700, var(--ver-zinc-700));
-      background-color: var(--theme-neutral-700, var(--ver-zinc-700));
+      border-color: var(--theme-neutral-700, var(--ver-neutral-700));
+      background-color: var(--theme-neutral-700, var(--ver-neutral-700));
     }
 
     .ver-switch-button {
@@ -35,7 +35,7 @@
       transition: all 0.3s;
       width: 16px;
       height: 16px;
-      background-color: var(--theme-neutral-100, var(--ver-zinc-100));
+      background-color: var(--theme-neutral-100, var(--ver-neutral-100));
     }
   }
 }

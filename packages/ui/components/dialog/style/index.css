@@ -12,13 +12,13 @@
     position: relative;
     width: 30%;
     margin: 15vh auto 50px;
-    background-color: var(--theme-neutral-100, var(--ver-zinc-100));
+    background-color: var(--theme-neutral-100, var(--ver-neutral-100));
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 
     .dark & {
-      background-color: var(--theme-neutral-800, var(--ver-zinc-800));
+      background-color: var(--theme-neutral-800, var(--ver-neutral-800));
     }
 
     &_header {
@@ -29,7 +29,7 @@
         color: #303133;
 
         .dark & {
-          color: var(--theme-neutral-100, var(--ver-zinc-100));
+          color: var(--theme-neutral-100, var(--ver-neutral-100));
         }
       }
       .ver-dialog_headerbtn {
@@ -51,7 +51,7 @@
       word-break: break-all;
 
       .dark & {
-        color: var(--theme-neutral-100, var(--ver-zinc-100));
+        color: var(--theme-neutral-100, var(--ver-neutral-100));
       }
     }
     &_footer {

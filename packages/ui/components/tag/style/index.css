@@ -1,7 +1,7 @@
 .ver-tag {
-  color: var(--theme-neutral-100, var(--ver-zinc-100));
-  background-color: var(--theme-neutral-600, var(--ver-zinc-600));
-  border-color: var(--theme-neutral-500, var(--ver-zinc-500));
+  color: var(--theme-neutral-100, var(--ver-neutral-100));
+  background-color: var(--theme-neutral-600, var(--ver-neutral-600));
+  border-color: var(--theme-neutral-500, var(--ver-neutral-500));
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -21,38 +21,24 @@
 }
 
 .ver-tag.is-plain {
-  color: var(--theme-primary-500, var(--ver-primary-color));
-  border-color: var(--theme-primary-600, var(--ver-primary-color));
+  color: var(--theme-primary-500, var(--ver-primary-500));
+  border-color: var(--theme-primary-600, var(--ver-primary-600));
   background-color: transparent;
 }
 
 @each $item in primary, success, warn, info, error {
   .ver-tag-$(item) {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
-    background-color: var(--theme-$(item)-600, var(--ver-$(item)-color));
-    border-color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
+    background-color: var(--theme-$(item)-600, var(--ver-$(item)-600));
+    border-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
   }
 
   .ver-tag-$(item).is-plain {
-    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
-    border-color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    color: var(--theme-$(item)-500, var(--ver-$(item)-50));
+    border-color: var(--theme-$(item)-500, var(--ver-$(item)-50));
     background-color: transparent;
   }
 }
-
-/* type */
-@include ver-tag-type('primary', $ver-violet-6, $ver-violet-5);
-@include ver-tag-type('success', $ver-green-6, $ver-green-5);
-@include ver-tag-type('info', $ver-zinc-6, $ver-zinc-5);
-@include ver-tag-type('warning', $ver-orange-6, $ver-orange-5);
-@include ver-tag-type('error', $ver-red-6, $ver-red-5);
-
-/* Plain */
-@include ver-tag-type-plain('primary', $ver-violet-5);
-@include ver-tag-type-plain('success', $ver-green-5);
-@include ver-tag-type-plain('info', $ver-zinc-5);
-@include ver-tag-type-plain('warning', $ver-orange-5);
-@include ver-tag-type-plain('error', $ver-red-5);
 
 /* size属性 */
 .ver-tag.is-xs {

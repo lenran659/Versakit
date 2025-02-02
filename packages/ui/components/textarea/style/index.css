@@ -9,7 +9,7 @@
     height: 100%;
     padding: 0;
     outline: none;
-    border: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+    border: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
     transition: all 0.2s ease;
     border-radius: 3px;
     padding: 8px 8px 10px 8px;
@@ -27,8 +27,8 @@
     }
 
     .dark & {
-      color: var(--theme-neutral-100, var(--ver-zinc-100));
-      border-color: var(--theme-neutral-900, var(--ver-zinc-900));
+      color: var(--theme-neutral-100, var(--ver-neutral-100));
+      border-color: var(--theme-neutral-900, var(--ver-neutral-900));
 
       &:focus,
       &:active,

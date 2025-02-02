@@ -1,13 +1,13 @@
 .ver-panel {
   margin-bottom: 15px;
   border-radius: 4px;
-  border: 1px solid var(--theme-neutral-300, var(--ver-zinc-300));
+  border: 1px solid var(--theme-neutral-300, var(--ver-neutral-300));
   background-color: #fff;
   padding: 20px;
   .dark & {
-    color: var(--theme-neutral-100, var(--ver-zinc-100));
-    background-color: var(--theme-neutral-900, var(--ver-zinc-900));
-    border-color: var(--theme-neutral-600, var(--ver-zinc-600));
+    color: var(--theme-neutral-100, var(--ver-neutral-100));
+    background-color: var(--theme-neutral-900, var(--ver-neutral-900));
+    border-color: var(--theme-neutral-600, var(--ver-neutral-600));
   }
 }
 

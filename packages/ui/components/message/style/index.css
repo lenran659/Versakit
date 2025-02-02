@@ -24,7 +24,7 @@
   border-radius: 4px;
   user-select: none;
   background: #ffffff;
-  color: var(--theme-neutral-600, var(--ver-zinc-600));
+  color: var(--theme-neutral-600, var(--ver-neutral-600));
   border-radius: 8px;
   box-shadow:
     0 6px 16px 0 rgba(0, 0, 0, 0.08),
@@ -41,12 +41,12 @@
 
 @each $item in primary, success, warn, info, error {
   .ver-message-$(item) {
-    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    color: var(--theme-$(item)-500, var(--ver-$(item)-500));
   }
 
   .ver-message-$(item)-plain {
-    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
-    background-color: var(--theme-$(item)-100, var(--ver-$(item)-color));
+    color: var(--theme-$(item)-500, var(--ver-$(item)-500));
+    background-color: var(--theme-$(item)-100, var(--ver-$(item)-100));
   }
 }
 
