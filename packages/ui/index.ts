@@ -3,8 +3,8 @@ import { installTheme } from './core/theme'
 
 // 组件
 import { VerButton } from './components/button/index'
-// import { VerText } from './components/text/index'
-// import { VerLink } from './components/link/index'
+import { VerText } from './components/text/index'
+import { VerLink } from './components/link/index'
 import { VerRow } from './components/row/index'
 // import { VerCol } from './components/col/index'
 import { VerInput } from './components/input/index'
@@ -13,16 +13,16 @@ import { VerDivider } from './components/divider/index'
 import { VerAvatar } from './components/avatar/index'
 import { VerBadge } from './components/badge/index'
 import { VerCard } from './components/card/index'
-// import { VerTag } from './components/tag/index'
+import { VerTag } from './components/tag/index'
 import { VerDrawer } from './components/drawer/index'
 import { VerSwitch } from './components/switch/index'
 import { VerRadio } from './components/radio/index'
-// import { VerMessage } from './components/message/index'
+import { VerMessage } from './components/message/index'
 import { VerTextarea } from './components/textarea/index'
 import { VerContainer } from './components/container/index'
 import { VerHeader } from './components/header/index'
 import { VerMain } from './components/main/index'
-// import { VerNotification } from './components/notification/index'
+import { VerNotification } from './components/notification/index'
 import { VerTab } from './components/tab/index'
 import { VerIcon } from './components/icon/index'
 import { VerBacktop } from './components/backtop/index'
@@ -51,6 +51,11 @@ import './style/index.css'
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerTag,
+  VerNotification,
+  VerMessage,
+  VerLink,
+  VerText,
   VerBadge,
   VerCarouselItem,
   VerCarousel,
@@ -87,6 +92,11 @@ const components: Component[] = [
   VerTable,
 ]
 export {
+  VerTag,
+  VerNotification,
+  VerMessage,
+  VerLink,
+  VerText,
   VerBadge,
   VerCarouselItem,
   VerCarousel,

@@ -1,0 +1,35 @@
+.ver-text {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  color: #606266;
+  word-break: break-all;
+
+  .dark & {
+    color: var(--theme-neutral-100, var(--ver-zinc-100));
+  }
+}
+
+.ver-text.is-truncated {
+  display: inline-block;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@each $item in primary, success, warn, info, error {
+  .ver-text-$(item) {
+    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+
+    .dark & {
+      color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    }
+  }
+}
+
+@each $size, $font-size in (lg, md, sm, xs), (16px, 14px, 12px, 10px) {
+  .ver-text.is-$(size) {
+    font-size: $(font-size);
+  }
+}

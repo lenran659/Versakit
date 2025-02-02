@@ -8,7 +8,7 @@ import { VerRow, VerText } from '@versakit/ui'
     <ver-text class="mx4" type="primary">Primary</ver-text>
     <ver-text class="mx4" type="success">Success</ver-text>
     <ver-text class="mx4" type="info">Info</ver-text>
-    <ver-text class="mx4" type="warning">Warning</ver-text>
+    <ver-text class="mx4" type="warn">Warning</ver-text>
     <ver-text class="mx4" type="error">Drange</ver-text>
   </ver-row>
 </template>

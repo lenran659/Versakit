@@ -10,7 +10,7 @@ import { VerRow, VerLink } from '@versakit/ui'
     <ver-link class="mx4" type="primary">primary</ver-link>
     <ver-link class="mx4" type="success">success</ver-link>
     <ver-link class="mx4" type="info">info</ver-link>
-    <ver-link class="mx4" type="warning">warning</ver-link>
+    <ver-link class="mx4" type="warn">warning</ver-link>
     <ver-link class="mx4" type="error">danger</ver-link>
   </ver-row>
 </template>

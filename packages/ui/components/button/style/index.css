@@ -62,7 +62,7 @@
   }
 
   /* 文本按钮 */
-  /* .ver-btn-$(item).is-text {
+  .ver-btn-$(item).is-text {
     border: none;
     color: var(--theme-$(item)-600, var(--ver-$(item)-color));
     background-color: transparent;
@@ -78,7 +78,7 @@
         color: var(--theme-$(item)-600, var(--ver-$(item)-color));
       }
     }
-  } */
+  }
 }
 
 .is-ghost {

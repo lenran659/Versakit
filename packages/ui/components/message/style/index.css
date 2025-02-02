@@ -1,0 +1,62 @@
+.ver-message-container {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ver-message {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 25px;
+  display: inline-flex;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  min-height: 45px;
+  padding: 10px;
+  border-radius: 4px;
+  user-select: none;
+  background: #ffffff;
+  color: var(--theme-neutral-600, var(--ver-zinc-600));
+  border-radius: 8px;
+  box-shadow:
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+  .text {
+    margin-inline: 0.5rem;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@each $item in primary, success, warn, info, error {
+  .ver-message-$(item) {
+    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+  }
+
+  .ver-message-$(item)-plain {
+    color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+    background-color: var(--theme-$(item)-100, var(--ver-$(item)-color));
+  }
+}
+
+.down-enter-active,
+.down-leave-active {
+  transition: all 0.5s;
+}
+
+.down-enter-from,
+.down-leave-to {
+  opacity: 0;
+  transform: translate3d(-50%, -100px, 0);
+}

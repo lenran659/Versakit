@@ -1,7 +1,7 @@
 <template>
   <div>
     <VerButton type="success" @click="success">success</VerButton>
-    <VerButton type="warning" @click="warning">warning</VerButton>
+    <VerButton type="warn" @click="warning">warning</VerButton>
     <VerButton type="info" @click="info">info</VerButton>
     <VerButton type="error" @click="error">error</VerButton>
   </div>
@@ -18,7 +18,7 @@ const success = () => {
 }
 const warning = () => {
   VerMessage({
-    type: 'warning',
+    type: 'warn',
     content: '这是一条消息',
   })
 }
