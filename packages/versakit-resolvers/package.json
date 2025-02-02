@@ -1,0 +1,19 @@
+{
+  "name": "@versakit/resolvers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "pnpm run build --watch --ignore-watch examples",
+    "build": "tsup index.ts --dts --format cjs,esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "unplugin-vue-components": "^28.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.6"
+  }
+}

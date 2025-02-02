@@ -53,7 +53,7 @@ var require_fs = __commonJS({
   },
 })
 
-// ../node_modules/.pnpm/vitepress-demo-plugin@1.2.3_vitepress@1.6.3_@algolia+client-search@5.20.0_@types+node@22.10.1_vs2uapzcxx7w4cpsedaiww2cv4/node_modules/vitepress-demo-plugin/dist/index.js
+// ../node_modules/.pnpm/vitepress-demo-plugin@1.2.3_vitepress@1.6.3_@algolia+client-search@5.20.0_@types+node@22.10.1_ei7j6yevi6m3um6sbmyeo6guye/node_modules/vitepress-demo-plugin/dist/index.js
 var import_fs = __toESM(require_fs())
 var Te = (e, t) => {
   const i = e.__vccOpts || e
