@@ -2,7 +2,7 @@
   <div>
     <VerButton type="info" @click="info">info</VerButton>
     <VerButton type="success" @click="success">success</VerButton>
-    <VerButton type="warning" @click="warning">warning</VerButton>
+    <VerButton type="warn" @click="warning">warning</VerButton>
     <VerButton type="error" @click="error">error</VerButton>
   </div>
 </template>
@@ -31,7 +31,7 @@ const success = () => {
 const warning = () => {
   VerNotification({
     title: 'title',
-    type: 'warning',
+    type: 'warn',
     plain: true,
     content: 'content',
   })

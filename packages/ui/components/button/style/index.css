@@ -42,7 +42,7 @@
 
   /* 幽灵按钮 */
   .ver-btn-$(item).is-ghost {
-    color: var(--utils-text-black, var(--ver-black));
+    color: var(--utils-text-black, var(--ver-$(item)-500));
     border: 1.5px solid var(--theme-$(item)-500, var(--ver-$(item)-500));
 
     &:not(.is-disabled):hover {

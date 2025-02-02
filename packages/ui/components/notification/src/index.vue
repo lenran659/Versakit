@@ -48,7 +48,7 @@ const iconColor = computed(() => {
   switch (props.type) {
     case 'success':
       return '#4ade80'
-    case 'warning':
+    case 'warn':
       return 'orange'
     case 'error':
       return 'red'
@@ -62,7 +62,7 @@ const iconName = computed(() => {
   switch (props.type) {
     case 'success':
       return 'check-circle-fill'
-    case 'warning':
+    case 'warn':
       return 'exclamation-triangle-fill'
     case 'error':
       return 'x-circle-fill'

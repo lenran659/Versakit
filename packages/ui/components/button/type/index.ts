@@ -10,7 +10,7 @@ export interface ButtonProps {
   size?: string
   disabled?: boolean
   circle?: boolean
-  type?: BtnType
+  type?: BtnType | ''
   icon?: string
   variant?: string
   unstyled?: boolean

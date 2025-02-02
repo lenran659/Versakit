@@ -27,8 +27,10 @@ const props = withDefaults(defineProps<MessageProps>(), {
 })
 
 const height = ref(0)
+
 // 上一个实例的最下面的坐标数字，第一个是 0
 const lastOffset = computed(() => getLastBottomOffset(props.id))
+
 // 这个元素应该使用的 top
 const topOffset = computed(() => props.offset + lastOffset.value)
 
@@ -44,7 +46,7 @@ const iconColor = computed(() => {
   switch (props.type) {
     case 'success':
       return '#4ade80'
-    case 'warning':
+    case 'warn':
       return 'orange'
     case 'error':
       return 'red'

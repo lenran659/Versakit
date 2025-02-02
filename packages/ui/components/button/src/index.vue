@@ -10,7 +10,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   size: 'md',
   icon: '',
   variant: '',
-  type: 'primary',
+  type: '',
   unstyled: false,
   pt: () => ({}) as BtnPassThroughOptions,
 })

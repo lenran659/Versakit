@@ -34,8 +34,8 @@
   }
 
   .ver-tag-$(item).is-plain {
-    color: var(--theme-$(item)-500, var(--ver-$(item)-50));
-    border-color: var(--theme-$(item)-500, var(--ver-$(item)-50));
+    color: var(--theme-$(item)-500, var(--ver-$(item)-500));
+    border-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
     background-color: transparent;
   }
 }

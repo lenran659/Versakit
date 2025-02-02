@@ -2,7 +2,7 @@
   <div>
     <VerButton type="info" @click="info">info</VerButton>
     <VerButton type="success" @click="success">success</VerButton>
-    <VerButton type="warning" @click="warning">warning</VerButton>
+    <VerButton type="warn" @click="warning">warning</VerButton>
     <VerButton type="error" @click="error">error</VerButton>
   </div>
 </template>

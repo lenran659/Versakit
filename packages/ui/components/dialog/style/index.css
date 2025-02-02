@@ -7,7 +7,7 @@
   overflow: auto;
   margin: 0;
   z-index: 2001;
-  background-color: rgba(#000, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   .ver-dialog {
     position: relative;
     width: 30%;
