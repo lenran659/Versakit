@@ -36,7 +36,146 @@
 
 @each $item in primary, success, warn, info, error {
   .ver-btn-$(item) {
-    color: var(--utils-text-white, #fff);
+    color: var(--utils-text-white, var(--ver-white));
     background-color: var(--theme-$(item)-500, var(--ver-$(item)-color));
   }
+
+  /* 幽灵按钮 */
+  .ver-btn-$(item).is-ghost {
+    color: var(--utils-text-black, var(--ver-black));
+    border: 1.5px solid var(--theme-$(item)-500, var(--ver-$(item)-color));
+
+    &:not(.is-disabled):hover {
+      background-color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+      border-color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+    }
+
+    .dark & {
+      border-color: var(--theme-$(item)-500, var(--ver-$(item)-color));
+      background-color: var(--theme-neutral-600, var(--ver-zinc-600));
+
+      &:not(.is-disabled):hover {
+        background-color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+        color: var(--theme-neutral-100, var(--ver-zinc-100));
+      }
+    }
+  }
+
+  /* 文本按钮 */
+  /* .ver-btn-$(item).is-text {
+    border: none;
+    color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+    background-color: transparent;
+
+    &:not(.is-disabled):hover {
+      background-color: var(--theme-$(item)-100, var(--ver-$(item)-color));
+    }
+
+    .dark & {
+      color: $color6;
+      background-color: transparent;
+      &:not(.is-disabled):hover {
+        color: var(--theme-$(item)-600, var(--ver-$(item)-color));
+      }
+    }
+  } */
+}
+
+.is-ghost {
+  padding: 12px 19px;
+  background-color: transparent;
+  color: var(--theme-neutral-600, var(--ver-zinc-600));
+  border: 1.5px solid var(--theme-neutral-500, var(--ver-zinc-500));
+
+  &:not(.is-disabled):hover {
+    background-color: var(--theme-neutral-600, var(--ver-zinc-600));
+    border-color: var(--theme-neutral-600, var(--ver-zinc-600));
+    color: var(--theme-neutral-100, var(--ver-zinc-100));
+  }
+
+  .dark & {
+    border-color: var(--theme-neutral-800, var(--ver-zinc-800));
+
+    &:not(.is-disabled):hover {
+      background-color: var(--theme-neutral-200, var(--ver-zinc-200));
+      color: var(--theme-neutral-600, var(--ver-zinc-600));
+    }
+  }
+}
+
+/* round属性 */
+.ver-btn.is-round {
+  border-radius: 20px;
+  padding: 12px 21px;
+}
+
+/* round属性 & ghost属性 */
+.ver-btn.is-round.is-ghost {
+  padding: 11px 20px;
+}
+
+/* 文本 */
+.is-text {
+  border: none;
+  color: var(--theme-neutral-600, var(--ver-zinc-600));
+  background-color: transparent;
+
+  &:not(.is-disabled):hover {
+    background-color: var(--theme-neutral-100, var(--ver-zinc-100));
+  }
+
+  .dark & {
+    color: var(--theme-neutral-600, var(--ver-zinc-600));
+    background-color: transparent;
+
+    &:not(.is-disabled):hover {
+      color: var(--theme-neutral-900, var(--ver-zinc-900));
+    }
+  }
+}
+
+/* size属性 */
+.ver-btn.is-xs {
+  font-size: 8px;
+  padding: 8px 10px;
+}
+
+.ver-btn.is-sm {
+  font-size: 10px;
+  padding: 10px 15px;
+}
+
+.ver-btn.is-lg {
+  font-size: 16px;
+  padding: 14px 25px;
+}
+
+/* shade属性 */
+.ver-btn.is-shade {
+  box-shadow: 0px 0 10px 0px var(--theme-neutral-500, var(--ver-zinc-500));
+
+  &:not(.is-disabled):hover {
+    box-shadow: 0px 0 10px 0px var(--theme-neutral-500, var(--ver-zinc-500));
+  }
+}
+
+/* 禁止状态 */
+.ver-btn.is-disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+  background-image: none;
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+/* circle */
+.ver-btn.is-circle {
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.ver-btn.is-full {
+  width: 100%;
 }

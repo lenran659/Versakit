@@ -48,13 +48,13 @@ const rootAttrs = computed(() => ({
 
 <template>
   <button v-bind="rootAttrs">
-    <!-- Icon slot -->
-    <span v-if="$slots.icon" v-bind="props.pt.icon">
-      <slot name="icon" />
-    </span>
-
-    <!-- Icon prop -->
-    <i v-else-if="props.icon" :class="props.icon" v-bind="props.pt.icon" />
+    <!-- icon -->
+    <ver-icon
+      v-if="props.icon"
+      :name="props.icon"
+      :class="props.icon"
+      v-bind="props.pt.icon"
+    />
 
     <!-- Label -->
     <span v-bind="props.pt.label">

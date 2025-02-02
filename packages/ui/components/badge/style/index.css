@@ -1,0 +1,34 @@
+.ver-badge {
+  position: relative;
+  display: inline-block;
+
+  &-dot,
+  &-num,
+  &-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 9px;
+    padding: 0 4px;
+    font-size: 12px;
+    color: #fff;
+    background: var(--theme-error-500, var(--ver-error-color));
+    box-shadow: 0 0 0 2px #fff;
+  }
+  .ver-badge-num,
+  .ver-badge-text {
+    min-width: 16px;
+    right: -8px;
+    top: -8px;
+  }
+  .ver-badge-dot {
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+  }
+}

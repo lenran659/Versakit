@@ -11,7 +11,7 @@ import { VerInput } from './components/input/index'
 import { VerDialog } from './components/dialog/index'
 import { VerDivider } from './components/divider/index'
 import { VerAvatar } from './components/avatar/index'
-// import { VerBadge } from './components/badge/index'
+import { VerBadge } from './components/badge/index'
 import { VerCard } from './components/card/index'
 // import { VerTag } from './components/tag/index'
 import { VerDrawer } from './components/drawer/index'
@@ -45,12 +45,13 @@ import { VerCollapse, VerCollapseItem } from './components/collapse/index'
 import { vRipple, vIncrease } from './directives/index'
 
 // 样式
-import './style/var.css'
+import './style/index.css'
 
 // 图标
 import 'virtual:svg-icons-register'
 
 const components: Component[] = [
+  VerBadge,
   VerCarouselItem,
   VerCarousel,
   VerFlex,
@@ -86,6 +87,7 @@ const components: Component[] = [
   VerTable,
 ]
 export {
+  VerBadge,
   VerCarouselItem,
   VerCarousel,
   VerFlex,
