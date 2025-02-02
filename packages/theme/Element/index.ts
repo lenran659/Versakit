@@ -12,5 +12,8 @@ export const Element = {
     error: {
       500: '#F56C6C',
     },
+    info: {
+      500: '#909399',
+    },
   },
 }

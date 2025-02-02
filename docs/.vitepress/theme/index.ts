@@ -13,6 +13,10 @@ export default {
   enhanceApp({ app }) {
     app.component('Tool', Tool)
 
-    app.use(Versakit) // 注册组件库
+    app.use(Versakit, {
+      theme: {
+        preset: Element,
+      },
+    })
   },
 }

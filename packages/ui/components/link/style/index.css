@@ -42,6 +42,7 @@
 
   .ver-link-$(item).is-disabled {
     color: var(--theme-$(item)-700, var(--ver-$(item)-700));
+
     .dark & {
       color: var(--theme-$(item)-700, var(--ver-$(item)-700));
     }
@@ -51,10 +52,5 @@
 /* 禁用状态 */
 .ver-link.is-disabled {
   cursor: not-allowed;
-  color: var(--theme-neutral-500, var(--ver-neutral-500));
   text-decoration: none;
-
-  .dark & {
-    color: var(--theme-neutral-400, var(--ver-neutral-400));
-  }
 }

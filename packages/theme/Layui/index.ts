@@ -10,5 +10,8 @@ export const Layui = {
     error: {
       500: '#FF5722',
     },
+    info: {
+      500: '#31BDEC',
+    },
   },
 }

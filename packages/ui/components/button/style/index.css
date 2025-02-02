@@ -16,7 +16,7 @@
   font-weight: 500;
   user-select: none;
   border-radius: 4px;
-  border: none;
+  border: 1px solid var(--theme-neutral-200, var(--ver-neutral-200));
   transition: 0.1s;
 
   &:not(.is-disabled):active {
@@ -42,7 +42,7 @@
 
   /* 幽灵按钮 */
   .ver-btn-$(item).is-ghost {
-    color: var(--utils-text-black, var(--ver-$(item)-500));
+    color: var(--theme-$(item)-500, var(--ver-$(item)-500));
     border: 1.5px solid var(--theme-$(item)-500, var(--ver-$(item)-500));
 
     &:not(.is-disabled):hover {
@@ -63,8 +63,8 @@
 
   /* 文本按钮 */
   .ver-btn-$(item).is-text {
+    color: var(--theme-$(item)-500, var(--ver-$(item)-500));
     border: none;
-    color: var(--theme-$(item)-600, var(--ver-$(item)-600));
     background-color: transparent;
 
     &:not(.is-disabled):hover {
