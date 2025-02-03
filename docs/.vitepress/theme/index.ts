@@ -13,10 +13,6 @@ export default {
   enhanceApp({ app }) {
     app.component('Tool', Tool)
 
-    app.use(Versakit, {
-      theme: {
-        preset: Layui,
-      },
-    })
+    app.use(Versakit)
   },
 }

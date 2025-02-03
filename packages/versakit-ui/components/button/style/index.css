@@ -38,6 +38,12 @@
   .ver-btn-$(item) {
     color: var(--utils-text-white, var(--ver-white));
     background-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
+
+    .dark & {
+      color: var(--utils-text-white, var(--ver-white));
+      border: 1px solid var(--theme-$(item)-500, var(--ver-$(item)-500));
+      background-color: var(--theme-$(item)-500, var(--ver-$(item)-500));
+    }
   }
 
   /* 幽灵按钮 */

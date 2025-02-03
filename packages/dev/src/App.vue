@@ -7,14 +7,20 @@ const flag = ref(true)
 <template>
   <div>
     <div class="container">
-      <VerButton>按钮</VerButton>
-
+      <p>style 模式</p>
+      <VerButton type="primary">按钮</VerButton>
+      <VerButton type="warn">按钮</VerButton>
+      <VerButton type="success">按钮</VerButton>
       <VerButton type="error">按钮</VerButton>
+      <VerButton type="info">按钮</VerButton>
 
-      <VerButton type="success" unstyled :pt="{ root: 'btn' }">按钮</VerButton>
+      <p>unstyled 模式</p>
+      <VerButton unstyled :pt="{ root: 'btn' }">按钮</VerButton>
     </div>
 
     <div class="container">
+      <p>按需引入测试</p>
+
       <ver-card>卡片</ver-card>
     </div>
 
@@ -30,7 +36,7 @@ const flag = ref(true)
 
 <style>
 .btn {
-  margin: 0px 12px;
+  margin: 10px 0px;
   padding: 1rem;
   color: white;
   background-color: black;
