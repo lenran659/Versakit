@@ -13,7 +13,8 @@ dist
 dist-ssr
 coverage
 *.local
-packages/docs/.vitepress/cache
+**/cache/
+packages/versakit-ui/stats.html
 
 /cypress/videos/
 /cypress/screenshots/
@@ -31,3 +32,4 @@ packages/docs/.vitepress/cache
 
 *.tsbuildinfo
 desktop.ini
+
