@@ -13,6 +13,7 @@
     "docs:dev": "pnpm --filter docs docs:dev",
     "docs:preview": "pnpm --filter docs docs:preview",
     "ui:build": "pnpm --filter ui build",
+    "resolvers:build": "pnpm --filter resolvers build",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "preinstall": "node ./scripts/preinstall.js",

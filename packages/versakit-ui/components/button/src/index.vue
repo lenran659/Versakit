@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, useAttrs } from 'vue'
 import type { ButtonProps, BtnPassThroughOptions } from '../type/index'
+import { VerIcon } from '../../icon/index'
 
 defineOptions({ name: 'VerButton' })
 

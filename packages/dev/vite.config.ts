@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { VersakitResolvers } from '@versakit/resolvers'
+import { VersakitResolver } from '@versakit/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,10 +11,10 @@ export default defineConfig({
     vue(),
     tailwindcss(),
     AutoImport({
-      resolvers: [VersakitResolvers()],
+      resolvers: [VersakitResolver()],
     }),
     Components({
-      resolvers: [VersakitResolvers()],
+      resolvers: [VersakitResolver()],
     }),
   ],
   server: {
